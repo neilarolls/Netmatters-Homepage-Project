@@ -19,6 +19,7 @@
 		"../scss/Layout/_header.scss",
 		"../scss/Layout/_footer.scss",
 		"../scss/Layout/_grid.scss",
+		"../scss/Layout/_layout.scss",
 		"../scss/Layout/_sidebar.scss"
 	],
 	"sourcesContent": [
@@ -35,12 +36,13 @@
 		"",
 		"",
 		"",
-		"@import \r\n    'header',\r\n    'footer',\r\n    'grid',\r\n    'sidebar';",
+		"@import \r\n    'header',\r\n    'footer',\r\n    'grid',\r\n    'layout',\r\n    'sidebar';",
 		"",
+		"footer {\r\n    background-color: #323544;\r\n    color: #fff;\r\n    padding: 30px 0 0;\r\n    position: relative;\r\n\r\n    .footer-row {\r\n        display: flex;\r\n        flex-wrap: wrap;\r\n\r\n        .footer-menu {\r\n            flex: 100%;\r\n            margin-bottom: 30px;\r\n\r\n            @media (min-width: 768px) {\r\n                flex: 50%;\r\n            }\r\n\r\n            @media (min-width: 992px) {\r\n                flex: 25%;\r\n            }\r\n\r\n            @media (min-width: 1260px) {\r\n                margin-bottom: 40px;\r\n            }\r\n\r\n            h4 {\r\n                text-transform: uppercase;\r\n                font-size: 1rem;\r\n                margin-bottom: 26px;\r\n            }\r\n        }\r\n    }\r\n}",
 		"",
-		"",
+		"body {\r\n    margin: 0;\r\n}\r\n\r\n* {\r\n    box-sizing: border-box;\r\n}\r\n\r\n.container {\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    padding-left: 15px;\r\n    padding-right: 15px;\r\n\r\n    @media (min-width: 768px) {\r\n        width: 750px;            \r\n    }\r\n\r\n    @media (min-width: 992px) {\r\n        width: 970px;            \r\n    }\r\n\r\n    @media (min-width: 1260px) {\r\n        width: 1200px;            \r\n    }\r\n}",
 		""
 	],
 	"names": [],
-	"mappings": ""
+	"mappings": ";AeAA,AAAA,MAAM,CAAC;EACH,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,QAAQ;EACjB,QAAQ,EAAE,QAAQ;CA6BrB;;;AAjCD,AAMI,MANE,CAMF,WAAW,CAAC;EACR,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;CAwBlB;;;AAhCL,AAUQ,MAVF,CAMF,WAAW,CAIP,YAAY,CAAC;EACT,IAAI,EAAE,IAAI;EACV,aAAa,EAAE,IAAI;CAmBtB;;AAjBG,MAAM,EAAE,SAAS,EAAE,KAAK;;EAdpC,AAUQ,MAVF,CAMF,WAAW,CAIP,YAAY,CAAC;IAKL,IAAI,EAAE,GAAG;GAgBhB;;;AAbG,MAAM,EAAE,SAAS,EAAE,KAAK;;EAlBpC,AAUQ,MAVF,CAMF,WAAW,CAIP,YAAY,CAAC;IASL,IAAI,EAAE,GAAG;GAYhB;;;AATG,MAAM,EAAE,SAAS,EAAE,MAAM;;EAtBrC,AAUQ,MAVF,CAMF,WAAW,CAIP,YAAY,CAAC;IAaL,aAAa,EAAE,IAAI;GAQ1B;;;;AA/BT,AA0BY,MA1BN,CAMF,WAAW,CAIP,YAAY,CAgBR,EAAE,CAAC;EACC,cAAc,EAAE,SAAS;EACzB,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,IAAI;CACtB;;;AE9Bb,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,CAAC;CACZ;;;AAED,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;CACzB;;;AAED,AAAA,UAAU,CAAC;EACP,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;CAatB;;AAXG,MAAM,EAAE,SAAS,EAAE,KAAK;;EAN5B,AAAA,UAAU,CAAC;IAOH,KAAK,EAAE,KAAK;GAUnB;;;AAPG,MAAM,EAAE,SAAS,EAAE,KAAK;;EAV5B,AAAA,UAAU,CAAC;IAWH,KAAK,EAAE,KAAK;GAMnB;;;AAHG,MAAM,EAAE,SAAS,EAAE,MAAM;;EAd7B,AAAA,UAAU,CAAC;IAeH,KAAK,EAAE,MAAM;GAEpB"
 }
