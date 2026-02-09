@@ -1,0 +1,23 @@
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url(../fonts/poppins-v15-latin-regular.woff2) format("woff2");
+}
+
+
+body {
+    font: 1rem "Poppins";
+    letter-spacing: 0.4px;
+    line-height: 1.375rem;
+}
+
+.footer-sub, .footer-menu, .footer-menu ul {
+    font-size: 0.8125rem;
+    padding-inline-start: 0em;
+}
+
+.footer-sub {
+    line-height: 0.8rem;
+}
