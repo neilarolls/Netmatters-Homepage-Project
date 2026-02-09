@@ -1,3 +1,530 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+/* line 31, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 40, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 53, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 64, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 76, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 85, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 95, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 105, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 116, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 125, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 133, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 137, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 148, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 160, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 176, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 186, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 195, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 206, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 218, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 229, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 240, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 253, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 261, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 270, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 280, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 290, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 299, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 308, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 320, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 328, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 339, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 347, ../../../Netmatters-Homepage-Project/scss/Layout/_normalise.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 1, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+body {
+  margin: 0;
+  background-color: #323544;
+}
+
+/* line 7, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 11, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  /* line 11, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 11, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 11, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+  .container {
+    width: 1200px;
+  }
+}
+
+/* line 1, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+footer {
+  padding: 0 0 0;
+  position: relative;
+  line-height: 1.375rem;
+}
+
+/* line 7, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 12, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+footer .footer-row .footer-menu {
+  padding: 0 0 0 0;
+  flex: 100%;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  /* line 12, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+  footer .footer-row .footer-menu {
+    flex: 50%;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 12, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+  footer .footer-row .footer-menu {
+    flex: 25%;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 12, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+  footer .footer-row .footer-menu {
+    margin-bottom: 40px;
+  }
+}
+
+/* line 31, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+footer .footer-row .footer-menu h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 26px;
+  font-weight: 400;
+}
+
+/* line 38, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+footer .footer-row .footer-menu ul {
+  list-style-type: none;
+}
+
+/* line 41, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+footer .footer-row .footer-menu ul a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 44, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+footer .footer-row .footer-menu ul a:hover {
+  text-decoration: underline;
+}
+
+/* line 58, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+.footer-sub {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #212330;
+  color: white;
+  padding: 15px 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15rem;
+}
+
+/* line 69, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+.footer-sub div {
+  padding: 0 0 8 14;
+}
+
+/* line 73, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+.footer-sub .hide-hyphen {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* line 58, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+  .footer-sub {
+    flex-direction: row;
+    padding: 0 0 20 15;
+  }
+  /* line 81, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+  .footer-sub .hide-hyphen {
+    display: block;
+  }
+}
+
+/* line 86, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+.footer-sub a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 90, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+.footer-sub a:hover {
+  text-decoration: underline;
+}
+
 @font-face {
   font-family: "Poppins";
   font-style: normal;
@@ -18,161 +545,9 @@ body {
   padding-inline-start: 0em;
 }
 
-/* line 21, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 22, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .footer-sub {
   line-height: 0.8rem;
-}
-
-/* line 1, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
-body {
-  margin: 0;
-}
-
-/* line 5, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
-* {
-  box-sizing: border-box;
-}
-
-/* line 9, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-@media (min-width: 768px) {
-  /* line 9, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
-  .container {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  /* line 9, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1260px) {
-  /* line 9, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
-  .container {
-    width: 1200px;
-  }
-}
-
-/* line 1, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-footer {
-  background-color: #323544;
-  color: #fff;
-  padding: 0 0 0;
-  position: relative;
-  line-height: 1.375rem;
-}
-
-/* line 9, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-footer .footer-row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* line 14, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-footer .footer-row .footer-menu {
-  padding: 0 0 0 0;
-  flex: 100%;
-  flex-direction: column;
-  margin-bottom: 30px;
-}
-
-@media (min-width: 768px) {
-  /* line 14, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-  footer .footer-row .footer-menu {
-    flex: 50%;
-    flex-direction: row;
-  }
-}
-
-@media (min-width: 992px) {
-  /* line 14, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-  footer .footer-row .footer-menu {
-    flex: 25%;
-  }
-}
-
-@media (min-width: 1260px) {
-  /* line 14, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-  footer .footer-row .footer-menu {
-    margin-bottom: 40px;
-  }
-}
-
-/* line 33, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-footer .footer-row .footer-menu h4 {
-  text-transform: uppercase;
-  font-size: 1rem;
-  margin-bottom: 26px;
-  font-weight: 400;
-}
-
-/* line 40, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-footer .footer-row .footer-menu ul {
-  list-style-type: none;
-}
-
-/* line 43, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-footer .footer-row .footer-menu ul a {
-  color: white;
-  text-decoration: none;
-}
-
-/* line 46, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-footer .footer-row .footer-menu ul a:hover {
-  text-decoration: underline;
-}
-
-/* line 60, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-.footer-sub {
-  background-color: #212330;
-  padding: 15px 0 15px 30px;
-  color: white;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.15rem;
-}
-
-/* line 69, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-.footer-sub div {
-  padding: 0 0 8 14;
-}
-
-/* line 73, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-.footer-sub .hide-hyphen {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  /* line 60, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-  .footer-sub {
-    flex-direction: row;
-    padding: 0 0 20 15;
-  }
-  /* line 81, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-  .footer-sub .hide-hyphen {
-    display: block;
-  }
-}
-
-/* line 86, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-.footer-sub a {
-  color: white;
-  text-decoration: none;
-}
-
-/* line 90, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-.footer-sub a:hover {
-  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */
