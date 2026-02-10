@@ -391,6 +391,29 @@ body {
   color: #fff;
 }
 
+/* line 13, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+.container .welcome-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 18, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+.container .button-no-action {
+  box-sizing: content-box;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  width: fit-content;
+  margin-top: 1em;
+  margin-right: 0.25em;
+  padding: 10px 30px 10px 30px;
+  background-color: #212330;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  line-height: 35px;
+}
+
 @media (min-width: 768px) {
   /* line 11, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
   .container {
