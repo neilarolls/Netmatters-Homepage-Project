@@ -13,3 +13,13 @@
     border-radius: 0.3rem;
     line-height: 35px;
 }
+
+.link-underline-only {
+    a {
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

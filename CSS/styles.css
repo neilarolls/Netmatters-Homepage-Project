@@ -545,21 +545,10 @@ footer .footer-row .footer-menu ul {
   margin-bottom: 30px;
 }
 
-/* line 95, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-footer .footer-row .footer-menu ul a {
-  color: white;
-  text-decoration: none;
-}
-
-/* line 98, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-footer .footer-row .footer-menu ul a:hover {
-  text-decoration: underline;
-}
-
-/* line 112, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+/* line 104, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
 .footer-sub {
   width: 100%;
-  margin-left: auto;
+  margin-left: 15px;
   margin-right: auto;
   background-color: #212330;
   color: white;
@@ -569,37 +558,26 @@ footer .footer-row .footer-menu ul a:hover {
   flex-direction: column;
 }
 
-/* line 123, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+/* line 115, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
 .footer-sub div {
   padding: 0 0 8 14;
 }
 
-/* line 127, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+/* line 119, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
 .footer-sub .hide-hyphen {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 112, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+  /* line 104, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
   .footer-sub {
     flex-direction: row;
     padding: 0 0 20 15;
   }
-  /* line 135, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
+  /* line 127, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
   .footer-sub .hide-hyphen {
     display: block;
   }
-}
-
-/* line 140, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-.footer-sub a {
-  color: white;
-  text-decoration: none;
-}
-
-/* line 144, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
-.footer-sub a:hover {
-  text-decoration: underline;
 }
 
 @font-face {
@@ -634,7 +612,7 @@ footer .footer-row .footer-menu ul a:hover {
 }
 
 /* line 28, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
-.citation + a {
+.citation + span {
   color: white;
   font-weight: 600;
   font-size: 1.1rem;
@@ -689,6 +667,17 @@ body {
   text-transform: uppercase;
   border-radius: 0.3rem;
   line-height: 35px;
+}
+
+/* line 18, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+.link-underline-only a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 21, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+.link-underline-only a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */

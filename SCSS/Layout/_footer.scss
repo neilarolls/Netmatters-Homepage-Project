@@ -91,14 +91,6 @@ footer {
             ul {
                 list-style-type: none;
                 margin-bottom: 30px;
-
-                a {
-                    color: white;
-                    text-decoration: none;
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
             }
         }
 
@@ -111,7 +103,7 @@ footer {
 
 .footer-sub {
     width: 100%;
-    margin-left: auto;
+    margin-left: 15px;
     margin-right: auto;
     background-color: #212330;
     color: white;
@@ -137,13 +129,13 @@ footer {
         }
     }
 
-    a {
-        color: white;
-        text-decoration: none;
+    // a {
+    //     color: white;
+    //     text-decoration: none;
 
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+    //     &:hover {
+    //         text-decoration: underline;
+    //     }
+    // }
 
 }
