@@ -497,7 +497,7 @@ footer .footer-row .wrap-items {
   /* line 47, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
   footer .footer-row .wrap-items {
     align-content: space-between;
-    gap: 40px;
+    flex-basis: auto;
   }
 }
 
