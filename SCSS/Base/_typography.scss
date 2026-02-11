@@ -6,6 +6,47 @@
     src: local(""), url(../fonts/poppins-v15-latin-regular.woff2) format("woff2");
 }
 
+.h4-36 {
+    font-size: 36px;
+    line-height: 39.6px;
+    margin-top: 0;
+}
+
+.testimonial {
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.875rem;
+    letter-spacing: 0.6px;
+}
+
+.citation {
+    font-weight: 600;
+    color: #a3a8ac;
+    font-size: 1.1rem;
+    line-height: 1.875;
+    + a {
+        color:white;
+        font-weight: 600;
+        font-size: 1.1rem;
+        line-height: 1.875;
+    }
+}
+
+.welcome {
+    line-height: 30px;
+
+    :first-child {
+        margin-top:-16px;
+    }
+}
+
+.welcome-anchors {
+    :last-child {
+        margin-bottom: 50px;
+    }
+}
+
 
 body {
     font: 1rem "Poppins";

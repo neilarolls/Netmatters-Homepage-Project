@@ -397,21 +397,10 @@ body {
   flex-direction: column;
 }
 
-/* line 18, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
-.container .button-no-action {
-  box-sizing: content-box;
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  width: fit-content;
-  margin-top: 1em;
-  margin-right: 0.25em;
-  padding: 10px 30px 10px 30px;
-  background-color: #212330;
-  text-transform: uppercase;
-  border-radius: 0.3rem;
-  line-height: 35px;
+/* line 16, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+.container .welcome-flex-wrapper .star {
+  width: 46.83px;
+  height: 50px;
 }
 
 @media (min-width: 768px) {
@@ -620,22 +609,86 @@ footer .footer-row .footer-menu ul a:hover {
   src: local(""), url(../fonts/poppins-v15-latin-regular.woff2) format("woff2");
 }
 
-/* line 10, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 9, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+.h4-36 {
+  font-size: 36px;
+  line-height: 39.6px;
+  margin-top: 0;
+}
+
+/* line 15, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+.testimonial {
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.875rem;
+  letter-spacing: 0.6px;
+}
+
+/* line 23, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+.citation {
+  font-weight: 600;
+  color: #a3a8ac;
+  font-size: 1.1rem;
+  line-height: 1.875;
+}
+
+/* line 28, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+.citation + a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.875;
+}
+
+/* line 36, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+.welcome {
+  line-height: 30px;
+}
+
+/* line 39, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+.welcome :first-child {
+  margin-top: -16px;
+}
+
+/* line 45, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+.welcome-anchors :last-child {
+  margin-bottom: 50px;
+}
+
+/* line 51, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 body {
   font: 1rem "Poppins";
   letter-spacing: 0.4px;
   line-height: 1.375rem;
 }
 
-/* line 16, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 57, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .footer-sub, .footer-menu, .footer-menu ul {
   font-size: 0.8125rem;
   padding-inline-start: 0em;
 }
 
-/* line 22, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 63, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .footer-sub {
   line-height: 1.13rem;
+}
+
+/* line 1, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+.button-no-action-large {
+  box-sizing: content-box;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  width: fit-content;
+  margin-top: 1em;
+  margin-right: 0.25em;
+  padding: 10px 30px 10px 30px;
+  background-color: #212330;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  line-height: 35px;
 }
 
 /*# sourceMappingURL=styles.css.map */

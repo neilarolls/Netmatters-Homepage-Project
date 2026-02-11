@@ -13,22 +13,10 @@ body {
     .welcome-flex-wrapper {
         display: flex;
         flex-direction: column;
-    }
-
-    .button-no-action {
-        box-sizing: content-box;
-        display: inline-block;
-        text-decoration: none;
-        color: #fff;
-        font-size: 20px;
-        width: fit-content;
-        margin-top: 1em;
-        margin-right: 0.25em;
-        padding: 10px 30px 10px 30px;
-        background-color: #212330;
-        text-transform: uppercase;
-        border-radius: 0.3rem;
-        line-height: 35px;
+        .star {
+            width: 46.83px;
+            height: 50px;
+        }
     }
 
     margin-right: auto;
