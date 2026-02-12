@@ -1,9 +1,10 @@
 
-@font-face {
+@font-face {    
     font-family: "Poppins";
+    src: local(""), url(../fonts/poppins-v15-latin-regular.woff2) format("woff2");
     font-style: normal;
     font-weight: 400;
-    src: local(""), url(../fonts/poppins-v15-latin-regular.woff2) format("woff2");
+    
 }
 
 .h4-36 {
@@ -13,6 +14,7 @@
 }
 
 .testimonial {
+    display: inline-block;
     font-weight: 600;
     font-size: 1.3rem;
     font-style: italic;
@@ -20,16 +22,24 @@
     letter-spacing: 0.6px;
 }
 
+// how do i condense this to avoid repetition?
 .citation {
+    display: inline-block;
     font-weight: 600;
     color: #a3a8ac;
     font-size: 1.1rem;
     line-height: 1.875;
-    + span {
+
+    + span {        
+        display: inline-block;
         color:white;
         font-weight: 600;
         font-size: 1.1rem;
         line-height: 1.875;
+
+        a {
+            display: inline-block;
+        }
     }
 }
 
@@ -56,7 +66,7 @@ body {
 
 .footer-sub, .footer-menu, .footer-menu ul {
     font-size: 0.8125rem;
-    // Took me a while to spot this was what was messing up my layout. Need to normalise.
+    // Took me a while to spot this below was what was messing up my layout. Need to normalise.
     padding-inline-start: 0em;
 }
 

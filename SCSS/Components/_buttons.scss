@@ -1,5 +1,5 @@
+// I should rewrite as a mixin taking colour as a parameter
 .button-no-action-large {
-    box-sizing: content-box;
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -14,6 +14,35 @@
     line-height: 35px;
 }
 
+.button-no-action-large-blueBG {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    width: fit-content;
+    margin-top: 1em;
+    margin-right: 0.25em;
+    padding: 10px 30px 10px 30px;
+    background-color: #166af4;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    line-height: 35px;
+}
+
+.button-no-action-large-greenBG {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    width: fit-content;
+    margin-top: 1em;
+    margin-right: 0.25em;
+    padding: 10px 30px 10px 30px;
+    background-color: #00b67b;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    line-height: 35px;
+}
 .link-underline-only {
     a {
         text-decoration: none;
