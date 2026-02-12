@@ -371,6 +371,20 @@ template {
   display: none;
 }
 
+/* line 1, ../../../Netmatters-Homepage-Project/scss/Layout/_banner.scss */
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/thumbnails/home-YLei.webp);
+  min-height: 550px;
+  position: relative;
+}
+
 /* line 1, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
 body {
   margin: 0;
@@ -378,11 +392,28 @@ body {
 }
 
 /* line 7, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+.content {
+  margin: 0 auto;
+}
+
+/* line 13, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 11, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+/* line 17, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+.welcome-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 20, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+.welcome-flex-wrapper .star {
+  width: 46.83px;
+  height: 50px;
+}
+
+/* line 27, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -391,34 +422,34 @@ body {
   color: #fff;
 }
 
-/* line 13, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+/* line 29, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
 .container .welcome-flex-wrapper {
   display: flex;
   flex-direction: column;
 }
 
-/* line 16, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+/* line 32, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
 .container .welcome-flex-wrapper .star {
   width: 46.83px;
   height: 50px;
 }
 
 @media (min-width: 768px) {
-  /* line 11, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+  /* line 27, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
   .container {
     width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 11, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+  /* line 27, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
   .container {
     width: 970px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 11, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+  /* line 27, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
   .container {
     width: 1200px;
   }
@@ -595,6 +626,13 @@ footer .footer-row .footer-menu ul {
 }
 
 /* line 16, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+.h1-64 {
+  font-size: 64px;
+  line-height: 5rem;
+  font-weight: 600;
+}
+
+/* line 22, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .testimonial {
   display: inline-block;
   font-weight: 600;
@@ -604,7 +642,7 @@ footer .footer-row .footer-menu ul {
   letter-spacing: 0.6px;
 }
 
-/* line 26, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 32, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .citation {
   display: inline-block;
   font-weight: 600;
@@ -613,7 +651,7 @@ footer .footer-row .footer-menu ul {
   line-height: 1.875;
 }
 
-/* line 33, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 39, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .citation + span {
   display: inline-block;
   color: white;
@@ -622,40 +660,40 @@ footer .footer-row .footer-menu ul {
   line-height: 1.875;
 }
 
-/* line 40, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 46, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .citation + span a {
   display: inline-block;
 }
 
-/* line 46, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 52, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .welcome {
   line-height: 30px;
 }
 
-/* line 49, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 55, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .welcome :first-child {
   margin-top: -16px;
 }
 
-/* line 55, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 61, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .welcome-anchors :last-child {
   margin-bottom: 50px;
 }
 
-/* line 61, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 67, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 body {
   font: 1rem "Poppins";
   letter-spacing: 0.4px;
   line-height: 1.375rem;
 }
 
-/* line 67, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 73, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .footer-sub, .footer-menu, .footer-menu ul {
   font-size: 0.8125rem;
   padding-inline-start: 0em;
 }
 
-/* line 73, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 79, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .footer-sub {
   line-height: 1.13rem;
 }

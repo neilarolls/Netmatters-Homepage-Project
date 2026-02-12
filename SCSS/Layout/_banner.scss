@@ -1,0 +1,12 @@
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/thumbnails/home-YLei.webp);
+    min-height: 550px;
+    position: relative;
+}

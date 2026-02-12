@@ -4,9 +4,25 @@ body {
 
 }
 
+.content {
+    margin: 0 auto;
+    // vertical-align: middle;
+}
+
+
 * {
     box-sizing: border-box;
 }
+
+.welcome-flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    .star {
+        width: 46.83px;
+        height: 50px;
+    }
+}
+
 
 .container {
 
