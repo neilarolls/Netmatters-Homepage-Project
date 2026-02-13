@@ -7,15 +7,15 @@
 }
 
 .button-no-action-large-blueBG {
-    @include button-no-action-large($bg_colour: #4387f6);
+    @include button-no-action-large($bg_colour: #4387f6, $hover-colour: #166af4);
 }
 
 .button-no-action-large-greenBG {
-    @include button-no-action-large($bg_colour: #00b67b);
+    @include button-no-action-large($bg_colour: #00b67b, $hover-colour: #009b69);
 }
 
 .button-no-action-large-purpleBG {
-    @include button-no-action-large($bg_colour: #926fb1);
+    @include button-no-action-large($bg_colour: #926fb1, $hover-colour: #7e57a0);
 }
 
 .link-underline-only {

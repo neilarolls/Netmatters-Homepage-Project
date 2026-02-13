@@ -9,4 +9,13 @@
     background-image: url(../img/thumbnails/home-YLei.webp);
     min-height: 550px;
     position: relative;
+
+    .content {
+
+        .text {
+            &:first-child {
+                margin-bottom: 1.25rem;
+            }
+        }
+    }
 }

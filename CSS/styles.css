@@ -480,6 +480,11 @@ template {
   position: relative;
 }
 
+/* line 16, ../../../Netmatters-Homepage-Project/scss/Layout/_banner.scss */
+.banner .content .text:first-child {
+  margin-bottom: 1.25rem;
+}
+
 /* line 1, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
 body {
   margin: 0;
@@ -745,7 +750,7 @@ footer .footer-row .footer-menu ul {
 
 /* line 14, ../../../Netmatters-Homepage-Project/scss/Abstracts/_mixins.scss */
 .button-no-action-large-blueBG:hover {
-  background-color: transparent;
+  background-color: #166af4;
 }
 
 /* line 13, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
@@ -766,7 +771,7 @@ footer .footer-row .footer-menu ul {
 
 /* line 14, ../../../Netmatters-Homepage-Project/scss/Abstracts/_mixins.scss */
 .button-no-action-large-greenBG:hover {
-  background-color: transparent;
+  background-color: #009b69;
 }
 
 /* line 17, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
@@ -787,7 +792,7 @@ footer .footer-row .footer-menu ul {
 
 /* line 14, ../../../Netmatters-Homepage-Project/scss/Abstracts/_mixins.scss */
 .button-no-action-large-purpleBG:hover {
-  background-color: transparent;
+  background-color: #7e57a0;
 }
 
 /* line 22, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
