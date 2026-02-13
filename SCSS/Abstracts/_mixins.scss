@@ -1,4 +1,4 @@
-@mixin button-no-action-large($bg_colour: transparent) {
+@mixin button-no-action-large($bg-colour: transparent, $hover-colour: transparent) {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -7,8 +7,11 @@
     margin-top: 1em;
     margin-right: 0.25em;
     padding: 10px 30px 10px 30px;
-    background-color: $bg_colour;
+    background-color: $bg-colour;
     text-transform: uppercase;
     border-radius: 0.3rem;
     line-height: 35px;
+    &:hover {
+        background-color: $hover-colour;
+    }
 }

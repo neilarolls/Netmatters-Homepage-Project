@@ -6,20 +6,28 @@
 }
 
 /* line 10, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+.mybold-600-26 {
+  font-size: 1.625rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* line 17, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .h4-36 {
   font-size: 36px;
   line-height: 39.6px;
   margin-top: 0;
 }
 
-/* line 16, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 23, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .h1-64 {
   font-size: 64px;
   line-height: 5rem;
   font-weight: 600;
 }
 
-/* line 22, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 29, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .testimonial {
   display: inline-block;
   font-weight: 600;
@@ -29,7 +37,7 @@
   letter-spacing: 0.6px;
 }
 
-/* line 32, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 39, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .citation {
   display: inline-block;
   font-weight: 600;
@@ -38,7 +46,7 @@
   line-height: 1.875;
 }
 
-/* line 39, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 46, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .citation + span {
   display: inline-block;
   color: white;
@@ -47,40 +55,40 @@
   line-height: 1.875;
 }
 
-/* line 46, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 53, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .citation + span a {
   display: inline-block;
 }
 
-/* line 52, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 59, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .welcome {
   line-height: 30px;
 }
 
-/* line 55, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 62, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .welcome :first-child {
   margin-top: -16px;
 }
 
-/* line 61, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 68, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .welcome-anchors :last-child {
   margin-bottom: 50px;
 }
 
-/* line 67, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 74, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 body {
   font: 1rem "Poppins";
   letter-spacing: 0.4px;
   line-height: 1.375rem;
 }
 
-/* line 73, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 80, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .footer-sub, .footer-menu, .footer-menu ul {
   font-size: 0.8125rem;
   padding-inline-start: 0em;
 }
 
-/* line 79, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
+/* line 86, ../../../Netmatters-Homepage-Project/scss/Base/_typography.scss */
 .footer-sub {
   line-height: 1.13rem;
 }
@@ -714,6 +722,11 @@ footer .footer-row .footer-menu ul {
   line-height: 35px;
 }
 
+/* line 14, ../../../Netmatters-Homepage-Project/scss/Abstracts/_mixins.scss */
+.button-no-action-large-dkblueBG:hover {
+  background-color: #121318;
+}
+
 /* line 9, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
 .button-no-action-large-blueBG {
   display: inline-block;
@@ -724,10 +737,15 @@ footer .footer-row .footer-menu ul {
   margin-top: 1em;
   margin-right: 0.25em;
   padding: 10px 30px 10px 30px;
-  background-color: #166af4;
+  background-color: #4387f6;
   text-transform: uppercase;
   border-radius: 0.3rem;
   line-height: 35px;
+}
+
+/* line 14, ../../../Netmatters-Homepage-Project/scss/Abstracts/_mixins.scss */
+.button-no-action-large-blueBG:hover {
+  background-color: transparent;
 }
 
 /* line 13, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
@@ -746,13 +764,39 @@ footer .footer-row .footer-menu ul {
   line-height: 35px;
 }
 
-/* line 18, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+/* line 14, ../../../Netmatters-Homepage-Project/scss/Abstracts/_mixins.scss */
+.button-no-action-large-greenBG:hover {
+  background-color: transparent;
+}
+
+/* line 17, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+.button-no-action-large-purpleBG {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  width: fit-content;
+  margin-top: 1em;
+  margin-right: 0.25em;
+  padding: 10px 30px 10px 30px;
+  background-color: #926fb1;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  line-height: 35px;
+}
+
+/* line 14, ../../../Netmatters-Homepage-Project/scss/Abstracts/_mixins.scss */
+.button-no-action-large-purpleBG:hover {
+  background-color: transparent;
+}
+
+/* line 22, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
 .link-underline-only a {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 21, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+/* line 25, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
 .link-underline-only a:hover {
   text-decoration: underline;
 }

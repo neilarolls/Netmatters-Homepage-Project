@@ -3,15 +3,19 @@
 
 
 .button-no-action-large-dkblueBG {
-    @include button-no-action-large($bg_colour: #212330);
+    @include button-no-action-large($bg_colour: #212330, $hover-colour: #121318);
 }
 
 .button-no-action-large-blueBG {
-    @include button-no-action-large($bg_colour: #166af4);
+    @include button-no-action-large($bg_colour: #4387f6);
 }
 
 .button-no-action-large-greenBG {
     @include button-no-action-large($bg_colour: #00b67b);
+}
+
+.button-no-action-large-purpleBG {
+    @include button-no-action-large($bg_colour: #926fb1);
 }
 
 .link-underline-only {
