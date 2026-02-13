@@ -1,48 +1,19 @@
-// I should rewrite as a mixin taking colour as a parameter
-.button-no-action-large {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    width: fit-content;
-    margin-top: 1em;
-    margin-right: 0.25em;
-    padding: 10px 30px 10px 30px;
-    background-color: #212330;
-    text-transform: uppercase;
-    border-radius: 0.3rem;
-    line-height: 35px;
+// I should rewrite as a mixin taking colour as a parameter - done
+
+
+
+.button-no-action-large-dkblueBG {
+    @include button-no-action-large($bg_colour: #212330);
 }
 
 .button-no-action-large-blueBG {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    width: fit-content;
-    margin-top: 1em;
-    margin-right: 0.25em;
-    padding: 10px 30px 10px 30px;
-    background-color: #166af4;
-    text-transform: uppercase;
-    border-radius: 0.3rem;
-    line-height: 35px;
+    @include button-no-action-large($bg_colour: #166af4);
 }
 
 .button-no-action-large-greenBG {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    width: fit-content;
-    margin-top: 1em;
-    margin-right: 0.25em;
-    padding: 10px 30px 10px 30px;
-    background-color: #00b67b;
-    text-transform: uppercase;
-    border-radius: 0.3rem;
-    line-height: 35px;
+    @include button-no-action-large($bg_colour: #00b67b);
 }
+
 .link-underline-only {
     a {
         text-decoration: none;
