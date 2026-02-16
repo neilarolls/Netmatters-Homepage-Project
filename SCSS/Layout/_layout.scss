@@ -1,13 +1,14 @@
 body {
     margin: 0;    
-    background-color: #323544;
+    background-color: #323544; // *SNAGGING* - Colour variables
 
 }
 
-.content {
+.banner-content {
+    align-content: center;
+    padding: 3.75rem 0;
     margin: 0 auto;
-    // vertical-align: middle;
-}
+} 
 
 
 * {
@@ -20,6 +21,9 @@ body {
     .star {
         width: 46.83px;
         height: 50px;
+    }
+    .citation-wrapper {
+        margin-bottom: 25px;
     }
 }
 
@@ -39,7 +43,7 @@ body {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    color: #fff;
+    color: #fff; // *SNAGGING* - Colour variables
 
     @media (min-width: 768px) {
         width: 750px;            
@@ -52,4 +56,9 @@ body {
     @media (min-width: 1260px) {
         width: 1200px;            
     }
+}
+
+.no-LR-padding {
+    padding-left: 0;
+    padding-right: 0;
 }
