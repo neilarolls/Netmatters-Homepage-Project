@@ -27,7 +27,7 @@
     @include button-no-action-large($bg_colour: #f62459, $hover-colour: #e80a42); // *SNAGGING* - Colour variables
 }
 
-.link-underline-only {e80a42
+.link-underline-only {
     a {
         text-decoration: none;
         color: #fff; // *SNAGGING* - Colour variables

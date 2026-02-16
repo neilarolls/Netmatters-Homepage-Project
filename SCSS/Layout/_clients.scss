@@ -1,0 +1,22 @@
+.clients {
+    display: flex;
+    flex-direction: row;
+    width: 1698px;
+    max-height: 70px;
+    height: fit-content;
+
+    div {
+        max-width: 240px;
+        height: 70px;
+        margin-right: 50px;
+        width: auto;
+
+        img {
+            vertical-align: middle;
+            display: block;
+            max-width:200px;
+            max-height: 70px;
+            width: auto;
+        }
+    }
+}

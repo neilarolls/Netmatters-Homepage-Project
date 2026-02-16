@@ -675,6 +675,32 @@ body {
   padding-right: 0;
 }
 
+/* line 1, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+.clients {
+  display: flex;
+  flex-direction: row;
+  width: 1698px;
+  max-height: 70px;
+  height: fit-content;
+}
+
+/* line 8, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+.clients div {
+  max-width: 240px;
+  height: 70px;
+  margin-right: 50px;
+  width: auto;
+}
+
+/* line 14, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+.clients div img {
+  vertical-align: middle;
+  display: block;
+  max-width: 200px;
+  max-height: 70px;
+  width: auto;
+}
+
 /* line 1, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
 footer {
   padding: 47px 0 0;
@@ -844,7 +870,7 @@ footer .footer-row .footer-menu ul {
   padding: 10px 30px 10px 30px;
   background-color: #212330;
   text-transform: uppercase;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   line-height: 35px;
 }
 
@@ -866,7 +892,7 @@ footer .footer-row .footer-menu ul {
   padding: 10px 30px 10px 30px;
   background-color: #4387f6;
   text-transform: uppercase;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   line-height: 35px;
 }
 
@@ -888,7 +914,7 @@ footer .footer-row .footer-menu ul {
   padding: 10px 30px 10px 30px;
   background-color: #00b67b;
   text-transform: uppercase;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   line-height: 35px;
 }
 
@@ -910,7 +936,7 @@ footer .footer-row .footer-menu ul {
   padding: 10px 30px 10px 30px;
   background-color: #926fb1;
   text-transform: uppercase;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   line-height: 35px;
 }
 
@@ -932,7 +958,7 @@ footer .footer-row .footer-menu ul {
   padding: 10px 30px 10px 30px;
   background-color: #f7b322;
   text-transform: uppercase;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   line-height: 35px;
 }
 
@@ -954,7 +980,7 @@ footer .footer-row .footer-menu ul {
   padding: 10px 30px 10px 30px;
   background-color: #d64541;
   text-transform: uppercase;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   line-height: 35px;
 }
 
@@ -976,7 +1002,7 @@ footer .footer-row .footer-menu ul {
   padding: 10px 30px 10px 30px;
   background-color: #f62459;
   text-transform: uppercase;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   line-height: 35px;
 }
 
@@ -985,16 +1011,14 @@ footer .footer-row .footer-menu ul {
   background-color: #e80a42;
 }
 
-/* line 30, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
-.link-underline-only e80a42
-a {
+/* line 31, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+.link-underline-only a {
   text-decoration: none;
   color: #fff;
 }
 
 /* line 34, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
-.link-underline-only e80a42
-a:hover {
+.link-underline-only a:hover {
   text-decoration: underline;
 }
 
