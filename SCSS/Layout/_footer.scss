@@ -1,3 +1,5 @@
+
+
 footer {
     padding: 47px 0 0;
     position: relative;
@@ -102,13 +104,12 @@ footer {
 }
 
 .footer-sub {
-    width: 100%;
-    margin-left: 15px;
-    margin-right: auto;
+    width: 120%;
+    margin-left: 0;
     background-color: #212330;
     color: white;
     line-height: 1.15rem;
-    padding: 15px 0 15px 0;
+    padding: 15px 0 15px 15px;
     display: flex;
     flex-direction: column;
 

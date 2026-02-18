@@ -1,4 +1,19 @@
-@import 'Abstracts/index';
-@import 'Base/index';
-@import 'Layout/index';
-@import 'Components/index';
+
+@import 'Layout/normalise';
+@import 'Abstracts/variables';
+@import 'Abstracts/mixins';
+@import 'Abstracts/functions';
+
+@import 'Base/typography';
+@import 'Base/base';
+
+@import 'Layout/banner';
+@import 'Layout/layout';
+@import 'Layout/clients';
+@import 'Layout/footer';
+@import 'Layout/grid';
+
+
+@import 'Components/buttons';
+@import 'Components/forms';
+@import 'Components/nav';

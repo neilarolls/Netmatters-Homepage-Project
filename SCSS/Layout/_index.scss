@@ -1,7 +1,6 @@
-@import
-    'normalise',
-    'banner',
-    'layout',
-    'clients',
-    'footer',
-    'grid';
+@use 'normalise';
+@use 'banner';
+@use 'layout';
+@use 'clients';
+@use 'footer';
+@use 'grid';

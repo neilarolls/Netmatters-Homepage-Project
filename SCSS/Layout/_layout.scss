@@ -29,16 +29,8 @@ body {
 
 
 .container {
-
-    .welcome-flex-wrapper {
-        display: flex;
-        flex-direction: column;
-        .star {
-            width: 46.83px;
-            height: 50px;
-        }
-    }
-
+   
+    height: auto;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -56,9 +48,6 @@ body {
     @media (min-width: 1260px) {
         width: 1200px;            
     }
+
 }
 
-.no-LR-padding {
-    padding-left: 0;
-    padding-right: 0;
-}

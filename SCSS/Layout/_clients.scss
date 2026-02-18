@@ -1,22 +1,47 @@
 .clients {
     display: flex;
     flex-direction: row;
-    width: 1698px;
-    max-height: 70px;
-    height: fit-content;
+    width: 120%;
+    height: 170px;
+    padding: 50px 0;
+    background-color: white;
 
-    div {
+    .item {
+        display:flex;
+        flex-grow: 1;
+        align-items: center;
+        vertical-align: middle;
         max-width: 240px;
         height: 70px;
         margin-right: 50px;
         width: auto;
 
+        .pop-up-text {
+            display: none;
+            background-color: #323544;
+            color: white;
+            position: absolute;
+            max-width: 280px;
+            width: 280px;
+            text-align: center;
+            
+
+        }
+
+
         img {
-            vertical-align: middle;
+            filter: grayscale(100%);
             display: block;
             max-width:200px;
             max-height: 70px;
             width: auto;
+
+            &:hover {
+                filter: grayscale(0%);
+                + div {
+                    display: block;
+                }
+            }
         }
     }
 }
