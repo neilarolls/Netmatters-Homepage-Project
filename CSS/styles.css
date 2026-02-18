@@ -676,6 +676,7 @@ body {
 
 /* line 9, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
 .clients .item {
+  position: relative;
   display: flex;
   flex-grow: 1;
   align-items: center;
@@ -683,21 +684,15 @@ body {
   max-width: 240px;
   height: 70px;
   margin-right: 50px;
-  width: auto;
+  width: fit-content;
 }
 
-/* line 19, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+/* line 20, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
 .clients .item .pop-up-text {
   display: none;
-  background-color: #323544;
-  color: white;
-  position: absolute;
-  max-width: 280px;
-  width: 280px;
-  text-align: center;
 }
 
-/* line 32, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+/* line 25, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
 .clients .item img {
   filter: grayscale(100%);
   display: block;
@@ -706,14 +701,23 @@ body {
   width: auto;
 }
 
-/* line 39, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+/* line 32, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
 .clients .item img:hover {
   filter: grayscale(0%);
 }
 
-/* line 41, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
-.clients .item img:hover + div {
+/* line 34, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+.clients .item img:hover + .pop-up-text {
   display: block;
+  background-color: #0b31eb;
+  color: white;
+  position: absolute;
+  max-width: 280px;
+  width: 280px;
+  bottom: 85px;
+  text-align: center;
+  left: -50px;
+  margin-bottom: 50px;
 }
 
 /* line 3, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */

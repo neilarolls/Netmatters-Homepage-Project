@@ -7,6 +7,7 @@
     background-color: white;
 
     .item {
+        position: relative;
         display:flex;
         flex-grow: 1;
         align-items: center;
@@ -14,18 +15,10 @@
         max-width: 240px;
         height: 70px;
         margin-right: 50px;
-        width: auto;
-
+        width: fit-content;
+        
         .pop-up-text {
             display: none;
-            background-color: #323544;
-            color: white;
-            position: absolute;
-            max-width: 280px;
-            width: 280px;
-            text-align: center;
-            
-
         }
 
 
@@ -38,8 +31,18 @@
 
             &:hover {
                 filter: grayscale(0%);
-                + div {
+                + .pop-up-text {
                     display: block;
+                    // background-color: #323544; Re-enable when background of section above is white
+                    background-color: #0b31eb;
+                    color: white;
+                    position: absolute;
+                    max-width: 280px;
+                    width: 280px;
+                    bottom: 85px;
+                    text-align: center;
+                    left: -50px;
+                    margin-bottom: 50px;
                 }
             }
         }
