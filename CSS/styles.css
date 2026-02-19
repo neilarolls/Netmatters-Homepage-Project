@@ -664,6 +664,30 @@ body {
   }
 }
 
+/* line 54, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+.view-all-pop-top {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* line 54, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+  .view-all-pop-top {
+    display: block;
+  }
+}
+
+/* line 62, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+.view-all-pop-bottom {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  /* line 62, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+  .view-all-pop-bottom {
+    display: none;
+  }
+}
+
 /* line 1, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
 .clients {
   display: flex;
@@ -891,6 +915,52 @@ footer .footer-row .footer-menu ul {
   .footer-sub .hide-hyphen {
     display: block;
   }
+}
+
+/* line 1, ../../../Netmatters-Homepage-Project/scss/Layout/_latestnews.scss */
+.full-width-background {
+  background-color: white;
+  color: #333645;
+}
+
+/* line 7, ../../../Netmatters-Homepage-Project/scss/Layout/_latestnews.scss */
+.full-width-background .latest-news {
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* line 17, ../../../Netmatters-Homepage-Project/scss/Layout/_latestnews.scss */
+.full-width-background .latest-news .header-bar-wrapper .header-bar {
+  display: flex;
+  flex-direction: row;
+  flex-basis: fit-content;
+  flex-grow: 0;
+  justify-content: space-between;
+}
+
+/* line 24, ../../../Netmatters-Homepage-Project/scss/Layout/_latestnews.scss */
+.full-width-background .latest-news .header-bar-wrapper .header-bar p {
+  padding-bottom: 28px;
+  align-items: start;
+  margin: 0;
+}
+
+/* line 29, ../../../Netmatters-Homepage-Project/scss/Layout/_latestnews.scss */
+.full-width-background .latest-news .header-bar-wrapper .header-bar p strong {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+/* line 37, ../../../Netmatters-Homepage-Project/scss/Layout/_latestnews.scss */
+.full-width-background .latest-news .header-bar-wrapper .header-bar h3 {
+  font-size: 1.625rem;
+  padding-bottom: 28px;
+  align-items: start;
+  margin: 0;
 }
 
 /* line 2, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */

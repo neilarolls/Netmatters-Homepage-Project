@@ -1,0 +1,47 @@
+.full-width-background {
+    // width: 120%;
+    // margin: 0 auto;
+    background-color: white; // *SNAGGING* colour variables
+    color: #333645; // *SNAGGING* colour variables
+
+    .latest-news {
+        width:100%;
+        max-width: 1200px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-right: 0;
+        margin-left: 0;
+
+        .header-bar-wrapper {
+
+            .header-bar {
+                display: flex;
+                flex-direction: row;
+                flex-basis: fit-content;
+                flex-grow: 0;
+                justify-content: space-between;
+
+                p {
+                    padding-bottom: 28px;
+                    align-items: start;
+                    margin: 0;
+
+                    strong {
+                        font-size: 2.25rem;
+                        font-weight: 600;
+                    }    
+                }
+
+                
+
+                h3 {
+                    font-size: 1.625rem;                    
+                    padding-bottom: 28px;
+                    align-items: start;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+}
