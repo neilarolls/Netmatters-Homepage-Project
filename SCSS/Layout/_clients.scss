@@ -1,6 +1,7 @@
 .clients {
     display: flex;
     flex-direction: row;
+    flex-grow: 0;
     width: 120%;
     height: 170px;
     padding: 50px 0;
@@ -9,10 +10,10 @@
     .item {
         position: relative;
         display:flex;
-        flex-grow: 1;
+        flex-grow: 0;
         align-items: center;
         vertical-align: middle;
-        max-width: 240px;
+        // max-width: 240px;
         height: 70px;
         margin-right: 50px;
         width: fit-content;
@@ -21,30 +22,47 @@
             display: none;
         }
 
+        div {            
+            display: flex;
 
-        img {
-            filter: grayscale(100%);
-            display: block;
-            max-width:200px;
-            max-height: 70px;
-            width: auto;
+            img {
+                filter: grayscale(100%);
+                display: block;
+                max-width:200px;
+                max-height: 70px;
+                width: auto;
 
-            &:hover {
-                filter: grayscale(0%);
-                + .pop-up-text {
-                    display: block;
-                    // background-color: #323544; Re-enable when background of section above is white
-                    background-color: #0b31eb;
-                    color: white;
-                    position: absolute;
-                    max-width: 280px;
-                    width: 280px;
-                    bottom: 85px;
-                    text-align: center;
-                    left: -50px;
-                    margin-bottom: 50px;
+                &:hover {
+                    filter: grayscale(0%);
+
+                    ~ div {
+                        display: block;
+                        animation: hide 3s 10s forwards;
+                        // background-color: #323544; Re-enable when background of section above is white,
+                        // delete line below and change arrow colour.
+                        background-color: #0b31eb;
+                        color: white;
+                        position: absolute;
+                        max-width: 280px;
+                        width: 280px;
+                        bottom: 70px;
+                        text-align: center;
+                        left: calc(50% - 140px);
+                        margin-bottom: 50px;
+
+                        .client-arrow {
+                            @include client-popup-triangle($triangle-colour: #0b31eb);
+                            position: relative;
+                            top: 56px;
+                        }
+
+                    }
                 }
             }
+
         }
+
+
+        
     }
 }

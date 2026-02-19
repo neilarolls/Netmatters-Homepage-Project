@@ -668,32 +668,37 @@ body {
 .clients {
   display: flex;
   flex-direction: row;
+  flex-grow: 0;
   width: 120%;
   height: 170px;
   padding: 50px 0;
   background-color: white;
 }
 
-/* line 9, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+/* line 10, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
 .clients .item {
   position: relative;
   display: flex;
-  flex-grow: 1;
+  flex-grow: 0;
   align-items: center;
   vertical-align: middle;
-  max-width: 240px;
   height: 70px;
   margin-right: 50px;
   width: fit-content;
 }
 
-/* line 20, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+/* line 21, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
 .clients .item .pop-up-text {
   display: none;
 }
 
 /* line 25, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
-.clients .item img {
+.clients .item div {
+  display: flex;
+}
+
+/* line 28, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+.clients .item div img {
   filter: grayscale(100%);
   display: block;
   max-width: 200px;
@@ -701,23 +706,36 @@ body {
   width: auto;
 }
 
-/* line 32, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
-.clients .item img:hover {
+/* line 35, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+.clients .item div img:hover {
   filter: grayscale(0%);
 }
 
-/* line 34, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
-.clients .item img:hover + .pop-up-text {
+/* line 38, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+.clients .item div img:hover ~ div {
   display: block;
+  animation: hide 3s 10s forwards;
   background-color: #0b31eb;
   color: white;
   position: absolute;
   max-width: 280px;
   width: 280px;
-  bottom: 85px;
+  bottom: 70px;
   text-align: center;
-  left: -50px;
+  left: calc(50% - 140px);
   margin-bottom: 50px;
+}
+
+/* line 53, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+.clients .item div img:hover ~ div .client-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px 35px 0px 35px;
+  border-color: #0b31eb transparent transparent transparent;
+  transform: rotate(0deg);
+  position: relative;
+  top: 56px;
 }
 
 /* line 3, ../../../Netmatters-Homepage-Project/scss/Layout/_footer.scss */
