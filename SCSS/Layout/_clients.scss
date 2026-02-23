@@ -13,13 +13,13 @@
         flex-grow: 0;
         align-items: center;
         vertical-align: middle;
-        // max-width: 240px;
         height: 70px;
         margin-right: 50px;
         width: fit-content;
         
         .pop-up-text {
             display: none;
+            padding: 20px;
         }
 
         div {            
@@ -32,15 +32,13 @@
                 max-height: 70px;
                 width: auto;
 
-                &:hover {
+                &:hover {                    
+
                     filter: grayscale(0%);
 
                     ~ div {
-                        display: block;
-                        animation: hide 3s 10s forwards;
-                        // background-color: #323544; Re-enable when background of section above is white,
-                        // delete line below and change arrow colour.
-                        background-color: #0b31eb;
+                        display:block;
+                        background-color: #323544;
                         color: white;
                         position: absolute;
                         max-width: 280px;
@@ -51,9 +49,9 @@
                         margin-bottom: 50px;
 
                         .client-arrow {
-                            @include client-popup-triangle($triangle-colour: #0b31eb);
+                            @include client-popup-triangle($triangle-colour: #323544);
                             position: relative;
-                            top: 56px;
+                            top: 76px;
                         }
 
                     }

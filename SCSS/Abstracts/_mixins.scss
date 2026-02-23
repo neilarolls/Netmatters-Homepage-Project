@@ -1,4 +1,5 @@
-@mixin button-no-action-large($bg-colour: #0f0, $hover-colour: #f0f) {
+
+@mixin button-large($bg-colour: #0f0, $hover-colour: #f0f) {
     font-weight: 400;
     display: inline-block;
     text-decoration: none;
@@ -6,7 +7,7 @@
     font-size: 20px;
     width: fit-content;
     margin-top: 1em;
-    margin-right: 0.25em;
+    margin-right: 0.4em;
     padding: 10px 30px 10px 30px;
     background-color: $bg-colour;
     text-transform: uppercase;
@@ -17,6 +18,24 @@
     }
 }
 
+@mixin button-banner($bg-colour: #0f0, $hover-colour: #f0f) {
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff; // *SNAGGING* - Colour variables
+    font-size: 20px;
+    width: fit-content;
+    margin-top: 1em;
+    margin-right: 0.4em;
+    padding: 5px 20px;
+    background-color: $bg-colour;
+    text-transform: uppercase;
+    border-radius: 0.2rem;
+    line-height: 3rem;
+    &:hover {
+        background-color: $hover-colour;
+    }
+}
 
 @mixin client-popup-triangle($triangle-colour: #f0f) {
     width: 0; height: 0;
@@ -24,4 +43,150 @@
     border-width: 35px 35px 0px 35px;
     border-color: $triangle-colour transparent transparent transparent;
     transform: rotate(0deg);
+}
+
+@mixin dummy-button($txt-colour: transparent, $bg-colour: transparent) {
+    padding: 5px 15px;
+    font-size: 1.063rem;
+    height: auto;
+    color: $txt-colour;
+    background-color: $bg-colour;
+    border-radius: 3px;
+    width: fit-content;
+    line-height: 35px;
+}
+
+@mixin display-banner($banner-index: 1) {
+    background-color: transparent;
+    color:#fff;
+
+    @if $banner-index==1 {
+        .banner-text-1 {
+            display: block;
+            z-index: 2;
+        }
+
+        .banner-img-1 {
+            display: block;
+            position: relative;
+        }
+
+        
+    }
+    
+    @if $banner-index==2 {        
+        .banner-text-2 {
+            display: block;
+            z-index: 2;
+        }
+
+        .banner-img-2 {
+            display: block;
+            position: absolute;
+        }
+
+    }
+    
+    @if $banner-index==3 {
+        .banner-img {
+            background-image: url(img/thumbnails/home-gay8.webp);
+            z-index: 1;
+        }
+
+        .banner-text-3 {
+            display: block;
+            z-index: 2;
+        }
+    }
+        
+    @if $banner-index==4 {
+        .banner-img {
+            background-image: url(img/thumbnails/home-6yTp.webp);
+            z-index: 1;
+        }
+
+        .banner-text-4 {
+            display: block;
+            z-index: 2;
+        }
+    }
+
+    @if $banner-index==5 {
+        .banner-img {
+            background-image: url(img/thumbnails/home-J8Xx.webp);
+            z-index: 1;
+        }
+
+        .banner-text-5 {
+            display: block;
+            z-index: 2;
+        }
+    }
+
+    @if $banner-index==6 {
+        .banner-img {
+            background-image: url(img/thumbnails/home-K0pn.webp);
+            z-index: 1;
+        }
+
+        .banner-text-6 {
+            display: block;
+            z-index: 2;
+        }
+    }
+
+    @if $banner-index==7 {
+        .banner-img {
+            background-image: url(img/thumbnails/home-MSxH.webp);
+            z-index: 1;
+        }
+
+        .banner-text-7 {
+            display: block;
+            z-index: 2;
+        }
+    }
+
+    // @if ($banner-index == 2) {
+    //     .banner-img {
+    //         background-image: url(../img/thumbnails/home-O67Y.webp);
+    //         opacity: 50%;
+    //     }
+    // }
+
+    // @if ($banner-index == 3) {
+    //     .banner-img {
+    //         background-image: url(../img/thumbnails/home-gay8.webp);
+    //         opacity: 50%;
+    //     }
+    // }
+       
+    // @if ($banner-index == 4) {
+    //     .banner-img {
+    //         background-image: url(../img/thumbnails/home-6yTp.webp);
+    //         opacity: 50%;
+    //     }
+    // }
+       
+    // @if ($banner-index == 5) {
+    //     .banner-img {
+    //         background-image: url(../img/thumbnails/home-J8Xx.webp);
+    //         opacity: 50%;
+    //     }
+    // }
+
+    // @if ($banner-index == 6) {
+    //     .banner-img {
+    //         background-image: url(../img/thumbnails/home-K0pn.webp);
+    //         opacity: 50%;
+    //     }
+    // }
+
+    // @if ($banner-index == 7) {
+    //     .banner-img {
+    //         background-image: url(../img/thumbnails/home-MSxH.webp);
+    //         opacity: 50%;
+    //     }
+    // }
+
 }

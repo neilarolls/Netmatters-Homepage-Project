@@ -1,30 +1,34 @@
 
-.button-no-action-large-dkblueBG {
-    @include button-no-action-large($bg_colour: #212330, $hover-colour: #121318); // *SNAGGING* - Colour variables
+.button-large-dkblueBG {
+    @include button-large($bg_colour: #212330, $hover-colour: #121318); // *SNAGGING* - Colour variables
 }
 
-.button-no-action-large-blueBG {
-    @include button-no-action-large($bg_colour: #4387f6, $hover-colour: #166af4); // *SNAGGING* - Colour variables
+.button-large-blueBG {
+    @include button-large($bg_colour: #4387f6, $hover-colour: #166af4); // *SNAGGING* - Colour variables
 }
 
-.button-no-action-large-greenBG {
-    @include button-no-action-large($bg_colour: #00b67b, $hover-colour: #009b69); // *SNAGGING* - Colour variables
+.button-large-greenBG {
+    @include button-large($bg_colour: #00b67b, $hover-colour: #009b69); // *SNAGGING* - Colour variables
 }
 
-.button-no-action-large-purpleBG {
-    @include button-no-action-large($bg_colour: #926fb1, $hover-colour: #7e57a0); // *SNAGGING* - Colour variables
+.button-large-purpleBG {
+    @include button-large($bg_colour: #926fb1, $hover-colour: #7e57a0); // *SNAGGING* - Colour variables
 }
 
-.button-no-action-large-goldBG {
-    @include button-no-action-large($bg_colour: #f7b322, $hover-colour: #e8a008); // *SNAGGING* - Colour variables
+.button-large-goldBG {
+    @include button-large($bg_colour: #f7b322, $hover-colour: #e8a008); // *SNAGGING* - Colour variables
 }
 
-.button-no-action-large-brickredBG {
-    @include button-no-action-large($bg_colour: #d64541, $hover-colour: #c42e2a); // *SNAGGING* - Colour variables
+.button-large-brickredBG {
+    @include button-large($bg_colour: #d64541, $hover-colour: #c42e2a); // *SNAGGING* - Colour variables
 }
 
-.button-no-action-large-ceriseBG {
-    @include button-no-action-large($bg_colour: #f62459, $hover-colour: #e80a42); // *SNAGGING* - Colour variables
+.button-large-ceriseBG {
+    @include button-large($bg_colour: #f62459, $hover-colour: #e80a42); // *SNAGGING* - Colour variables
+}
+
+.button-banner-purpleBG {
+    @include button-banner($bg_colour: #926fb1, $hover-colour: #7e57a0); // *SNAGGING* - Colour variables
 }
 
 .link-underline-only {

@@ -4,13 +4,6 @@ body {
 
 }
 
-.banner-content {
-    align-content: center;
-    padding: 3.75rem 0;
-    margin: 0 auto;
-} 
-
-
 * {
     box-sizing: border-box;
 }
@@ -27,6 +20,29 @@ body {
     }
 }
 
+.container-inverse {
+   
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #333645; // *SNAGGING* - Colour variables
+    background-color: #fff;
+
+    @media (min-width: 768px) {
+        width: 750px;            
+    }
+
+    @media (min-width: 992px) {
+        width: 970px;            
+    }
+
+    @media (min-width: 1260px) {
+        width: 1200px;            
+    }
+
+}
 
 .container {
    
@@ -36,6 +52,31 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     color: #fff; // *SNAGGING* - Colour variables
+    background-color: #323544;
+
+    @media (min-width: 768px) {
+        width: 750px;            
+    }
+
+    @media (min-width: 992px) {
+        width: 970px;            
+    }
+
+    @media (min-width: 1260px) {
+        width: 1200px;            
+    }
+
+}
+
+.container-transparent {
+   
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff; // *SNAGGING* - Colour variables
+    background-color: transparent;
 
     @media (min-width: 768px) {
         width: 750px;            
@@ -67,4 +108,11 @@ body {
     }
 }
 
+.LN-button-gold {
+    @include dummy-button($txt-colour: #fff, $bg-colour: #f7b322);
+}
+
+.LN-button-blue {
+    @include dummy-button($txt-colour: #fff, $bg-colour: #4183d7);
+}
 
