@@ -66,9 +66,9 @@
       </div>
     </div>
     
-    <div class="container"> <!-- WELCOME -->
+    <div class="container-welcome"> <!-- WELCOME -->
       <div class="welcome-flex-wrapper">
-        <h4 class="h4-36">Welcome To Netmatters</h4>
+        <strong class="h2-36">Welcome To Netmatters</strong>
         <div class="welcome">
           <p><strong>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in Cambridge, Wymondham, and Great Yarmouth.</strong></p>
           <p>We aren't tied into contracts with third party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
@@ -78,23 +78,25 @@
           <a class="button-large-dkblueBG" href="#" target="_blank">Why Choose Us? &#10132</a>
           <a class="button-large-dkblueBG" href="#" target="_blank">Our Culture &#10132</a>
         </div>
-        <h4 class="h4-36">What Our Clients Think</h4>
-        <div id="rating stars">
-          <img class="star" src="img/star-fill.png" alt="gold star">
-          <img class="star" src="img/star-fill.png" alt="gold star">
-          <img class="star" src="img/star-fill.png" alt="gold star">
-          <img class="star" src="img/star-fill.png" alt="gold star">
-          <img class="star" src="img/star-fill.png" alt="gold star">
+        <strong class="h2-36">What Our Clients Think</strong><br>
+        <div id="rating-stars">
+          <i class="fa-solid fa-star fa-2xl star" style="color: #ffa500;"></i>
+          <i class="fa-solid fa-star fa-2xl star" style="color: #ffa500;"></i>
+          <i class="fa-solid fa-star fa-2xl star" style="color: #ffa500;"></i>
+          <i class="fa-solid fa-star fa-2xl star" style="color: #ffa500;"></i>
+          <i class="fa-solid fa-star fa-2xl star" style="color: #ffa500;"></i>
         </div>
         <p class="testimonial">Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
         <div class="citation-wrapper">
           <div class="citation">Eleanor Bishop, Head of Marketing -&nbsp
             <span class="link-underline-only"><a href="#"> Ashcroft Partnership LLP</a></span>
           </div>
-        </div>          
-        <a class="button-large-blueBG" href="#" target="_blank">GOOGLE REVIEWS &#10132</a>
-        <!-- *SNAGGING* Need to fiddle with the arrow so below doesn't wrap. Size is correct. -->
-        <a class="button-large-greenBG" href="#" target="_blank">TRUSTPILOT REVIEWS &#10132</a>
+        </div>
+        <div class="welcome-buttons">
+          <a class="button-large-blueBG" href="#" target="_blank">GOOGLE REVIEWS<i class="fa-solid fa-arrow-right"></i></a>
+          <!-- *SNAGGING* Need to fiddle with the arrow so below doesn't wrap. Size is correct. -->
+          <a class="button-large-greenBG" href="#" target="_blank">TRUSTPILOT REVIEWS<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
       </div>
     </div>
     <div class="container-inverse"> <!-- LATEST NEWS -->
@@ -323,13 +325,23 @@
       <footer>
         <div class="footer-row">
           <div class="footer-company-info">
-            <img src="img/nm-logo-white-med.webp" alt="Netmatters Logo">
+            <div class="NM-logo">
+              <img src="img/nm-logo-white-med.webp" alt="Netmatters Logo">
+            </div>
             <h4>Follow Us On:</h4>
             <div class="contact-icons">
-              <img src="img/logos/logo--facebook.svg" alt="facebook logo">
-              <img src="img/logos/logo--linkedin.svg" alt="linkedin logo">
-              <img src="img/logos/logo--x.svg" alt="x logo">
-              <img src="img/logos/logo--instagram.svg" alt="instagram logo">
+              <div class="brand-link">
+                <i class="fa-brands fa-facebook-f fa-xl"></i>
+              </div>
+              <div class="brand-link">
+                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+              </div>
+              <div class="brand-link">
+                <i class="fa-brands fa-x-twitter fa-2xl"></i>
+              </div>
+              <div class="brand-link">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+              </div>
             </div>
           </div>
 
@@ -382,7 +394,7 @@
               </ul>
             </div>
 
-            <div class="footer-menu">
+            <div class="footer-menu no-btm-margin">
               <h4>Locations</h4>
               <ul class="link-underline-only">
                 <li><a href="#">Cambridge Office</a></li>
