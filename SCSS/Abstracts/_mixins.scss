@@ -66,9 +66,8 @@
             z-index: 2;
         }
 
-        .banner-img-1 {
-            display: block;
-            position: relative;
+        .banner-image {
+            background-image: url(file://img/thumbnails/home-YLei.webp);
         }
 
         
@@ -80,113 +79,9 @@
             z-index: 2;
         }
 
-        .banner-img-2 {
-            display: block;
-            position: absolute;
+        .banner-image {
+            background-image: url(img/thumbnails/img/thumbnails/home-O67Y.webp);
         }
 
-    }
-    
-    @if $banner-index==3 {
-        .banner-img {
-            background-image: url(img/thumbnails/home-gay8.webp);
-            z-index: 1;
-        }
-
-        .banner-text-3 {
-            display: block;
-            z-index: 2;
-        }
-    }
-        
-    @if $banner-index==4 {
-        .banner-img {
-            background-image: url(img/thumbnails/home-6yTp.webp);
-            z-index: 1;
-        }
-
-        .banner-text-4 {
-            display: block;
-            z-index: 2;
-        }
-    }
-
-    @if $banner-index==5 {
-        .banner-img {
-            background-image: url(img/thumbnails/home-J8Xx.webp);
-            z-index: 1;
-        }
-
-        .banner-text-5 {
-            display: block;
-            z-index: 2;
-        }
-    }
-
-    @if $banner-index==6 {
-        .banner-img {
-            background-image: url(img/thumbnails/home-K0pn.webp);
-            z-index: 1;
-        }
-
-        .banner-text-6 {
-            display: block;
-            z-index: 2;
-        }
-    }
-
-    @if $banner-index==7 {
-        .banner-img {
-            background-image: url(img/thumbnails/home-MSxH.webp);
-            z-index: 1;
-        }
-
-        .banner-text-7 {
-            display: block;
-            z-index: 2;
-        }
-    }
-
-    // @if ($banner-index == 2) {
-    //     .banner-img {
-    //         background-image: url(../img/thumbnails/home-O67Y.webp);
-    //         opacity: 50%;
-    //     }
-    // }
-
-    // @if ($banner-index == 3) {
-    //     .banner-img {
-    //         background-image: url(../img/thumbnails/home-gay8.webp);
-    //         opacity: 50%;
-    //     }
-    // }
-       
-    // @if ($banner-index == 4) {
-    //     .banner-img {
-    //         background-image: url(../img/thumbnails/home-6yTp.webp);
-    //         opacity: 50%;
-    //     }
-    // }
-       
-    // @if ($banner-index == 5) {
-    //     .banner-img {
-    //         background-image: url(../img/thumbnails/home-J8Xx.webp);
-    //         opacity: 50%;
-    //     }
-    // }
-
-    // @if ($banner-index == 6) {
-    //     .banner-img {
-    //         background-image: url(../img/thumbnails/home-K0pn.webp);
-    //         opacity: 50%;
-    //     }
-    // }
-
-    // @if ($banner-index == 7) {
-    //     .banner-img {
-    //         background-image: url(../img/thumbnails/home-MSxH.webp);
-    //         opacity: 50%;
-    //     }
-    // }
-
+    }    
 }

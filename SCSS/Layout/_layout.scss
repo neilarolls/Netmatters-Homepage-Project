@@ -92,6 +92,29 @@ body {
 
 }
 
+.container-services {
+   
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px 15px;
+    color: #333645; // *SNAGGING* - Colour variables
+    background-color: #fff;
+
+    @media (min-width: 768px) {
+        width: 750px;            
+    }
+
+    @media (min-width: 992px) {
+        width: 970px;            
+    }
+
+    @media (min-width: 1260px) {
+        width: 1200px;            
+    }
+
+}
+
 .view-all-pop-top {
     display: none;
 

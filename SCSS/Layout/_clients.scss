@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     flex-grow: 0;
-    width: 120%;
+    width: 100%;
     height: 170px;
     padding: 50px 0;
     background-color: white;
@@ -20,10 +20,20 @@
         .pop-up-text {
             display: none;
             padding: 20px;
-        }
 
-        div {            
-            display: flex;
+            h3 {
+                font-size: 1.125rem;
+                font-weight: 400;
+                padding-bottom: 17px;
+            }
+
+            div {
+                font-size: .8125rem;
+                line-height: 1.375rem;
+            }
+        }
+ 
+        div {
 
             img {
                 filter: grayscale(100%);

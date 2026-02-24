@@ -531,9 +531,8 @@ body {
 }
 
 /* line 69, ../../../Netmatters-Homepage-Project/scss/Abstracts/_mixins.scss */
-.banner .banner-img-1 {
-  display: block;
-  position: relative;
+.banner .banner-image {
+  background-image: url(file://img/thumbnails/home-YLei.webp);
 }
 
 /* line 21, ../../../Netmatters-Homepage-Project/scss/Layout/_banner.scss */
@@ -566,19 +565,26 @@ div[class*=banner-text] > a {
   width: fit-content;
 }
 
-/* line 46, ../../../Netmatters-Homepage-Project/scss/Layout/_banner.scss */
-img[class*=banner-image] {
-  width: 100vw;
-  height: auto;
-  padding: 0;
-  margin: 0;
-  display: none;
-}
-
 /* line 55, ../../../Netmatters-Homepage-Project/scss/Layout/_banner.scss */
 .LRgradient::before {
   background: linear-gradient(270deg, #000 0%, transparent 50%);
   z-index: 10;
+}
+
+/* line 1, ../../../Netmatters-Homepage-Project/scss/Layout/_services.scss */
+.services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* line 7, ../../../Netmatters-Homepage-Project/scss/Layout/_services.scss */
+.services-wrapper :first-child {
+  padding-left: 15px;
+  font-size: 2.7rem;
+  font-weight: 400;
+  line-height: 1.1;
 }
 
 /* line 1, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
@@ -706,30 +712,61 @@ body {
 }
 
 /* line 95, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+.container-services {
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 50px 15px;
+  color: #333645;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  /* line 95, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+  .container-services {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 95, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+  .container-services {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 95, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+  .container-services {
+    width: 1200px;
+  }
+}
+
+/* line 118, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
 .view-all-pop-top {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 95, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+  /* line 118, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
   .view-all-pop-top {
     display: block;
   }
 }
 
-/* line 103, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+/* line 126, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
 .view-all-pop-bottom {
   display: block;
 }
 
 @media (min-width: 768px) {
-  /* line 103, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+  /* line 126, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
   .view-all-pop-bottom {
     display: none;
   }
 }
 
-/* line 111, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+/* line 134, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
 .LN-button-gold {
   padding: 5px 15px;
   font-size: 1.063rem;
@@ -741,7 +778,7 @@ body {
   line-height: 35px;
 }
 
-/* line 115, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
+/* line 138, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
 .LN-button-blue {
   padding: 5px 15px;
   font-size: 1.063rem;
@@ -758,7 +795,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-grow: 0;
-  width: 120%;
+  width: 100%;
   height: 170px;
   padding: 50px 0;
   background-color: white;
@@ -782,12 +819,20 @@ body {
   padding: 20px;
 }
 
-/* line 25, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
-.clients .item div {
-  display: flex;
+/* line 24, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+.clients .item .pop-up-text h3 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding-bottom: 17px;
 }
 
-/* line 28, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+/* line 30, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+.clients .item .pop-up-text div {
+  font-size: .8125rem;
+  line-height: 1.375rem;
+}
+
+/* line 38, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
 .clients .item div img {
   filter: grayscale(100%);
   display: block;
@@ -796,12 +841,12 @@ body {
   width: auto;
 }
 
-/* line 35, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+/* line 45, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
 .clients .item div img:hover {
   filter: grayscale(0%);
 }
 
-/* line 39, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+/* line 49, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
 .clients .item div img:hover ~ div {
   display: block;
   background-color: #323544;
@@ -815,7 +860,7 @@ body {
   margin-bottom: 50px;
 }
 
-/* line 51, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
+/* line 61, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
 .clients .item div img:hover ~ div .client-arrow {
   width: 0;
   height: 0;
@@ -1082,13 +1127,13 @@ footer .footer-row .footer-menu ul {
 /* line 91, ../../../Netmatters-Homepage-Project/scss/Layout/_latestnews.scss */
 .posted-by .posted-by-text {
   display: inline-block;
-  text-wrap: wrap;
   padding-left: 20px;
   line-height: 1.375rem;
 }
 
-/* line 97, ../../../Netmatters-Homepage-Project/scss/Layout/_latestnews.scss */
+/* line 96, ../../../Netmatters-Homepage-Project/scss/Layout/_latestnews.scss */
 .posted-by .posted-by-text strong {
+  text-wrap: wrap;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.6px;
@@ -1100,8 +1145,16 @@ footer .footer-row .footer-menu ul {
   float: left;
 }
 
-/* line 111, ../../../Netmatters-Homepage-Project/scss/Layout/_latestnews.scss */
+/* line 110, ../../../Netmatters-Homepage-Project/scss/Layout/_latestnews.scss */
 .articles-wrapper {
+  margin-top: 15px;
+}
+
+/* line 114, ../../../Netmatters-Homepage-Project/scss/Layout/_latestnews.scss */
+.article-content {
+  box-shadow: 0 0 15px 15px #eeeeee99;
+  border: 0.67px solid #ccc;
+  border-radius: 0 0 2px 2px;
   margin-top: 30px;
 }
 

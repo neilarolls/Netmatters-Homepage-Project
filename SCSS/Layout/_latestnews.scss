@@ -90,11 +90,11 @@
 
     .posted-by-text {
         display: inline-block;
-        text-wrap: wrap;
         padding-left: 20px;
         line-height: 1.375rem;
 
         strong {
+            text-wrap: wrap;
             font-size: 14px;
             font-weight: 600;
             letter-spacing: 0.6px;
@@ -102,13 +102,18 @@
     }
 
     img {
-        // vertical-align: middle;
         display: block;
         float: left;
     }
 }
 
 .articles-wrapper {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
+.article-content {
+    box-shadow: 0 0 15px 15px #eeeeee99;
+    border: 0.67px solid #ccc;
+    border-radius: 0 0 2px 2px;
+    margin-top: 30px;
+}
