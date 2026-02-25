@@ -205,11 +205,14 @@ body {
     }
 }
 
-.LN-button-gold {
+.dummy-button-gold {
     @include dummy-button($txt-colour: #fff, $bg-colour: #f7b322);
 }
 
-.LN-button-blue {
+.dummy-button-blue {
     @include dummy-button($txt-colour: #fff, $bg-colour: #4183d7);
 }
 
+.dummy-button-green {
+    @include dummy-button($txt-colour: #fff, $bg-colour: #2ecc71);
+}
