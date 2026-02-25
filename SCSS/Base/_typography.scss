@@ -46,6 +46,7 @@
     font-style: italic;
     line-height: 1.875rem;
     letter-spacing: 0.6px;
+    margin-bottom: 25px;
 }
 
 // how do i condense this to avoid repetition?
@@ -69,18 +70,8 @@
     }
 }
 
-.welcome {
-    line-height: 30px;
-
-    :first-child {
-        margin-top:-16px;
-    }
-}
-
 .welcome-anchors {
-    :last-child {
-        margin-bottom: 50px;
-    }
+    margin-bottom: 50px;
 }
 
 
@@ -92,10 +83,13 @@ body {
 
 .footer-sub, .footer-menu, .footer-menu ul {
     font-size: 0.8125rem;
-    // Took me a while to spot this below was what was messing up my layout. Need to normalise.
     padding-inline-start: 0em;
 }
 
 .footer-sub {
     line-height: 1.13rem;
+}
+
+.no-top-margin {
+    margin-top: 0;
 }

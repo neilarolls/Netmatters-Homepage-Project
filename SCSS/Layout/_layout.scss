@@ -8,6 +8,13 @@ body {
     box-sizing: border-box;
 }
 
+.welcome-text {
+    p {
+        margin-bottom: 25px;
+        line-height: 30px;
+    }
+}
+
 .welcome-flex-wrapper {
     display: flex;
     flex-direction: column;
@@ -157,6 +164,19 @@ body {
 
 .view-all-pop-top {
     display: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+
+    a {
+        font-size: 1.625rem;
+        
+    }
+
+    i {
+            vertical-align: 1px;
+            scale: 0.85;
+    }
 
     @media (min-width: 768px) {
         display: block;
@@ -165,6 +185,20 @@ body {
 
 .view-all-pop-bottom {
     display: block;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+
+    a {
+        font-size: 1.625rem;
+        
+    }
+
+    i {
+            vertical-align: 2.5px;
+            scale: 1.25;
+    }
 
     @media (min-width: 768px) {
         display: none;
