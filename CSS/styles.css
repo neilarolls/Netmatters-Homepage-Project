@@ -607,13 +607,19 @@ div[class*=banner-text] > a {
 }
 
 /* line 28, ../../../Netmatters-Homepage-Project/scss/Layout/_services.scss */
+.services-wrapper .icon-wrapper {
+  width: 65px;
+  height: 65px;
+}
+
+/* line 33, ../../../Netmatters-Homepage-Project/scss/Layout/_services.scss */
 .services-wrapper .services-item-title {
   font-size: 1.3rem;
   padding-bottom: 10px;
   margin-bottom: 11px;
 }
 
-/* line 34, ../../../Netmatters-Homepage-Project/scss/Layout/_services.scss */
+/* line 39, ../../../Netmatters-Homepage-Project/scss/Layout/_services.scss */
 .services-wrapper .services-item-description {
   font-size: .8125rem;
   margin-bottom: 13px;
@@ -882,42 +888,6 @@ body {
   .view-all-pop-bottom {
     display: none;
   }
-}
-
-/* line 208, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
-.dummy-button-gold {
-  padding: 5px 15px;
-  font-size: 1.063rem;
-  height: auto;
-  color: #fff;
-  background-color: #f7b322;
-  border-radius: 3px;
-  width: fit-content;
-  line-height: 35px;
-}
-
-/* line 212, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
-.dummy-button-blue {
-  padding: 5px 15px;
-  font-size: 1.063rem;
-  height: auto;
-  color: #fff;
-  background-color: #4183d7;
-  border-radius: 3px;
-  width: fit-content;
-  line-height: 35px;
-}
-
-/* line 216, ../../../Netmatters-Homepage-Project/scss/Layout/_layout.scss */
-.dummy-button-green {
-  padding: 5px 15px;
-  font-size: 1.063rem;
-  height: auto;
-  color: #fff;
-  background-color: #2ecc71;
-  border-radius: 3px;
-  width: fit-content;
-  line-height: 35px;
 }
 
 /* line 1, ../../../Netmatters-Homepage-Project/scss/Layout/_clients.scss */
@@ -1494,12 +1464,96 @@ footer .footer-row .footer-menu ul {
 }
 
 /* line 35, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+.dummy-button-gold {
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  height: auto;
+  color: #fff;
+  background-color: #f7b322;
+  border-radius: 3px;
+  width: fit-content;
+  line-height: 35px;
+}
+
+/* line 39, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+.dummy-button-blue {
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  height: auto;
+  color: #fff;
+  background-color: #4183d7;
+  border-radius: 3px;
+  width: fit-content;
+  line-height: 35px;
+}
+
+/* line 43, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+.dummy-button-green {
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  height: auto;
+  color: #fff;
+  background-color: #2ecc71;
+  border-radius: 3px;
+  width: fit-content;
+  line-height: 35px;
+}
+
+/* line 47, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+.dummy-button-brickred {
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  height: auto;
+  color: #fff;
+  background-color: #d64541;
+  border-radius: 3px;
+  width: fit-content;
+  line-height: 35px;
+}
+
+/* line 51, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+.dummy-button-purple {
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  height: auto;
+  color: #fff;
+  background-color: #926fb1;
+  border-radius: 3px;
+  width: fit-content;
+  line-height: 35px;
+}
+
+/* line 55, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+.dummy-button-cerise {
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  height: auto;
+  color: #fff;
+  background-color: #f62459;
+  border-radius: 3px;
+  width: fit-content;
+  line-height: 35px;
+}
+
+/* line 59, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+.dummy-button-redbrown {
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  height: auto;
+  color: #fff;
+  background-color: #ce4125;
+  border-radius: 3px;
+  width: fit-content;
+  line-height: 35px;
+}
+
+/* line 64, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
 .link-underline-only a {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 38, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
+/* line 67, ../../../Netmatters-Homepage-Project/scss/Components/_buttons.scss */
 .link-underline-only a:hover {
   text-decoration: underline;
 }

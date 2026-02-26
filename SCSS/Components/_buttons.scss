@@ -31,6 +31,35 @@
     @include button-banner($bg_colour: #926fb1, $hover-colour: #7e57a0); // *SNAGGING* - Colour variables
 }
 
+
+.dummy-button-gold {
+    @include dummy-button($txt-colour: #fff, $bg-colour: #f7b322);
+}
+
+.dummy-button-blue {
+    @include dummy-button($txt-colour: #fff, $bg-colour: #4183d7);
+}
+
+.dummy-button-green {
+    @include dummy-button($txt-colour: #fff, $bg-colour: #2ecc71);
+}
+
+.dummy-button-brickred {
+    @include dummy-button($txt-colour: #fff, $bg-colour: #d64541);
+}
+
+.dummy-button-purple {
+    @include dummy-button($txt-colour: #fff, $bg-colour: #926fb1);
+}
+
+.dummy-button-cerise {
+    @include dummy-button($txt-colour: #fff, $bg-colour: #f62459);
+}
+
+.dummy-button-redbrown {
+    @include dummy-button($txt-colour: #fff, $bg-colour: #ce4125);
+}
+
 .link-underline-only {
     a {
         text-decoration: none;

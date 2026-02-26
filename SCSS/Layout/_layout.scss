@@ -205,14 +205,3 @@ body {
     }
 }
 
-.dummy-button-gold {
-    @include dummy-button($txt-colour: #fff, $bg-colour: #f7b322);
-}
-
-.dummy-button-blue {
-    @include dummy-button($txt-colour: #fff, $bg-colour: #4183d7);
-}
-
-.dummy-button-green {
-    @include dummy-button($txt-colour: #fff, $bg-colour: #2ecc71);
-}
