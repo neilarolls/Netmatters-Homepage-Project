@@ -57,7 +57,6 @@
 }
 
 @mixin display-banner($banner-index: 1) {
-    background-color: transparent;
     color:#fff;
 
     @if $banner-index==1 {

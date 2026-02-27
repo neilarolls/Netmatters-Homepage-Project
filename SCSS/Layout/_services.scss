@@ -5,16 +5,36 @@
     margin-right: -15px;
 
     .services-title {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         padding-left: 15px;
+        padding-right: 15px;
         padding-bottom: 15px;
         font-size: 2.7rem;
         font-weight: 400;
         line-height: 1.1;
+
+        h3 a {
+            display: inline-block;
+            text-decoration: none;
+            vertical-align: sub;
+
+            i {
+                position: relative;
+                vertical-align: middle;
+                margin-bottom: 9px;
+                width: fit-content;
+                right: 32px;
+            }
+        }
     }
 
     .services-item {
         padding-left: 15px;
         padding-right: 15px;
+        min-width: 290px;
         width: 100%;
     }
 
@@ -23,6 +43,7 @@
         padding: 30px;
         text-align: center;
         border-radius: 15px;
+        max-width: 290px;
     }
 
     .icon-wrapper {
@@ -43,4 +64,50 @@
 
     }
 
+}
+
+.view-our-work-pop-top {
+    display: none;
+    padding-left: 15px;
+    margin-bottom: 20px;
+
+    a {
+        font-size: 2.225rem;
+        font-weight: 600;
+        
+    }
+
+    i {
+            vertical-align: 1px;
+            scale: 0.85;
+    }
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+
+.view-our-work-pop-bottom {
+    display: block;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+
+    a {
+        font-size: 1.625rem;
+        
+    }
+
+    i {
+        position: relative;
+        right: 5px;
+        vertical-align: -0.93px;
+        scale: 1.25;            
+        font-size: 1.625rem;
+    }
+
+    @media (min-width: 768px) {
+        display: none;
+    }
 }

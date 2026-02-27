@@ -1,0 +1,30 @@
+.dropdown-items {
+    margin: 0 auto;
+
+    .dd-item-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 19px 0 18px 0;
+
+        .dd-item {
+            min-width: 134.285px;
+            max-width: 167.143px;
+            text-align: center;
+
+            .dd-icon {
+                padding-bottom: 0px;
+            }
+
+            .menu-item-sm-title {
+                font-size: 12.5px;
+                line-height: 10px;
+            }
+
+            span {
+                font-size: 1.125rem;
+                line-height: 1.125;
+            }
+        }
+    }
+}

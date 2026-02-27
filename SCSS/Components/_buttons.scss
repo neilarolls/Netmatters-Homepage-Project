@@ -61,11 +61,22 @@
 }
 
 .link-underline-only {
-    a {
+    a, a i {
         text-decoration: none;
         color: #fff; // *SNAGGING* - Colour variables
+        
         &:hover {
             text-decoration: underline;
         }
     }
 }
+
+.link-underline-only-inverse {
+    text-decoration: none;
+    color: #333645; // *SNAGGING* - Colour variables
+
+    &:hover * {
+        text-decoration: underline;
+        }
+}
+
