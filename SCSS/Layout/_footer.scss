@@ -135,17 +135,12 @@ footer {
     display: flex;
     flex-direction: column;
 
-    div {
-        padding: 0 0 8 14;
-    }
-
     .hide-hyphen {
         display: none;
     }
     
     @media (min-width: 768px) {
         flex-direction: row;
-        padding: 0 0 20 15;
 
         .hide-hyphen {
             display: block;

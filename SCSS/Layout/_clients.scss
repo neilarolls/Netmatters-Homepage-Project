@@ -7,6 +7,32 @@
     padding: 50px 0;
     background-color: white;
 
+    .item, .pop-up-text {
+
+        &:hover {
+
+            .pop-up-text {
+                display:block;
+                background-color: #323544;
+                color: white;
+                position: absolute;
+                max-width: 280px;
+                width: 280px;
+                bottom: 70px;
+                // text-align: center;
+                left: 0px;
+                margin: 0 0 50px;
+
+                .client-arrow {
+                    @include client-popup-triangle($triangle-colour: #323544);
+                    position: relative;
+                    top: 76px;
+
+                }
+            }
+        }
+    }
+
     .item {
         position: relative;
         display:flex;
@@ -14,7 +40,8 @@
         align-items: center;
         vertical-align: middle;
         height: 70px;
-        margin-right: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
         width: fit-content;
         
         .pop-up-text {
@@ -28,10 +55,13 @@
             }
 
             div {
+                display: inline;
                 font-size: .8125rem;
                 line-height: 1.375rem;
             }
         }
+
+        
  
         div {
 
@@ -42,33 +72,15 @@
                 max-height: 70px;
                 width: auto;
 
-                &:hover {                    
+                &:hover {
 
                     filter: grayscale(0%);
 
-                    ~ div {
-                        display:block;
-                        background-color: #323544;
-                        color: white;
-                        position: absolute;
-                        max-width: 280px;
-                        width: 280px;
-                        bottom: 70px;
-                        text-align: center;
-                        left: calc(50% - 140px);
-                        margin-bottom: 50px;
-
-                        .client-arrow {
-                            @include client-popup-triangle($triangle-colour: #323544);
-                            position: relative;
-                            top: 76px;
-                        }
-
                     }
                 }
-            }
-
         }
+
+        
 
 
         

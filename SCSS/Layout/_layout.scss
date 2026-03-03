@@ -116,46 +116,90 @@ body {
 }
 
 .container-banner {
-   
+    box-sizing: border-box;
     height: auto;
-    margin: 0 auto;
     padding: 0;
+    margin: 0;
     color: #fff; // *SNAGGING* - Colour variables
-    background-blend-mode: darken;
+    background-color: black;
+    width: max-content;
 
     @media (min-width: 768px) {
-        width: 750px;            
+        min-width: 750px;
     }
 
     @media (min-width: 992px) {
-        width: 970px;            
+        min-width: 970px;
+
+        div[class*=banner-text] {           
+
+            div, p {
+                text-align: left;
+                width: 970px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            div {                
+                font-size: 4rem;
+                line-height: 5rem;
+                letter-spacing: 1px;
+            }
+
+            p {
+                font-size: 1.625rem;
+                line-height: 2.5rem;
+            }
+
+            .banner-button {
+                display: block;
+                width: 970px;
+                margin: 0 auto;
+                text-align: left;
+            }
+        }
     }
 
     @media (min-width: 1260px) {
-        width: 1200px;            
+        min-width: 1200px;
+
+        div[class*=banner-text] {
+
+            div, p {
+                width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .banner-button {
+                width: 1200px;
+            }
+        }
     }
 
 }
 
 .container-services {
-   
     height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 50px 15px;
+    width: 100vw;
+    padding: 50px 0;
     color: #333645; // *SNAGGING* - Colour variables
     background-color: #fff;
 
     @media (min-width: 768px) {
-        width: 750px;            
+        min-width: 750px;
+
+        .services-item {
+            width: 290px;
+        }
     }
 
     @media (min-width: 992px) {
-        width: 970px;            
+        min-width: 970px;
     }
 
     @media (min-width: 1260px) {
-        width: 1200px;            
+        min-width: 1200px;
     }
 }
 
@@ -170,15 +214,15 @@ body {
     background-color: #323544;
 
     @media (min-width: 768px) {
-        width: 750px;            
+        width: 750px;
     }
 
     @media (min-width: 992px) {
-        width: 970px;            
+        width: 970px;
     }
 
     @media (min-width: 1260px) {
-        width: 1200px;            
+        width: 1200px;
     }
 
 }
