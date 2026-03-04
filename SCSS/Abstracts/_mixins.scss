@@ -18,6 +18,23 @@
     }
 }
 
+@mixin button-large-contact($bg-colour: #0f0, $hover-colour: #f0f) {
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff; // *SNAGGING* - Colour variables
+    font-size: 1.125rem;
+    width: fit-content;
+    padding: 5px 15px;
+    background-color: $bg-colour;
+    text-transform: uppercase;
+    border-radius: 0.2rem;
+    line-height: 45px;
+    &:hover {
+        background-color: $hover-colour;
+    }
+}
+
 @mixin button-banner($bg-colour: #0f0, $hover-colour: #f0f) {
     font-weight: 400;
     display: inline-block;
@@ -53,7 +70,7 @@
     transform: rotate(0deg);
 }
 
-@mixin dummy-button($txt-colour: transparent, $bg-colour: transparent) {
+@mixin dummy-button($txt-colour: #0f0, $bg-colour: #f0f) {
     padding: 5px 15px;
     font-size: 1.063rem;
     height: auto;
@@ -83,7 +100,7 @@
 
         @media (min-width: 992px) {
 
-            @if ($dd-item != ".dd-item-1") {
+            @if ($dd-item != ".dd-item-1") { // Fix for dodgy arrow on original :-P
                 margin-top: 20px;
             }
 
@@ -111,12 +128,12 @@
         left: 0;
         right: 0;
         position: absolute;
-        top: 117px;
+        top: 232.6px;
         z-index: 2;
         background-color: $bg-dark;
 
         @media (min-width: 1260px) {
-            top: 97px;
+            top: 212.6px;
         }
 
 

@@ -1,6 +1,7 @@
 .banner {
     display: flex;
-    flex-direction: column;
+    flex-basis: content;
+    flex-direction: row;
     align-content: center;
     align-items: center;
     padding: 3.75rem 0;
@@ -11,10 +12,10 @@
     background-color: #000;
     background-image: url(file///../../../../img/thumbnails/home-YLei.webp);
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     min-height: 550px;
-    height: 100%;
+    height: 608.5px;
 
 }
 
@@ -22,7 +23,6 @@ div[class*=banner-text] {
     width: calc( 100vw - 30px );
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
     justify-content: center;
     text-align: center;
     
