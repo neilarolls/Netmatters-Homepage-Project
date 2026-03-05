@@ -1,37 +1,99 @@
-.welcome-text {
-    p {
-        margin-bottom: 25px;
-        line-height: 30px;
-    }
-}
+.container-welcome {
+   
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px 0;
+    color: #fff; // *SNAGGING* - Colour variables
+    background-color: #323544;
 
-.welcome-flex-wrapper {
-    display: flex;
-    flex-direction: column;
-
-    .rating-stars {
-        height: 5px;
-        padding-top: 100px;
+    @media (min-width: 768px) {
+        width: 750px;
     }
 
-    .star {
-        width: 46.83px;
-        height: 50px;
-        vertical-align: sub;
-        font-size: 42.5px;
-        position: relative;
-    }
+    @media (min-width: 992px) {
+        width: 970px;
 
-    .citation-wrapper {
-        margin-bottom: 25px;
-    }
+        .welcome-flex-wrapper {
+            
+            .welcome-column-1 {
+                width: 485px;
+            }
 
-    .welcome-buttons {
-        letter-spacing: 0.2px;
-        
-        i {
-            margin-left: 11px;
+            .welcome-column-2 {
+                width: 485px;
+            }            
         }
     }
-}
 
+    @media (min-width: 1260px) {
+        width: 1200px;
+
+        .welcome-flex-wrapper {
+            
+            .welcome-column-1 {
+                width: 600px;
+            }
+
+            .welcome-column-2 {
+                width: 600px;
+            }            
+        }
+    }
+    
+    .welcome-flex-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        .welcome-column-1 {
+            padding-left: 15px;
+            padding-right: 15px;
+
+            p {
+                margin-bottom: 40px;
+            }
+            
+            .welcome-text {
+
+                p {
+                    margin-bottom: 25px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        .welcome-column-2 {
+            padding-left: 15px;
+            padding-right: 15px;
+
+            .rating-stars {
+                display: flex;
+                flex-direction: row;
+                height: 5px;
+                padding-top: 100px;
+            }
+
+
+            .star {
+                width: 46.83px;
+                height: 50px;
+                vertical-align: -65px;
+                font-size: 42.5px;
+                position: relative;
+            }
+
+            .citation-wrapper {
+                margin-bottom: 25px;
+            }
+
+            .welcome-buttons {
+                letter-spacing: 0.2px;
+                
+                i {
+                    margin-left: 11px;
+                }
+            }
+        }
+    }
+
+}

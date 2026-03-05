@@ -203,3 +203,57 @@
         }
     }
 }
+
+@mixin services-bump-colour($colour-all: #f0f, $img-padding: 15px) {
+
+    .services-default {
+                background-color: $colour-all;
+                border-radius: 50%;
+                padding: $img-padding;
+                margin-bottom: 17px;
+                height: 65px;
+                width: 65px;
+            }
+
+            // .services-hidden {
+            //     background-color: white;
+            //     border-radius: 50%;
+            //     padding: 12px;
+            //     margin-bottom: 17px;
+            //     height: 65px;
+            //     width: 65px;
+            // }
+            
+            &:hover {
+
+                transition-property: display, background-color, color;
+                transition-duration: 0.5s, 0.5s, 0.5s;
+                
+                background-color: $colour-all;
+
+                .services-default {
+                    display: none;
+                }
+
+                .services-hidden {
+                    display: inline;
+                    background-color: white;
+                    border-radius: 50%;
+                    padding: $img-padding;
+                    margin-bottom: 17px;
+                    height: 65px;
+                    width: 65px;
+                }
+
+                .services-item-title, div p {
+                    background-color: $colour-all;
+                    color: white;
+                }
+
+
+                .services-color-target {
+                    background-color: white;
+                    color: $colour-all;
+                }
+            }
+}
