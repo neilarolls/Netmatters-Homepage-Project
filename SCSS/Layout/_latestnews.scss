@@ -198,8 +198,10 @@
         }
 
         i {
-                vertical-align: 1px;
-                scale: 0.85;
+            position: relative;
+            right: 28px;
+            bottom: 1px;
+            scale: 0.8;
         }
 
         @media (min-width: 768px) {
@@ -212,7 +214,7 @@
         margin: 0 auto;
         padding-left: 15px;
         padding-right: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 28px;
 
         a {
             font-size: 1.625rem;
@@ -220,8 +222,9 @@
         }
 
         i {
-                vertical-align: 2.5px;
-                scale: 1.25;
+            position: relative;
+            right: 23px;
+            bottom: 5px;
         }
 
         @media (min-width: 768px) {
