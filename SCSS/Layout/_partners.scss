@@ -1,0 +1,36 @@
+.partners-top-wrapper {
+    width: 100vw;
+    background-color: white;
+
+    .partners-v-wrapper {
+        height: 170px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .partners {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            height: 70px;
+
+            .partner-logo {
+                margin-right: 50px;
+
+                .partner-logo-colour {
+                    display: none;
+                }
+
+                &:hover {
+
+                    .partner-logo-greyscale {
+                        display: none;
+                    }
+
+                    .partner-logo-colour {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

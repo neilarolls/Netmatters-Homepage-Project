@@ -81,6 +81,17 @@
     line-height: 35px;
 }
 
+@mixin LN-button($txt-colour: #0f0, $bg-colour: #f0f) {
+    padding: 5px 15px;
+    font-size: 1.063rem;
+    height: auto;
+    color: $txt-colour;
+    background-color: $bg-colour;
+    border-radius: 3px;
+    width: fit-content;
+    line-height: 35px;
+}
+
 @mixin show-dd-submenu($dd-sbm: ".dd-sbm-1", $dd-item: ".dd-item-1", $bg-dark: #f0f, $bg-lgt: #f0f) {
 
     .hidden {

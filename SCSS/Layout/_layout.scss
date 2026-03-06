@@ -124,30 +124,6 @@ body {
 
 }
 
-.container-footer {
-   
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #fff; // *SNAGGING* - Colour variables
-    background-color: #323544;
-
-    @media (min-width: 768px) {
-        width: 750px;            
-    }
-
-    @media (min-width: 992px) {
-        width: 970px;            
-    }
-
-    @media (min-width: 1260px) {
-        width: 1200px;            
-    }
-
-}
-
 
 
 

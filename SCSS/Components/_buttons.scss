@@ -43,6 +43,14 @@
     @include button-large-contact($bg_colour: #999aa2, $hover-colour: #84858f)
 }
 
+.LN-button-gold {
+    @include LN-button($txt-colour: #fff, $bg-colour: #f7b322);
+}
+
+.LN-button-blue {
+    @include LN-button($txt-colour: #fff, $bg-colour: #4183d7);
+}
+
 
 .dummy-button-gold {
     @include dummy-button($txt-colour: #fff, $bg-colour: #f7b322);
