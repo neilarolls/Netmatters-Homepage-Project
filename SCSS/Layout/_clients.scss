@@ -19,14 +19,15 @@
                 max-width: 280px;
                 width: 280px;
                 bottom: 70px;
-                // text-align: center;
-                left: 0px;
+                text-align: center;
+                left: calc(50% - 140px);
                 margin: 0 0 50px;
 
                 .client-arrow {
                     @include client-popup-triangle($triangle-colour: #323544);
-                    position: relative;
-                    top: 76px;
+                    position: absolute;
+                    left: calc(50% - 35px);
+                    bottom: -35px;
 
                 }
             }
