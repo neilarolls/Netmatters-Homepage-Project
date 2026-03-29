@@ -26,44 +26,62 @@
 
     footer {
         padding: 27px 0 0;
-        position: relative;
         line-height: 1.375rem;
 
-        .footer-company-info {
-            width: 100vw;
+        .footer-row {
+
             display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
             flex-direction: column;
-            align-content: start;
 
             @media (min-width: 1260px) {
-                margin-right: 80px;
-                width: fit-content;
+                flex-direction: row;
+                width: 1200px;
+                
+
             }
 
-            .NM-logo img {
-                width:250px;
-                height: 51px;
-
-                @media (min-width: 480px) {
-                    width: 320px;
-                    height: 65.6px;
-                }
-            }
-
-            
-            h4 {
-                text-transform: uppercase;
-                font-size: 1rem;
-                margin-top: 24px;
-                margin-bottom: 26px;
-                font-weight:400;
-            }
-
-            .contact-icons {
+            #footer-company-info {
+                width: 100vw;
                 display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                margin-bottom: 30px;
+                flex-direction: column;
+                align-content: start;
+
+                @media (min-width: 1260px) {
+                    margin-right: 80px;
+                    width: fit-content;
+                }
+
+                .NM-logo {
+
+                    
+                    img {
+                        width:250px;
+                        height: 51px;
+
+                        @media (min-width: 480px) {
+                            width: 320px;
+                            height: 65.6px;
+                        }
+                    }
+                }
+
+                
+                h4 {
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    margin-top: 24px;
+                    margin-bottom: 26px;
+                    font-weight:400;
+                }
+
+                .contact-icons {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin-bottom: 30px;
+                }
                 
                 .brand-link {
                     display: flex;
@@ -87,21 +105,6 @@
                 }
             }
 
-        }
-
-        .footer-row {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-            flex-direction: column;
-
-            @media (min-width: 1260px) {
-                flex-direction: row;
-                width: 1200px;
-                
-
-            }
-
             .wrap-items {
                 display: flex;
                 flex-basis: 100%;
@@ -122,43 +125,39 @@
                     margin-bottom: 0;
                 }
 
+                .footer-menu {
+                    padding: 0 0 0 0;
+                    width: 200px;
+                                                                    
+                    @media (min-width: 768px) {
+                        flex: 50%;
+                    }
+
+                    @media (min-width: 992px) {
+                        flex: 25%;                
+                        flex-direction: row;
+                    }
+
+                    @media (min-width: 1260px) {
+                        margin-bottom: 40px;
+                        flex-wrap: nowrap;
+                    }
+
+                    h4 {
+                        text-transform: uppercase;
+                        font-size: 1rem;
+                        margin-top: 0;
+                        margin-bottom: 26px;
+                        font-weight:400;
+                    }
+
+                    ul {
+                        list-style-type: none;
+                        margin-bottom: 30px;
+                    }
+                }
             }
-            
-            .footer-menu {
-                padding: 0 0 0 0;
-                width: 200px;
-                                                                
-                @media (min-width: 768px) {
-                    flex: 50%;
-                }
-
-                @media (min-width: 992px) {
-                    flex: 25%;                
-                    flex-direction: row;
-                }
-
-                @media (min-width: 1260px) {
-                    margin-bottom: 40px;
-                    flex-wrap: nowrap;
-                }
-
-                h4 {
-                    text-transform: uppercase;
-                    font-size: 1rem;
-                    margin-top: 0;
-                    margin-bottom: 26px;
-                    font-weight:400;
-                }
-
-                ul {
-                    list-style-type: none;
-                    margin-bottom: 30px;
-                }
-            }
-
-        
         }
-
     }
 }
 
