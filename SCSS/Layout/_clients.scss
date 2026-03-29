@@ -6,13 +6,14 @@
     height: 170px;
     padding: 50px 0;
     background-color: white;
+    overflow-x: clip;
 
     .item, .pop-up-text {
 
         &:hover {
 
             .pop-up-text {
-                display:block;
+                display: block;
                 background-color: #323544;
                 color: white;
                 position: absolute;
@@ -29,6 +30,10 @@
                     left: calc(50% - 35px);
                     bottom: -35px;
 
+                }
+
+                a {
+                    padding: 5px 15px;
                 }
             }
         }
@@ -55,14 +60,28 @@
                 padding-bottom: 17px;
             }
 
-            div {
-                display: inline;
+            :nth-child(2) {
+                display: block;
                 font-size: .8125rem;
                 line-height: 1.375rem;
+                padding-bottom: 11px;
+            }
+
+            :nth-child(4) {
+                display: flex;
+                justify-content: center;
+                height: 47px;
+                width: 240px;
+
+                a i {
+                    position: relative;
+                    width: fit-content;
+                    top: 0rem;
+                    left: 0.5rem;
+                }
             }
         }
 
-        
  
         div {
 
@@ -72,13 +91,15 @@
                 max-width:200px;
                 max-height: 70px;
                 width: auto;
+            }
 
-                &:hover {
+            &:hover {
 
+                img {
                     filter: grayscale(0%);
-
-                    }
                 }
+
+            }
         }
 
         

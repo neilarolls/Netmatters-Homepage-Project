@@ -80,6 +80,22 @@
     @include dummy-button($txt-colour: #fff, $bg-colour: #ce4125);
 }
 
+.client-button-gold {
+    @include client-button($txt-colour: #fff, $bg-colour: #f7b322, $bg-colour-alt: #e8a008)
+}
+
+.client-button-blue {
+    @include client-button($txt-colour: #fff, $bg-colour: #4183d7, $bg-colour-alt: #296cc2)
+}
+
+.client-button-green {
+    @include client-button($txt-colour: #fff, $bg-colour: #2ecc71, $bg-colour-alt: #26aa5f)
+}
+
+.client-button-purple {
+    @include client-button($txt-colour: #fff, $bg-colour: #926fb1, $bg-colour-alt: #7e57a0)
+}
+
 .link-underline-only {
     a, a i {
         text-decoration: none;
