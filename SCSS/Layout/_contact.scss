@@ -162,6 +162,12 @@
                                     font-size: 14px;
                                 }
 
+                                &:focus {
+                                    outline: 0.5px ridge rgb(91,192,222);
+                                    box-shadow: 0 0 10px rgb(91,192,222);
+                                }
+
+
                             }
 
 
@@ -171,7 +177,7 @@
                                 height: 100%;
                                 width: 63px;
                                 padding: 8px 5px 5px 5px;
-                                border-radius: 0 3px 3px 0;
+                                border-radius: 3px 3px 3px 3px;
                             }
 
                         }
