@@ -54,10 +54,10 @@
 
                 @media (min-width: 1260px) {
                     width: 167.15px;
-                }          
+                }
 
             }
-            
+
             .dd-item-1:hover {
                 @include show-dd-submenu($dd-sbm: ".dd-sbm-1", $dd-item: ".dd-item-1", $bg-dark: #526781, $bg-lgt: #67809f)
             }
@@ -65,11 +65,11 @@
             .dd-item-2:hover {
                 @include show-dd-submenu($dd-sbm: ".dd-sbm-2", $dd-item: ".dd-item-2", $bg-dark: #286abd, $bg-lgt: #4183d7)
             }
-            
+
             .dd-item-3:hover {
                 @include show-dd-submenu($dd-sbm: ".dd-sbm-3", $dd-item: ".dd-item-3", $bg-dark: #25a25a, $bg-lgt: #2ecc71)
             }
-            
+
             .dd-item-4:hover {
                 @include show-dd-submenu($dd-sbm: ".dd-sbm-4", $dd-item: ".dd-item-4", $bg-dark: #bc2c28, $bg-lgt: #d64541)
             }

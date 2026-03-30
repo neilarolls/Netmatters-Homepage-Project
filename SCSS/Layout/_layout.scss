@@ -1,5 +1,5 @@
 body {
-    margin: 0;    
+    margin: 0;
     background-color: #323544; // *SNAGGING* - Colour variables
 
 }
@@ -76,7 +76,7 @@ body {
     @media (min-width: 992px) {
         min-width: 970px;
 
-        div[class*=banner-text] {           
+        div[class*=banner-text] {
 
             div, p {
                 text-align: left;
@@ -85,7 +85,7 @@ body {
                 margin-right: auto;
             }
 
-            div {                
+            div {
                 font-size: 4rem;
                 line-height: 5rem;
                 letter-spacing: 1px;
