@@ -85,7 +85,6 @@
 
     font-size: 1.063rem;
     font-weight: 400;
-    padding: 5px 15px;
     background-color: $bg-colour;
     border-radius: 3px;
     width: fit-content;
@@ -96,7 +95,8 @@
     a {
         text-decoration: none;
         color: $txt-colour;
-        line-height: 35px;    
+        line-height: 35px;
+        padding: 12.5px 15px;
 
     }
 }
