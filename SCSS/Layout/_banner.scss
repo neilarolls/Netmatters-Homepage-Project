@@ -10,7 +10,7 @@
     line-height: 3rem;
     color: #fff;
     background-color: #000;
-    background-image: url(file///../../../../img/thumbnails/home-YLei.webp);
+    background-image: linear-gradient(90deg, #000, transparent 50%), url(file///../../../../img/thumbnails/home-YLei.webp);
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -49,9 +49,3 @@ div[class*=banner-text] {
         }
     }
 }
-
-// .LRgradient::before {
-//     background: linear-gradient(90deg, #000, transparent 50%);
-//     background-blend-mode: darken;
-//     z-index: 3;
-// }
