@@ -59,7 +59,7 @@
                             font-size: 1.625rem;
                             padding-bottom: 15px;
                         }
-                    }                
+                    }
                 }
 
                 .articles-wrapper {
@@ -77,10 +77,40 @@
                             > div {
                                 width: calc(100% - 30px);
                                 position: relative;
-                                top: 0;
+                                top: 0px;
                                 left: 0;
                                 transition: top 0.5s ease;
+
+                                .LN-tag {
+                                    position: absolute;
+                                    bottom: calc(100% - 32px);
+                                    left: calc(100% - 76px);
+                                    color: white;
+                                    width: 76px;
+                                    font-size: 0.75rem;
+                                    padding: 0 0.625rem;
+                                    font-weight: 600;
+                                }
                             }
+
+                            #article-1 {
+                                .LN-tag {
+                                    background-color: #67809f;
+                                }
+                            }
+
+                            #article-2 {
+                                .LN-tag {
+                                    background-color: #67809f;
+                                }
+                            }
+
+                            #article-3 {
+                                .LN-tag {
+                                    background-color: #4183d7;
+                                }
+                            }
+
 
                             @media (min-width: 768px) {
                                 > div {
@@ -113,7 +143,7 @@
                             }
                         }
                     }
-                }                
+                }
             }
         }
     }
@@ -127,7 +157,7 @@
 .margin-reduction-LN {
     padding: 30px;
 
-    h3 {
+    .article-first-line {
         display: flex;
         flex-direction: column;
         flex-basis: content;
@@ -137,7 +167,8 @@
         padding: 0;
         margin-block-start: 0;
         margin-block-end: 0;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        height: 48px;
 
         div {
             color: #67809f;

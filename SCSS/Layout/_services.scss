@@ -302,6 +302,14 @@
             }
             
             .services-item {
+                position: relative;
+                top: 0;
+                left: 0;
+                transition: top 0.5s ease;
+
+                &:hover {
+                    top: -10px;
+                }
                 
                 .services-item-wrapper {
                     margin-top: 30px;
