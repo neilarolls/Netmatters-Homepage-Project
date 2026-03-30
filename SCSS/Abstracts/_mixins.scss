@@ -227,9 +227,7 @@
 @mixin services-bump-colour($colour-all: #f0f, $img-padding: 15px) {
 
     .services-default {
-                transition-timing-function: linear;
-                transition-property: display, background-color, color;
-                transition-duration: 0.5s, 0.5s, 0.5s;
+                transition: top 0.5s ease-in;
                 background-color: $colour-all;
                 border-radius: 50%;
                 padding: $img-padding;
@@ -238,41 +236,44 @@
                 width: 65px;
     }
 
+    .services-hidden {
+        transition: top 0.5s ease-in;
+        background-color: white;
+        border-radius: 50%;
+        padding: $img-padding;
+        margin-bottom: 17px;
+        height: 65px;
+        width: 65px;
+    }
+
     &:hover {
-        transition-timing-function: linear;
-        transition-property: background-color, color, display;
-        transition-duration: 0.5s, 0.5s, 0.5s;
+
+        transition: background-color 0.2s ease-in;
         background-color: $colour-all;
+            color: white;
 
         .services-default {
-            // transition-property: background-color, color, display;
-            // transition-duration: 0.5s, 0.5s, 0.5s;
+          
+            transition: all 0.5s ease-in;
             display: none;
         }
 
         .services-hidden {
-            // transition-property: background-color, color, display;
-            // transition-duration: 0.5s, 0.5s, 0.5s;
+           
+            transition: all 0.5s ease-in;
             display: inline;
-            background-color: white;
-            border-radius: 50%;
-            padding: $img-padding;
-            margin-bottom: 17px;
-            height: 65px;
-            width: 65px;
         }
 
         .services-item-title, div p {
-            // transition-property: background-color, color, display;
-            // transition-duration: 0.5s, 0.5s, 0.5s;
+           
+            transition: all 0.5s ease-in;
             background-color: $colour-all;
-            color: white;
         }
 
 
         .services-color-target {
-            // transition-property: background-color, color, display;
-            // transition-duration: 0.8s, 0.8s, 0.8s;
+             
+            transition: all 0.5s ease-in;
             background-color: white;
             color: $colour-all;
         }
