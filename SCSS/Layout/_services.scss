@@ -4,6 +4,7 @@
     padding: 50px 0;
     color: #333645; // *SNAGGING* - Colour variables
     background-color: #fff;
+    overflow-x: clip;
 
     .services-h-wrapper {
         display: flex;
@@ -103,6 +104,7 @@
                 .services-item:nth-child(5) {
                     width: 345px;
                     height: 320.54px;
+                    margin: 0 15px;
                 }
             }
 
@@ -110,8 +112,7 @@
                 .services-item:nth-child(6) {
                     width: 345px;
                     height: 320.54px;
-                    margin-left: 30px;
-                    margin-right: 0;
+                    margin: 0 15px;
                 }
             }
 
@@ -119,6 +120,7 @@
                 .services-item:nth-child(7) {
                     width: 345px;
                     height: 320.54px;
+                    margin: 0 15px;
                 }
             }
 
@@ -126,8 +128,7 @@
                 .services-item:nth-child(8) {
                     width: 345px;
                     height: 320.54px;
-                    margin-left: 30px;
-                    margin-right: 0;
+                    margin: 0 15px;
                 }
             }
 
@@ -230,6 +231,7 @@
                 .services-item:nth-child(5) {
                     width: 270px;
                     height: 342px;
+                    margin: 0 15px;
 
                 }
             }
@@ -238,7 +240,7 @@
                 .services-item:nth-child(6) {
                     width: 270px;
                     height: 342px;
-                    margin-left: 30px;
+                    margin: 0 15px;
 
                 }
             }
@@ -247,7 +249,7 @@
                 .services-item:nth-child(7) {
                     width: 270px;
                     height: 342px;
-                    margin-left: 30px;
+                    margin: 0 15px;
 
                 }
             }
@@ -256,7 +258,7 @@
                 .services-item:nth-child(8) {
                     width: 270px;
                     height: 342px;
-                    margin-left: 30px;
+                    margin: 0 15px;
 
                 }
             }
@@ -404,6 +406,8 @@
         }
 
         .view-our-work-pop-top {
+            position: relative;
+            left: 40px;
             display: none;
             margin-bottom: 20px;
             justify-self: flex-end;

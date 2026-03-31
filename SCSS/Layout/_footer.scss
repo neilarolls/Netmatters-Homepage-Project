@@ -6,6 +6,7 @@
     padding-right: 15px;
     color: #fff; // *SNAGGING* - Colour variables
     background-color: #323544;
+    overflow-x: clip;
 
     @media (min-width: 768px) {
         width: 750px;

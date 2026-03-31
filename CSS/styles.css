@@ -738,6 +738,7 @@ body {
 
 .container-dropdown {
   display: none;
+  overflow-x: clip;
 }
 
 @media (min-width: 992px) {
@@ -1693,38 +1694,54 @@ body {
 .container-banner {
   box-sizing: border-box;
   width: 100vw;
-  height: auto;
+  min-height: 550px;
+  margin: 0 auto;
   padding: 0;
   color: #fff;
-  background-color: black;
-  background-image: linear-gradient(90deg, #000, transparent 50%), url(file///../../../../img/thumbnails/home-YLei.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(file///../../../../img/thumbnails/home-YLei.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 550px;
-  height: 608.5px;
+  overflow-x: clip;
+  align-content: center;
+}
+
+@media (max-width: 992px) {
+  .container-banner {
+    background-blend-mode: darken;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-banner {
+    background-image: linear-gradient(90deg, #000, transparent 75%), url(file///../../../../img/thumbnails/home-YLei.webp);
+  }
 }
 
 .container-banner .banner {
+  overflow-x: clip;
   display: flex;
   flex-basis: content;
   flex-direction: row;
-  align-content: center;
   align-items: center;
-  padding: 3.75rem 0;
-  padding-left: 25px;
+  padding-left: 15px;
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 3rem;
+  margin: auto auto;
+  height: 100%;
 }
 
 .container-banner div[class*=banner-text] {
-  width: calc( 100vw - 30px);
+  width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .container-banner div[class*=banner-text] > div {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .container-banner div[class*=banner-text] > p {
@@ -1748,16 +1765,14 @@ body {
 }
 
 @media (min-width: 768px) {
-  .container-banner {
-    width: 750px;
-  }
   .container-banner .banner {
+    width: 750px;
     max-height: 550px;
   }
 }
 
 @media (min-width: 992px) {
-  .container-banner {
+  .container-banner .banner {
     width: 970px;
   }
   .container-banner div[class*=banner-text] div, .container-banner div[class*=banner-text] p {
@@ -1784,7 +1799,7 @@ body {
 }
 
 @media (min-width: 1260px) {
-  .container-banner {
+  .container-banner .banner {
     width: 1200px;
   }
   .container-banner div[class*=banner-text] div, .container-banner div[class*=banner-text] p {
@@ -1803,6 +1818,7 @@ body {
   padding: 50px 0;
   color: #333645;
   background-color: #fff;
+  overflow-x: clip;
 }
 
 .container-services .services-h-wrapper {
@@ -1872,22 +1888,22 @@ body {
   .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(5) {
     width: 345px;
     height: 320.54px;
+    margin: 0 15px;
   }
   .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(6) {
     width: 345px;
     height: 320.54px;
-    margin-left: 30px;
-    margin-right: 0;
+    margin: 0 15px;
   }
   .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(7) {
     width: 345px;
     height: 320.54px;
+    margin: 0 15px;
   }
   .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(8) {
     width: 345px;
     height: 320.54px;
-    margin-left: 30px;
-    margin-right: 0;
+    margin: 0 15px;
   }
 }
 
@@ -1948,21 +1964,22 @@ body {
   .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(5) {
     width: 270px;
     height: 342px;
+    margin: 0 15px;
   }
   .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(6) {
     width: 270px;
     height: 342px;
-    margin-left: 30px;
+    margin: 0 15px;
   }
   .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(7) {
     width: 270px;
     height: 342px;
-    margin-left: 30px;
+    margin: 0 15px;
   }
   .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(8) {
     width: 270px;
     height: 342px;
-    margin-left: 30px;
+    margin: 0 15px;
   }
 }
 
@@ -2376,6 +2393,8 @@ body {
 }
 
 .container-services .services-h-wrapper .view-our-work-pop-top {
+  position: relative;
+  left: 40px;
   display: none;
   margin-bottom: 20px;
   justify-self: flex-end;
@@ -2431,6 +2450,7 @@ body {
 body {
   margin: 0;
   background-color: #323544;
+  overflow-x: clip;
 }
 
 * {
@@ -2443,6 +2463,7 @@ body {
   padding: 0;
   color: #333645;
   background-color: #fff;
+  overflow-x: clip;
 }
 
 @media (min-width: 768px) {
@@ -2625,6 +2646,7 @@ body {
   color: #333645;
   background-color: #fff;
   border: none;
+  overflow-x: clip;
 }
 
 .container-LNews .latest-news {
@@ -2984,6 +3006,7 @@ body {
   padding-right: 15px;
   color: #fff;
   background-color: #323544;
+  overflow-x: clip;
   margin: 0 auto;
 }
 

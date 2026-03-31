@@ -1,5 +1,6 @@
 .container-dropdown {
     display: none;
+    overflow-x: clip;
 
     @media (min-width: 992px) {
         display: block;
