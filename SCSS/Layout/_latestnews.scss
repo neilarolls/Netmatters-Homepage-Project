@@ -26,8 +26,7 @@
         background-color: white; // *SNAGGING* colour variables
         color: #333645; // *SNAGGING* colour variables
         max-width: 1200px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding: 50px 15px;
         margin-right: 0;
         margin-left: 0;
 
@@ -41,8 +40,7 @@
                 justify-content: space-between;
                             
                 p {
-                    align-items: start;
-                    margin: 0 0 15px 15px;
+                    margin: 0 0 15px 0;
 
                     strong {
                         font-size: 2.25rem;
@@ -233,10 +231,12 @@
     left: 26px;
 
     a {
+        position: absolute;
+        overflow-x: clip;
         display: inline-block;
         font-size: 1.625rem;
         width: 180px;
-
+        right: -15px;
 
         i {
             position: relative;

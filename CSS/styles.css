@@ -1690,18 +1690,13 @@ body {
   text-decoration: underline;
 }
 
-.banner {
-  display: flex;
-  flex-basis: content;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  padding: 3.75rem 0;
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 3rem;
+.container-banner {
+  box-sizing: border-box;
+  width: 100vw;
+  height: auto;
+  padding: 0;
   color: #fff;
-  background-color: #000;
+  background-color: black;
   background-image: linear-gradient(90deg, #000, transparent 50%), url(file///../../../../img/thumbnails/home-YLei.webp);
   background-position: center;
   background-size: cover;
@@ -1710,36 +1705,96 @@ body {
   height: 608.5px;
 }
 
-div[class*=banner-text] {
-  width: calc( 100vw - 30px);
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  text-align: center;
+.container-banner .banner {
+  display: flex;
+  flex-basis: content;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  padding: 3.75rem 0;
+  padding-left: 25px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
 }
 
-div[class*=banner-text] > div {
+.container-banner div[class*=banner-text] {
+  width: calc( 100vw - 30px);
+  margin: 0 auto;
+}
+
+.container-banner div[class*=banner-text] > div {
   margin-bottom: 20px;
 }
 
-div[class*=banner-text] > p {
+.container-banner div[class*=banner-text] > p {
   margin-bottom: 6px;
   margin-top: 0;
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
-div[class*=banner-text] .banner-button {
+.container-banner div[class*=banner-text] .banner-button {
   z-index: 0;
 }
 
-div[class*=banner-text] .banner-button a {
+.container-banner div[class*=banner-text] .banner-button a {
   position: relative;
   margin-bottom: 1.125rem;
   margin-top: 1.938rem;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
+}
+
+@media (min-width: 768px) {
+  .container-banner {
+    width: 750px;
+  }
+  .container-banner .banner {
+    max-height: 550px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-banner {
+    width: 970px;
+  }
+  .container-banner div[class*=banner-text] div, .container-banner div[class*=banner-text] p {
+    text-align: left;
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-banner div[class*=banner-text] div {
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 1px;
+  }
+  .container-banner div[class*=banner-text] p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+  }
+  .container-banner div[class*=banner-text] .banner-button {
+    display: block;
+    width: 970px;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1260px) {
+  .container-banner {
+    width: 1200px;
+  }
+  .container-banner div[class*=banner-text] div, .container-banner div[class*=banner-text] p {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-banner div[class*=banner-text] .banner-button {
+    width: 1200px;
+  }
 }
 
 .container-services {
@@ -1822,6 +1877,7 @@ div[class*=banner-text] .banner-button a {
     width: 345px;
     height: 320.54px;
     margin-left: 30px;
+    margin-right: 0;
   }
   .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(7) {
     width: 345px;
@@ -1831,6 +1887,7 @@ div[class*=banner-text] .banner-button a {
     width: 345px;
     height: 320.54px;
     margin-left: 30px;
+    margin-right: 0;
   }
 }
 
@@ -1916,6 +1973,7 @@ div[class*=banner-text] .banner-button a {
   flex-shrink: 0;
   margin: 0 auto;
   max-width: 1200px;
+  justify-content: center;
 }
 
 .container-services .services-h-wrapper .services-wrapper .services-title {
@@ -1923,7 +1981,7 @@ div[class*=banner-text] .banner-button a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 15px;
+  padding: 0 15px 15px;
   font-size: 2.7rem;
   font-weight: 400;
   line-height: 1.1;
@@ -2320,6 +2378,7 @@ div[class*=banner-text] .banner-button a {
 .container-services .services-h-wrapper .view-our-work-pop-top {
   display: none;
   margin-bottom: 20px;
+  justify-self: flex-end;
 }
 
 .container-services .services-h-wrapper .view-our-work-pop-top a {
@@ -2428,66 +2487,6 @@ body {
 
 @media (min-width: 1260px) {
   .container-dropdown {
-    width: 1200px;
-  }
-}
-
-.container-banner {
-  box-sizing: border-box;
-  height: auto;
-  padding: 0;
-  margin: 0;
-  color: #fff;
-  background-color: black;
-  width: 100vw;
-}
-
-@media (min-width: 768px) {
-  .container-banner {
-    min-width: 750px;
-  }
-  .container-banner .banner {
-    max-height: 550px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container-banner {
-    min-width: 970px;
-  }
-  .container-banner div[class*=banner-text] div, .container-banner div[class*=banner-text] p {
-    text-align: left;
-    width: 970px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .container-banner div[class*=banner-text] div {
-    font-size: 4rem;
-    line-height: 5rem;
-    letter-spacing: 1px;
-  }
-  .container-banner div[class*=banner-text] p {
-    font-size: 1.625rem;
-    line-height: 2.5rem;
-  }
-  .container-banner div[class*=banner-text] .banner-button {
-    display: block;
-    width: 970px;
-    margin: 0 auto;
-    text-align: left;
-  }
-}
-
-@media (min-width: 1260px) {
-  .container-banner {
-    min-width: 1200px;
-  }
-  .container-banner div[class*=banner-text] div, .container-banner div[class*=banner-text] p {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .container-banner div[class*=banner-text] .banner-button {
     width: 1200px;
   }
 }
@@ -2632,8 +2631,7 @@ body {
   background-color: white;
   color: #333645;
   max-width: 1200px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 15px;
   margin-right: 0;
   margin-left: 0;
 }
@@ -2665,8 +2663,7 @@ body {
 }
 
 .container-LNews .latest-news .header-bar-wrapper .header-bar p {
-  align-items: start;
-  margin: 0 0 15px 15px;
+  margin: 0 0 15px 0;
 }
 
 .container-LNews .latest-news .header-bar-wrapper .header-bar p strong {
@@ -2839,9 +2836,12 @@ body {
 }
 
 .view-all-pop-top a {
+  position: absolute;
+  overflow-x: clip;
   display: inline-block;
   font-size: 1.625rem;
   width: 180px;
+  right: -15px;
 }
 
 .view-all-pop-top a i {
