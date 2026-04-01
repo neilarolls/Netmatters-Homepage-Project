@@ -2,7 +2,7 @@
     height: auto;
     width: 100vw;
     padding: 50px 0;
-    color: #333645; // *SNAGGING* - Colour variables
+    color: #333645;
     background-color: #fff;
     overflow-x: clip;
 
@@ -12,7 +12,7 @@
         margin: 0 auto;
 
 
-        @media (max-width: 767.99px) {
+        @media (max-width: 767.99px) {                  // These @media calls set each item's width, height and margin so the boxes appear in the desired arrangement
 
             .services-wrapper {
                 .services-item:nth-child(2) {
@@ -79,7 +79,7 @@
 
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 768px) {                  // These @media calls set each item's width, height and margin so the boxes appear in the desired arrangement
             width: 750px;
 
             .services-wrapper {
@@ -134,7 +134,7 @@
 
         }
 
-        @media (min-width: 992px) {
+        @media (min-width: 992px) {                  // These @media calls set each item's width, height and margin so the boxes appear in the desired arrangement
             width: 970px;
 
 
@@ -198,7 +198,7 @@
 
         }
 
-        @media (min-width: 1260px) {
+        @media (min-width: 1260px) {                  // These @media calls set each item's width, height and margin so the boxes appear in the desired arrangement
             width: 1200px;
 
             .services-wrapper {
@@ -274,7 +274,7 @@
             justify-content: center;
             
 
-            .services-title {
+            .services-title {                           // Set default styling for the title area
                 width: 100%;
                 display: flex;
                 flex-direction: row;
@@ -307,14 +307,14 @@
                 }
             }
             
-            .services-item {
+            .services-item {                            // 
                 position: relative;
                 top: 0;
                 left: 0;
-                transition: all 0.5s ease-in;
+                transition: top 0.5s ease-in;
 
                 &:hover {
-                    transition: all 0.5s ease-in;
+                    transition: top 0.5s ease-in;
                     top: -10px;
                 }
                 
