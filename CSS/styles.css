@@ -2084,7 +2084,7 @@ body {
 }
 
 .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(2) .services-item-wrapper:hover {
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.18s ease-in;
   background-color: #67809f;
   color: white;
 }
@@ -2131,7 +2131,7 @@ body {
 }
 
 .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(3) .services-item-wrapper:hover {
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.18s ease-in;
   background-color: #4183d7;
   color: white;
 }
@@ -2178,7 +2178,7 @@ body {
 }
 
 .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(4) .services-item-wrapper:hover {
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.18s ease-in;
   background-color: #2ecc71;
   color: white;
 }
@@ -2225,7 +2225,7 @@ body {
 }
 
 .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(5) .services-item-wrapper:hover {
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.18s ease-in;
   background-color: #d64541;
   color: white;
 }
@@ -2272,7 +2272,7 @@ body {
 }
 
 .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(6) .services-item-wrapper:hover {
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.18s ease-in;
   background-color: #926fb1;
   color: white;
 }
@@ -2319,7 +2319,7 @@ body {
 }
 
 .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(7) .services-item-wrapper:hover {
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.18s ease-in;
   background-color: #f62459;
   color: white;
 }
@@ -2366,7 +2366,7 @@ body {
 }
 
 .container-services .services-h-wrapper .services-wrapper .services-item:nth-child(8) .services-item-wrapper:hover {
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.18s ease-in;
   background-color: #ce4125;
   color: white;
 }
@@ -2914,7 +2914,7 @@ body {
   overflow-x: clip;
 }
 
-.clients .item:hover .pop-up-text, .clients .pop-up-text:hover .pop-up-text {
+.clients .item:hover .pop-up-text, .clients .item > *:hover .pop-up-text {
   display: block;
   background-color: #323544;
   color: white;
@@ -2927,7 +2927,7 @@ body {
   margin: 0 0 50px;
 }
 
-.clients .item:hover .pop-up-text .client-arrow, .clients .pop-up-text:hover .pop-up-text .client-arrow {
+.clients .item:hover .pop-up-text .client-arrow, .clients .item > *:hover .pop-up-text .client-arrow {
   width: 0;
   height: 0;
   border-style: solid;
@@ -2939,7 +2939,7 @@ body {
   bottom: -35px;
 }
 
-.clients .item:hover .pop-up-text a, .clients .pop-up-text:hover .pop-up-text a {
+.clients .item:hover .pop-up-text a, .clients .item > *:hover .pop-up-text a {
   padding: 5px 15px;
 }
 
