@@ -41,7 +41,7 @@
 
     .item {
         position: relative;
-        display:flex;
+        display: flex;
         flex-grow: 0;
         align-items: center;
         vertical-align: middle;
@@ -51,6 +51,16 @@
         width: fit-content;
         
         .pop-up-text {
+
+            &::before, &::after {               // Extends the :hover area
+                content: '';
+                position: absolute;
+                top: 100%;
+                bottom: -50px;
+                left:0px;
+                width: 280px;
+            }
+
             display: none;
             padding: 20px;
 
@@ -78,6 +88,7 @@
                     width: fit-content;
                     top: 0rem;
                     left: 0.5rem;
+                    z-index: 2;
                 }
             }
         }

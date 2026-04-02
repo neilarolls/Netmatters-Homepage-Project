@@ -2960,6 +2960,15 @@ body {
   padding: 20px;
 }
 
+.clients .item .pop-up-text::before, .clients .item .pop-up-text::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  bottom: -50px;
+  left: 0px;
+  width: 280px;
+}
+
 .clients .item .pop-up-text h3 {
   font-size: 1.125rem;
   font-weight: 400;
@@ -2985,6 +2994,7 @@ body {
   width: fit-content;
   top: 0rem;
   left: 0.5rem;
+  z-index: 2;
 }
 
 .clients .item div img {
