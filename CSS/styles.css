@@ -2955,18 +2955,27 @@ body {
   width: fit-content;
 }
 
-.clients .item .pop-up-text {
-  display: none;
-  padding: 20px;
-}
-
-.clients .item .pop-up-text::before, .clients .item .pop-up-text::after {
+.clients .item .pop-up-text ::before {
   content: '';
   position: absolute;
   top: 100%;
   bottom: -50px;
   left: 0px;
   width: 280px;
+}
+
+.clients .item .pop-up-text ::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  bottom: -50px;
+  left: 0px;
+  width: 280px;
+}
+
+.clients .item .pop-up-text {
+  display: none;
+  padding: 20px;
 }
 
 .clients .item .pop-up-text h3 {

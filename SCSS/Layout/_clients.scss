@@ -49,10 +49,10 @@
         padding-left: 25px;
         padding-right: 25px;
         width: fit-content;
-        
-        .pop-up-text {
 
-            &::before, &::after {               // Extends the :hover area
+        .pop-up-text {
+            
+            ::before {               // Extends the :hover area
                 content: '';
                 position: absolute;
                 top: 100%;
@@ -60,6 +60,23 @@
                 left:0px;
                 width: 280px;
             }
+
+            ::after {               // Extends the :hover area
+                content: '';
+                position: absolute;
+                top: 100%;
+                bottom: -50px;
+                left:0px;
+                width: 280px;
+            }
+            
+        }
+
+
+
+
+        
+        .pop-up-text {
 
             display: none;
             padding: 20px;
