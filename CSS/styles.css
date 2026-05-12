@@ -2972,10 +2972,9 @@ header {
   padding: 50px 0;
   background-color: white;
   overflow-x: clip;
-  overflow-y: visible;
 }
 
-.clients .slick-list .slicktrack .item:hover .pop-up-text, .clients .slick-list .slicktrack .item > *:hover .pop-up-text {
+.clients .item:hover .pop-up-text, .clients .item > *:hover .pop-up-text {
   display: block;
   background-color: #323544;
   color: white;
@@ -2988,7 +2987,7 @@ header {
   margin: 0 0 50px;
 }
 
-.clients .slick-list .slicktrack .item:hover .pop-up-text .client-arrow, .clients .slick-list .slicktrack .item > *:hover .pop-up-text .client-arrow {
+.clients .item:hover .pop-up-text .client-arrow, .clients .item > *:hover .pop-up-text .client-arrow {
   width: 0;
   height: 0;
   border-style: solid;
@@ -3000,7 +2999,7 @@ header {
   bottom: -35px;
 }
 
-.clients .slick-list .slicktrack .item:hover .pop-up-text a, .clients .slick-list .slicktrack .item > *:hover .pop-up-text a {
+.clients .item:hover .pop-up-text a, .clients .item > *:hover .pop-up-text a {
   padding: 5px 15px;
 }
 
@@ -3014,6 +3013,7 @@ header {
   padding-left: 25px;
   padding-right: 25px;
   width: fit-content;
+  cursor: pointer;
 }
 
 .clients .item .pop-up-text ::before {
