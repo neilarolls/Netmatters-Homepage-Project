@@ -225,9 +225,10 @@
 }
 
 @mixin services-bump-colour($colour-all: #f0f, $img-padding: 15px) {
+    transition: background-color 0.1s ease-in;
 
     .services-default {
-                transition: top 0.5s ease-in;
+                transition: all 0.25s ease;
                 background-color: $colour-all;
                 border-radius: 50%;
                 padding: $img-padding;
@@ -237,7 +238,7 @@
     }
 
     .services-hidden {
-        transition: top 0.5s ease-in;
+        transition: all 0.25s ease;
         background-color: white;
         border-radius: 50%;
         padding: $img-padding;
@@ -248,32 +249,32 @@
 
     &:hover {
 
-        transition: background-color 0.18s ease-in;
+        transition: background-color 0.1s ease;
         background-color: $colour-all;
             color: white;
 
         .services-default {
           
-            transition: all 0.5s ease-in;
+            transition: all 0.25s ease;
             display: none;
         }
 
         .services-hidden {
            
-            transition: all 0.5s ease-in;
+            transition: all 0.25s ease;
             display: inline;
         }
 
         .services-item-title, div p {
            
-            transition: all 0.5s ease-in;
+            transition: all 0.25s ease;
             background-color: $colour-all;
         }
 
 
         .services-color-target {
              
-            transition: all 0.5s ease-in;
+            transition: all 0.25s ease;
             background-color: white;
             color: $colour-all;
         }

@@ -1,7 +1,7 @@
     $(document).ready(function(){
       $('.clients').slick({
         autoplay:true,
-        autoplaySpeed:3000,
+        autoplaySpeed:4000,
         infinite:true,
         variableWidth:true,
         pauseOnHover:true,
