@@ -7,33 +7,38 @@
     padding: 50px 0;
     background-color: white;
     overflow-x: clip;
+    overflow-y: visible;
 
-    .item, .item > * {
+    .slick-list {
+        .slicktrack {
+            .item, .item > * {
 
-        &:hover {
+                &:hover {
 
-            .pop-up-text {
-                display: block;
-                background-color: #323544;
-                color: white;
-                position: absolute;
-                max-width: 280px;
-                width: 280px;
-                bottom: 70px;
-                text-align: center;
-                left: calc(50% - 140px);
-                margin: 0 0 50px;
+                    .pop-up-text {
+                        display: block;
+                        background-color: #323544;
+                        color: white;
+                        position: absolute;
+                        max-width: 280px;
+                        width: 280px;
+                        bottom: 70px;
+                        text-align: center;
+                        left: calc(50% - 140px);
+                        margin: 0 0 50px;
 
-                .client-arrow {
-                    @include client-popup-triangle($triangle-colour: #323544);
-                    position: absolute;
-                    left: calc(50% - 35px);
-                    bottom: -35px;
+                        .client-arrow {
+                            @include client-popup-triangle($triangle-colour: #323544);
+                            position: absolute;
+                            left: calc(50% - 35px);
+                            bottom: -35px;
 
-                }
+                        }
 
-                a {
-                    padding: 5px 15px;
+                        a {
+                            padding: 5px 15px;
+                        }
+                    }
                 }
             }
         }

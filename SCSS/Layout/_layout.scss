@@ -2,11 +2,19 @@ body {
     margin: 0;
     background-color: #323544; // *SNAGGING* - Colour variables
     overflow-x: clip;
+    z-index: 0;
 
 }
 
 * {
     box-sizing: border-box;
+}
+
+header {
+    margin: 0;
+    width: 100vw;
+    background-color: #323544;
+    z-index: 0;
 }
 
 .container-contact {
@@ -33,7 +41,7 @@ body {
 
 }
 
-.container-dropdown {
+#container-dropdown {
    
     height: auto;
     margin-right: auto;

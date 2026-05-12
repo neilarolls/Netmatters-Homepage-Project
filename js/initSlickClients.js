@@ -1,0 +1,12 @@
+    $(document).ready(function(){
+      $('.clients').slick({
+        autoplay:true,
+        autoplaySpeed:3000,
+        infinite:true,
+        variableWidth:true,
+        pauseOnHover:true,
+        arrows:false,
+        slidesToShow:12,
+        draggable:false
+      });
+    });
