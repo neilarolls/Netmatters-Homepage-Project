@@ -1,12 +1,25 @@
-  $(document).ready(function(){
-      $('.partners').slick({
-        autoplay:true,
-        autoplaySpeed:4000,
-        infinite:true,
-        variableWidth:true,
-        pauseOnHover:true,
-        arrows:false,
-        slidesToShow:11,
-        draggable:false
-      });
-    });
+$(document).ready(function(){
+  $('.partners').slick({
+    autoplay:true,
+    autoplaySpeed:4000,
+    infinite:true,
+    variableWidth:true,
+    pauseOnHover:true,
+    arrows:false,
+    slidesToShow:11,
+    draggable:false
+  });
+});
+
+$(document).ready(function(){
+  $('.clients').slick({
+    autoplay:true,
+    autoplaySpeed:4000,
+    infinite:true,
+    variableWidth:true,
+    pauseOnHover:true,
+    arrows:false,
+    slidesToShow:12,
+    draggable:false
+  });
+});

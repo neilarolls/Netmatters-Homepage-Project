@@ -763,6 +763,31 @@ body {
 #container-dropdown {
   display: none;
   overflow-x: clip;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+  background-color: #323544;
+}
+
+@media (min-width: 768px) {
+  #container-dropdown {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  #container-dropdown {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1260px) {
+  #container-dropdown {
+    width: 1200px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2544,34 +2569,6 @@ header {
   }
 }
 
-#container-dropdown {
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  color: #fff;
-  background-color: #323544;
-}
-
-@media (min-width: 768px) {
-  #container-dropdown {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  #container-dropdown {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1260px) {
-  #container-dropdown {
-    width: 1200px;
-  }
-}
-
 .partners-top-wrapper {
   width: 100vw;
   background-color: white;
@@ -2873,8 +2870,8 @@ header {
 
 .posted-by {
   font-size: .8125rem;
-  margin-top: 30px;
-  padding-top: 30px;
+  margin-top: 20px;
+  padding-top: 20px;
   padding-bottom: 0;
   border-top: 1px solid #ccc;
   height: 77.67px;
@@ -2963,18 +2960,20 @@ header {
   }
 }
 
-.clients {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 0;
+#container-clients {
   width: 100%;
   height: 170px;
   padding: 50px 0;
-  background-color: white;
-  overflow-x: clip;
+  background-color: #ffffff;
 }
 
-.clients .item:hover .pop-up-text, .clients .item > *:hover .pop-up-text {
+#container-clients .clients {
+  overflow-x: clip;
+  overflow-y: visible;
+  min-width: 0;
+}
+
+#container-clients .clients .item:hover .pop-up-text, #container-clients .clients .item > *:hover .pop-up-text, #container-clients .clients .pop-up-text:hover .pop-up-text {
   display: block;
   background-color: #323544;
   color: white;
@@ -2987,7 +2986,7 @@ header {
   margin: 0 0 50px;
 }
 
-.clients .item:hover .pop-up-text .client-arrow, .clients .item > *:hover .pop-up-text .client-arrow {
+#container-clients .clients .item:hover .pop-up-text .client-arrow, #container-clients .clients .item > *:hover .pop-up-text .client-arrow, #container-clients .clients .pop-up-text:hover .pop-up-text .client-arrow {
   width: 0;
   height: 0;
   border-style: solid;
@@ -2999,15 +2998,9 @@ header {
   bottom: -35px;
 }
 
-.clients .item:hover .pop-up-text a, .clients .item > *:hover .pop-up-text a {
-  padding: 5px 15px;
-}
-
-.clients .item {
+#container-clients .clients .item {
   position: relative;
-  display: flex;
-  flex-grow: 0;
-  align-items: center;
+  align-content: center;
   vertical-align: middle;
   height: 70px;
   padding-left: 25px;
@@ -3016,50 +3009,36 @@ header {
   cursor: pointer;
 }
 
-.clients .item .pop-up-text ::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  bottom: -50px;
-  left: 0px;
-  width: 280px;
-}
-
-.clients .item .pop-up-text ::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  bottom: -50px;
-  left: 0px;
-  width: 280px;
-}
-
-.clients .item .pop-up-text {
+#container-clients .clients .item .pop-up-text {
   display: none;
   padding: 20px;
 }
 
-.clients .item .pop-up-text h3 {
+#container-clients .clients .item .pop-up-text h3 {
   font-size: 1.125rem;
   font-weight: 400;
   padding-bottom: 17px;
 }
 
-.clients .item .pop-up-text :nth-child(2) {
+#container-clients .clients .item .pop-up-text :nth-child(2) {
   display: block;
   font-size: .8125rem;
   line-height: 1.375rem;
   padding-bottom: 11px;
 }
 
-.clients .item .pop-up-text :nth-child(4) {
+#container-clients .clients .item .pop-up-text :nth-child(4) {
   display: flex;
   justify-content: center;
   height: 47px;
   width: 240px;
 }
 
-.clients .item .pop-up-text :nth-child(4) a i {
+#container-clients .clients .item .pop-up-text :nth-child(4) a {
+  padding: 5px 15px;
+}
+
+#container-clients .clients .item .pop-up-text :nth-child(4) a i {
   position: relative;
   width: fit-content;
   top: 0rem;
@@ -3067,7 +3046,7 @@ header {
   z-index: 2;
 }
 
-.clients .item div img {
+#container-clients .clients .item div img {
   filter: grayscale(100%);
   display: block;
   max-width: 200px;
@@ -3075,7 +3054,7 @@ header {
   width: auto;
 }
 
-.clients .item div:hover img {
+#container-clients .clients .item div:hover img {
   filter: grayscale(0%);
 }
 
