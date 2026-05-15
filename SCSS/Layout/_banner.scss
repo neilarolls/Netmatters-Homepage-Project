@@ -1,8 +1,6 @@
 .container-banner {
-    box-sizing: border-box;
     width: 100vw;
     min-height: 550px;
-    margin: 0 auto;
     padding: 0;
     color: #fff; // *SNAGGING* - Colour variables
     background-color: rgba(0, 0, 0, 0.5);
@@ -13,7 +11,7 @@
     overflow-x: clip;
     align-content: center;
 
-    @media (max-width: 992px) {
+    @media (max-width: 991.999px) {
         background-blend-mode: darken;
     }
 
@@ -39,11 +37,12 @@
         width: 100%;
         margin: 0 auto;
         text-align: center;
-        
+
         > div {
             margin-bottom: 20px;
             width: 100%;
         }
+
         > p {
             margin-bottom: 6px;
             margin-top: 0;
@@ -65,7 +64,7 @@
         }
     }
 
-    
+
     @media (min-width: 768px) {
         
         .banner {

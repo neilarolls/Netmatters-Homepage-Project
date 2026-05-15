@@ -1,5 +1,5 @@
 #container-clients {
-        width: 100%;
+        width: 100vw;
         height: 170px;
         padding: 50px 0;
         background-color: #ffffff;
@@ -15,37 +15,9 @@
 
                 .pop-up-text {
                     display: block;
-                    background-color: #323544;
-                    color: white;
-                    position: absolute;
-                    max-width: 280px;
-                    width: 280px;
-                    bottom: 70px;
-                    text-align: center;
-                    left: calc(50% - 140px);
-                    margin: 0 0 50px;
-
-                    .client-arrow {
-                        @include client-popup-triangle($triangle-colour: #323544);
-                        position: absolute;
-                        left: calc(50% - 35px);
-                        bottom: -35px;
-
-                    }
-
                 }
             }
         }
-
-        // .item::after {                   // Extends the :hover area
-        //     content: '';
-        //     position: absolute;
-        //     height: 50px;
-        //     bottom: 100%;
-        //     left:0px;
-        //     width: 280px;
-        //     z-index: 5;
-        // }
 
         .item {
             position: relative;
@@ -59,7 +31,34 @@
             
             .pop-up-text {
                 display: none;
+                position: absolute;
+                color: white;
+                background-color: #323544;
                 padding: 20px;
+                max-width: 280px;
+                width: 280px;
+                bottom: 70px;
+                text-align: center;
+                left: calc(50% - 140px);
+                margin: 0 0 50px;
+
+                .item::after {                   // Extends the :hover area
+                    content: '';
+                    position: absolute;
+                    height: 50px;
+                    bottom: 100%;
+                    left:0px;
+                    width: 280px;
+                    z-index: 5;
+                }
+
+                .client-arrow {
+                    @include client-popup-triangle($triangle-colour: #323544);
+                    position: absolute;
+                    left: calc(50% - 35px);
+                    bottom: -35px;
+
+                }
 
                 h3 {
                     font-size: 1.125rem;

@@ -460,8 +460,40 @@ body {
   background-color: #262834;
   color: white;
   width: 335px;
+  height: 100vh;
   right: 0;
   z-index: -5;
+  overflow-y: scroll;
+}
+
+#sidemenu-desktop .desktop-sidebar-item::before {
+  content: url("../img/icons/angles-right-solid-sm.png");
+  position: relative;
+  width: 0.5rem;
+  height: 0.5rem;
+  top: 0;
+  left: -8px;
+  z-index: 5;
+}
+
+#sidemenu-desktop .desktop-sidebar-item {
+  height: 51px;
+  font-size: 0.875rem;
+  padding: 14px 20px 26px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+  letter-spacing: 0.4px;
+  width: 335px;
+}
+
+#sidemenu-desktop .desktop-sidebar-title {
+  height: 56px;
+  background-color: #333645;
+  font-size: 1rem;
+  padding: 18px 20px 22px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.4px;
+  width: 335px;
 }
 
 .contact-v-wrapper {
@@ -761,32 +793,25 @@ body {
 }
 
 #container-dropdown {
+  width: 100vw;
   display: none;
   overflow-x: clip;
   height: auto;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   color: #fff;
   background-color: #323544;
 }
 
-@media (min-width: 768px) {
-  #container-dropdown {
-    width: 750px;
-  }
-}
-
 @media (min-width: 992px) {
   #container-dropdown {
-    width: 970px;
+    padding-left: calc((100vw - 970px) / 2);
+    padding-right: calc((100vw - 970px) / 2);
   }
 }
 
 @media (min-width: 1260px) {
   #container-dropdown {
-    width: 1200px;
+    padding-left: calc((100vw - 1200px) / 2);
+    padding-right: calc((100vw - 1200px) / 2);
   }
 }
 
@@ -1741,10 +1766,8 @@ body {
 }
 
 .container-banner {
-  box-sizing: border-box;
   width: 100vw;
   min-height: 550px;
-  margin: 0 auto;
   padding: 0;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
@@ -1756,7 +1779,7 @@ body {
   align-content: center;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.999px) {
   .container-banner {
     background-blend-mode: darken;
   }
@@ -2606,8 +2629,6 @@ header {
 
 .container-welcome {
   height: auto;
-  margin-right: auto;
-  margin-left: auto;
   padding: 50px 0;
   color: #fff;
   background-color: #323544;
@@ -2615,13 +2636,15 @@ header {
 
 @media (min-width: 768px) {
   .container-welcome {
-    width: 750px;
+    padding-left: calc((100vw - 750px) / 2);
+    padding-right: calc((100vw - 750px) / 2);
   }
 }
 
 @media (min-width: 992px) {
   .container-welcome {
-    width: 970px;
+    padding-left: calc(((100vw - 970px) / 2) - 7.5px);
+    padding-right: calc(((100vw - 970px) / 2) - 7.5px);
   }
   .container-welcome .welcome-flex-wrapper .welcome-column-1 {
     width: 485px;
@@ -2633,7 +2656,8 @@ header {
 
 @media (min-width: 1260px) {
   .container-welcome {
-    width: 1200px;
+    padding-left: calc(((100vw - 1200px) / 2) - 7.5px);
+    padding-right: calc(((100vw - 1200px) / 2) - 7.5px);
   }
   .container-welcome .welcome-flex-wrapper .welcome-column-1 {
     width: 600px;
@@ -2648,16 +2672,16 @@ header {
   flex-wrap: wrap;
 }
 
-.container-welcome .welcome-flex-wrapper .welc1me-column-1 {
+.container-welcome .welcome-flex-wrapper .welcome-column-1 {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.container-welcome .welcome-flex-wrapper .welc1me-column-1 p {
+.container-welcome .welcome-flex-wrapper .welcome-column-1 p {
   margin-bottom: 40px;
 }
 
-.container-welcome .welcome-flex-wrapper .welc1me-column-1 .welcome-text p {
+.container-welcome .welcome-flex-wrapper .welcome-column-1 .welcome-text p {
   margin-bottom: 25px;
   line-height: 30px;
 }
@@ -2895,7 +2919,7 @@ header {
   display: block;
   float: left;
   position: relative;
-  vertical-align: top;
+  align-content: top;
 }
 
 .article-content {
@@ -2961,7 +2985,7 @@ header {
 }
 
 #container-clients {
-  width: 100%;
+  width: 100vw;
   height: 170px;
   padding: 50px 0;
   background-color: #ffffff;
@@ -2975,27 +2999,6 @@ header {
 
 #container-clients .clients .item:hover .pop-up-text, #container-clients .clients .item > *:hover .pop-up-text, #container-clients .clients .pop-up-text:hover .pop-up-text {
   display: block;
-  background-color: #323544;
-  color: white;
-  position: absolute;
-  max-width: 280px;
-  width: 280px;
-  bottom: 70px;
-  text-align: center;
-  left: calc(50% - 140px);
-  margin: 0 0 50px;
-}
-
-#container-clients .clients .item:hover .pop-up-text .client-arrow, #container-clients .clients .item > *:hover .pop-up-text .client-arrow, #container-clients .clients .pop-up-text:hover .pop-up-text .client-arrow {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 35px 35px 0px 35px;
-  border-color: #323544 transparent transparent transparent;
-  transform: rotate(0deg);
-  position: absolute;
-  left: calc(50% - 35px);
-  bottom: -35px;
 }
 
 #container-clients .clients .item {
@@ -3011,7 +3014,38 @@ header {
 
 #container-clients .clients .item .pop-up-text {
   display: none;
+  position: absolute;
+  color: white;
+  background-color: #323544;
   padding: 20px;
+  max-width: 280px;
+  width: 280px;
+  bottom: 70px;
+  text-align: center;
+  left: calc(50% - 140px);
+  margin: 0 0 50px;
+}
+
+#container-clients .clients .item .pop-up-text .item::after {
+  content: '';
+  position: absolute;
+  height: 50px;
+  bottom: 100%;
+  left: 0px;
+  width: 280px;
+  z-index: 5;
+}
+
+#container-clients .clients .item .pop-up-text .client-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px 35px 0px 35px;
+  border-color: #323544 transparent transparent transparent;
+  transform: rotate(0deg);
+  position: absolute;
+  left: calc(50% - 35px);
+  bottom: -35px;
 }
 
 #container-clients .clients .item .pop-up-text h3 {
@@ -3065,25 +3099,27 @@ header {
   padding-right: 15px;
   color: #fff;
   background-color: #323544;
-  overflow-x: clip;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .container-footer {
-    width: 750px;
+    padding-left: calc(((100vw - 750px) / 2));
+    padding-right: calc(((100vw - 750px) / 2));
   }
 }
 
 @media (min-width: 992px) {
   .container-footer {
-    width: 970px;
+    padding-left: calc(((100vw - 970px) / 2));
+    padding-right: calc(((100vw - 970px) / 2));
   }
 }
 
 @media (min-width: 1260px) {
   .container-footer {
-    width: 1200px;
+    padding-left: calc(((100vw - 1200px) / 2));
+    padding-right: calc(((100vw - 1200px) / 2));
   }
 }
 

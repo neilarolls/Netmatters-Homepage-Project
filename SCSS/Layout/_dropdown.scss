@@ -1,24 +1,22 @@
 #container-dropdown {
+    width: 100vw;
     display: none;
     overflow-x: clip;   
     height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    // margin-right: auto;
+    // margin-left: auto;
+
     color: #fff; // *SNAGGING* - Colour variables
     background-color: #323544;
 
-    @media (min-width: 768px) {
-        width: 750px;
-    }
-
     @media (min-width: 992px) {
-        width: 970px;
+        padding-left: calc((100vw - 970px) / 2);
+        padding-right: calc((100vw - 970px) / 2);
     }
 
     @media (min-width: 1260px) {
-        width: 1200px;
+        padding-left: calc((100vw - 1200px) / 2);
+        padding-right: calc((100vw - 1200px) / 2);
     }
 
 

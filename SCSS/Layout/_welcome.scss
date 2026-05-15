@@ -1,18 +1,21 @@
 .container-welcome {
 
     height: auto;
-    margin-right: auto;
-    margin-left: auto;
+    // margin-right: auto;
+    // margin-left: auto;
+
     padding: 50px 0;
     color: #fff; // *SNAGGING* - Colour variables
-    background-color: #323544; 
+    background-color: #323544;
 
     @media (min-width: 768px) {
-        width: 750px;
+        padding-left: calc((100vw - 750px) / 2);
+        padding-right: calc((100vw - 750px) / 2);
     }
 
     @media (min-width: 992px) {
-        width: 970px;
+        padding-left: calc(((100vw - 970px) / 2) - 7.5px);
+        padding-right: calc(((100vw - 970px) / 2) - 7.5px);
 
         .welcome-flex-wrapper {
             
@@ -27,7 +30,8 @@
     }
 
     @media (min-width: 1260px) {
-        width: 1200px;
+        padding-left: calc(((100vw - 1200px) / 2) - 7.5px);
+        padding-right: calc(((100vw - 1200px) / 2) - 7.5px);
 
         .welcome-flex-wrapper {
             
@@ -46,7 +50,7 @@
         display: flex;
         flex-wrap: wrap;
 
-        .welc1me-column-1 {
+        .welcome-column-1 {
             padding-left: 15px;
             padding-right: 15px;
 

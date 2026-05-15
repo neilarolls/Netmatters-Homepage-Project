@@ -15,55 +15,55 @@
   <body>
     <div id="sidemenu-desktop">         <!-- Side Menus -->
           <ul id="desktop-sidebar-services">
-            <li><a>SERVICES</a></li>
-            <li><a>BESPOKE SOFTWARE</a></li>
-            <li><a>IT SUPPORT</a></li>
-            <li><a>DIGITAL MARKETING</a></li>
-            <li><a>TELECOMS SERVICES</a></li>
-            <li><a>WEB DESIGN</a></li>
-            <li><a>CYBER SECURITY</a></li>
+            <li class="desktop-sidebar-title"><a>SERVICES</a></li>
+            <li class="desktop-sidebar-item"><a>BESPOKE SOFTWARE</a></li>
+            <li class="desktop-sidebar-item"><a>IT SUPPORT</a></li>
+            <li class="desktop-sidebar-item"><a>DIGITAL MARKETING</a></li>
+            <li class="desktop-sidebar-item"><a>TELECOMS SERVICES</a></li>
+            <li class="desktop-sidebar-item"><a>WEB DESIGN</a></li>
+            <li class="desktop-sidebar-item"><a>CYBER SECURITY</a></li>
           </ul>
           <ul id="desktop-sidebar-our-work">           
-            <li><a>OUR WORK</a></li> 
-            <li><a>CASE STUDIES</a></li>
-            <li><a>OUR DIGITAL MARKETING CLIENTS</a></li>
-            <li><a>OUR WEBSITE CLIENTS</a></li>
-            <li><a>OUR IT CLIENTS</a></li>
-            <li><a>OUR BESPOKE SOFTWARE CLIENTS</a></li>
-            <li><a>OUR TELECOMS CLIENTS</a></li>
+            <li class="desktop-sidebar-title"><a>OUR WORK</a></li> 
+            <li class="desktop-sidebar-item"><a>CASE STUDIES</a></li>
+            <li class="desktop-sidebar-item"><a>OUR DIGITAL MARKETING CLIENTS</a></li>
+            <li class="desktop-sidebar-item"><a>OUR WEBSITE CLIENTS</a></li>
+            <li class="desktop-sidebar-item"><a>OUR IT CLIENTS</a></li>
+            <li class="desktop-sidebar-item"><a>OUR BESPOKE SOFTWARE CLIENTS</a></li>
+            <li class="desktop-sidebar-item"><a>OUR TELECOMS CLIENTS</a></li>
           </ul>
           <ul id="desktop-sidebar-our-knowledge">            
-            <li><a>OUR KNOWLEDGE</a></li>
-            <li><a>TECHNOLOGIES</a></li>
-            <li><a>INDUSTRIES</a></li>
-            <li><a>NEWS</a></li>
-            <li><a>INSIGHTS</a></li>
+            <li class="desktop-sidebar-title"><a>OUR KNOWLEDGE</a></li>
+            <li class="desktop-sidebar-item"><a>TECHNOLOGIES</a></li>
+            <li class="desktop-sidebar-item"><a>INDUSTRIES</a></li>
+            <li class="desktop-sidebar-item"><a>NEWS</a></li>
+            <li class="desktop-sidebar-item"><a>INSIGHTS</a></li>
           </ul>
           <ul id="desktop-sidebar-training">
-            <li><a>TRAINING</a></li>
-            <li><a>TRAIN FOR A CAREER IN TECH</a></li>
-            <li><a>SKILLS BOOTCAMP</a></li>
-            <li><a>SCS FREQUENTLY ASKED QUESTIONS</a></li>
-            <li><a>SCION COLLABORATORS</a></li>
+            <li class="desktop-sidebar-title"><a>TRAINING</a></li>
+            <li class="desktop-sidebar-item"><a>TRAIN FOR A CAREER IN TECH</a></li>
+            <li class="desktop-sidebar-item"><a>SKILLS BOOTCAMP</a></li>
+            <li class="desktop-sidebar-item"><a>SCS FREQUENTLY ASKED QUESTIONS</a></li>
+            <li class="desktop-sidebar-item"><a>SCION COLLABORATORS</a></li>
           </ul>
           <ul id="desktop-sidebar-our-company">
-            <li><a>OUR COMPANY</a></li>
-            <li><a>WHY CHOOSE US?</a></li>
-            <li><a>OUR CULTURE</a></li>
-            <li><a>OUR TEAM</a></li>
-            <li><a>OUR CAREERS</a></li>
-            <li><a>OUR BENEFITS</a></li>
-            <li><a>OUR ACCREDITATIONS</a></li>
-            <li><a>LAPTOPS 4 LEARNING</a></li>
+            <li class="desktop-sidebar-title"><a>OUR COMPANY</a></li>
+            <li class="desktop-sidebar-item"><a>WHY CHOOSE US?</a></li>
+            <li class="desktop-sidebar-item"><a>OUR CULTURE</a></li>
+            <li class="desktop-sidebar-item"><a>OUR TEAM</a></li>
+            <li class="desktop-sidebar-item"><a>OUR CAREERS</a></li>
+            <li class="desktop-sidebar-item"><a>OUR BENEFITS</a></li>
+            <li class="desktop-sidebar-item"><a>OUR ACCREDITATIONS</a></li>
+            <li class="desktop-sidebar-item"><a>LAPTOPS 4 LEARNING</a></li>
           </ul>
           <ul id="desktop-sidebar-contact-us">
-            <li><a>CONTACT US</a></li>
-            <li><a>CAMBRIDGE OFFICE</a></li>
-            <li><a>WYMONDHAM OFFICE</a></li>
-            <li><a>GREAT YARMOUTH OFFICE</a></li>
+            <li class="desktop-sidebar-title"><a>CONTACT US</a></li>
+            <li class="desktop-sidebar-item"><a>CAMBRIDGE OFFICE</a></li>
+            <li class="desktop-sidebar-item"><a>WYMONDHAM OFFICE</a></li>
+            <li class="desktop-sidebar-item"><a>GREAT YARMOUTH OFFICE</a></li>
           </ul>
     </div>
-    <main>
+    <main id="side-menu-target">
       <div class="header">                <!-- HEADER -->
         <div class="container-contact">   <!-- CONTACT -->
           <div class="contact-v-wrapper">
@@ -869,7 +869,7 @@
           </div>
         </div>
       </div>
-      <div class="container-welcome">     <!-- WELCOME -->
+      <div class="container-welcome" id="welcome-container">     <!-- WELCOME -->
         <div class="welcome-flex-wrapper">
           <div class="welcome-column-1">
             <p><strong class="h2-36">Welcome To Netmatters</strong></p>
@@ -1239,6 +1239,7 @@
     <script type="text/javascript" src="js/jquery-4.0.0.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>                <!-- Version from slick branch compatible with jq4+ -->
     <script type="text/javascript" src="js/initSlick.js"></script>
+    <script type="text/javascript" src="js/burgerButton.js"></script>
   </body>
   
 </html>
