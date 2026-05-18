@@ -2991,14 +2991,14 @@ header {
   background-color: #ffffff;
 }
 
+#container-clients .clients .slick-list .slick-track .slick-slide div .item .client-image-wrapper:hover .pop-up-text, #container-clients .clients .slick-list .slick-track .slick-slide div .item .client-image-wrapper .pop-up-text:hover .pop-up-text {
+  display: block;
+}
+
 #container-clients .clients {
   overflow-x: clip;
   overflow-y: visible;
   min-width: 0;
-}
-
-#container-clients .clients .item:hover .pop-up-text, #container-clients .clients .item > *:hover .pop-up-text, #container-clients .clients .pop-up-text:hover .pop-up-text {
-  display: block;
 }
 
 #container-clients .clients .item {
@@ -3026,11 +3026,11 @@ header {
   margin: 0 0 50px;
 }
 
-#container-clients .clients .item .pop-up-text .item::after {
+#container-clients .clients .item .pop-up-text ::after {
   content: '';
   position: absolute;
   height: 50px;
-  bottom: 100%;
+  top: 100%;
   left: 0px;
   width: 280px;
   z-index: 5;
