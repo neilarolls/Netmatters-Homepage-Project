@@ -458,10 +458,12 @@ body {
 #sidemenu-desktop {
   position: fixed;
   background-color: #262834;
+  background-attachment: scroll;
   color: white;
   width: 335px;
   height: 100vh;
   right: 0;
+  overflow-x: clip;
   z-index: -5;
 }
 
@@ -471,14 +473,14 @@ body {
   width: 0.5rem;
   height: 0.5rem;
   top: 0;
-  left: -8px;
+  left: -16px;
   z-index: 5;
 }
 
 #sidemenu-desktop .desktop-sidebar-item {
   height: 51px;
   font-size: 0.875rem;
-  padding: 14px 20px 26px 20px;
+  padding: 14px 20px 26px 35px;
   border-top: 1px solid rgba(0, 0, 0, 0.45);
   letter-spacing: 0.4px;
   width: 335px;

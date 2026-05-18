@@ -1,5 +1,11 @@
+// **************************************************************
+// ***  Make sure the main element has relative positioning.  ***
+// **************************************************************
+
+$("main").css({"position":"relative"});
+
 // ********************************************************
-// ***   These vaiables track the status of the menu    ***
+// ***   Variables to track the status of the menu.     ***
 // ********************************************************
 
 let bmOpen = false;
@@ -7,7 +13,7 @@ let bmClosed = true;
 
 // ********************************************************
 // ***   Event listener on Menu Button toggles menu     ***
-// ***   open/closed.                                   ***
+// ***   open/closed. Also scrollbars are toggled here. ***
 // ********************************************************
 
 $("#contact-burger-btn").on("click", function() {
@@ -24,47 +30,20 @@ $("#contact-burger-btn").on("click", function() {
     }
 })
 
+// ********************************************************
+// ***   Animate the opening and closing of the menu    ***
+// ********************************************************
+
 function bmOpenMenu() {
 
-    let currentWidth = window.innerWidth;
-    let slideTarget = document.querySelector('#side-menu-target');
-
-    $("main").css({"position":"relative"});
-    // $("main").width(currentWidth + 335);
     $("main").animate({"right":"335px"}, 300, "swing");
 
 }
 
 function bmCloseMenu() {
 
-    let currentWidth = window.innerWidth;
-    let slideTarget = document.querySelector('#side-menu-target');
-
     $("main").animate({"right":"0"}, 300, "swing");
 
 }
 
-// function updatePadding() {
-//     let currentWidth = window.innerWidth;
-//     let newPadding = 0;
-
-//     if (bmOpen) {
-//         currentWidth -= 335;
-//     }
-
-//     $("#welcome-container").css({"padding-left": newPadding, "padding-right": newPadding, "width":"1200"});
-
-//     if (currentWidth >= 1260) {
-//         newPadding = (currentWidth - 1200) / 2;
-//         $("#welcome-container").css({"padding-left": newPadding, "padding-right": newPadding, "width":"1200"});
-//     } else if (currentWidth >= 992) {
-//         newPadding = (currentWidth - 970) / 2;
-//         $("#welcome-container").css({"padding-left": newPadding, "padding-right": newPadding, "width":"970"});
-//     } else if (currentWidth >= 768) {
-//         newPadding = (currentWidth - 750) / 2;
-//         $("#welcome-container").css({"padding-left": newPadding, "padding-right": newPadding, "width":"750"});
-//     }
-
-// }
-
-// const bbIntervalID = setInterval(updatePadding, 10);
+// const clientHoverIntervalID = setInterval(getZones, 10);
