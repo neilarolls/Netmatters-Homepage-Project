@@ -1,5 +1,5 @@
 .container-banner {
-    width: 100vw;
+    width: calc((100vw - 15) * 1px);
     min-height: 550px;
     padding: 0;
     color: #fff; // *SNAGGING* - Colour variables

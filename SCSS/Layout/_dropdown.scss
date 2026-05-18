@@ -1,5 +1,5 @@
 #container-dropdown {
-    width: 100vw;
+    width: calc((100vw - 15) * 1px);
     display: none;
     overflow-x: clip;   
     height: auto;

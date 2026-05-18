@@ -14,60 +14,57 @@ $("#contact-burger-btn").on("click", function() {
     if (bmClosed) {
         bmClosed = false;
         bmOpen = true;
+        $("#sidemenu-desktop").css({"overflow-y":"scroll"});
         bmOpenMenu();
     } else {
         bmOpen = false;
         bmClosed = true;
         bmCloseMenu();
+        $("#sidemenu-desktop").css({"overflow-y":"hidden"});
     }
 })
 
 function bmOpenMenu() {
 
     let currentWidth = window.innerWidth;
+    let slideTarget = document.querySelector('#side-menu-target');
 
     $("main").css({"position":"relative"});
-    $("main").width(currentWidth + 335);
-    $("main").animate({"right":"335px"}, 300 );
-    while (getComputedStyle('#side-menu-target').animationName !== 'none') {
-    }
+    // $("main").width(currentWidth + 335);
+    $("main").animate({"right":"335px"}, 300, "swing");
 
 }
 
 function bmCloseMenu() {
 
     let currentWidth = window.innerWidth;
+    let slideTarget = document.querySelector('#side-menu-target');
 
-    $("main").animate({"right":"0"}, 300 );
-
-    while (getComputedStyle('#side-menu-target').animationName !== 'none') {
-    }
-
-    $("main").width(currentWidth - 335);
-    $("main").css({"position":"static"});
-    
-}
-
-function updatePadding() {
-    let currentWidth = window.innerWidth;
-    let newPadding = 0;
-
-    if (bmOpen) {
-        currentWidth -= 335;
-    }
-
-    if (currentWidth >= 1260) {
-        newPadding = (currentWidth - 1200) / 2;
-    } else if (currentWidth >= 992) {
-        newPadding = (currentWidth - 970) / 2;
-    } else if (currentWidth >= 768) {        
-        newPadding = (currentWidth - 750) / 2;
-    } else if (currentWidth)
-
-
-
-
-    $("#welcome-container").css({"padding-left": newPadding, "padding-right": newPadding})
+    $("main").animate({"right":"0"}, 300, "swing");
 
 }
-// const bbIntervalID = setInterval(updatePadding(), 10);
+
+// function updatePadding() {
+//     let currentWidth = window.innerWidth;
+//     let newPadding = 0;
+
+//     if (bmOpen) {
+//         currentWidth -= 335;
+//     }
+
+//     $("#welcome-container").css({"padding-left": newPadding, "padding-right": newPadding, "width":"1200"});
+
+//     if (currentWidth >= 1260) {
+//         newPadding = (currentWidth - 1200) / 2;
+//         $("#welcome-container").css({"padding-left": newPadding, "padding-right": newPadding, "width":"1200"});
+//     } else if (currentWidth >= 992) {
+//         newPadding = (currentWidth - 970) / 2;
+//         $("#welcome-container").css({"padding-left": newPadding, "padding-right": newPadding, "width":"970"});
+//     } else if (currentWidth >= 768) {
+//         newPadding = (currentWidth - 750) / 2;
+//         $("#welcome-container").css({"padding-left": newPadding, "padding-right": newPadding, "width":"750"});
+//     }
+
+// }
+
+// const bbIntervalID = setInterval(updatePadding, 10);

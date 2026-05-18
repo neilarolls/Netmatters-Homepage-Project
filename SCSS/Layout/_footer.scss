@@ -43,7 +43,7 @@
             }
 
             #footer-company-info {
-                width: 100vw;
+                width: calc((100vw - 15) * 1px);
                 display: flex;
                 flex-direction: column;
                 align-content: start;
@@ -200,7 +200,7 @@
     }
 }
 .sub-footer-top {
-        width: 100vw;
+        width: calc((100vw - 15) * 1px);
         background-color: #212330;
         color: white;
 
