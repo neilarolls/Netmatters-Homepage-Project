@@ -11,6 +11,60 @@ $("main").css({"position":"relative"});
 let bmOpen = false;
 let bmClosed = true;
 
+let menuDesktop = false;
+let menuMobile = true;
+
+// ********************************************************
+// ***   Set menu flags according to width at start.     ***
+// ********************************************************
+
+const startingWidth = window.innerWidth;
+
+if (startingWidth >= 992) {
+    menuDesktop = true;
+    menuMobile = false;
+}
+
+
+$("#sidemenu-desktop").css({"width":"335px"});
+$("#sidemenu-mobile").css({"width":"260px"});
+
+
+
+
+function updateMenus() {
+
+    let currentWidth = window.innerWidth;
+
+    
+    if (currentWidth >= 992) {
+        $("#sidemenu-mobile").css({"display":"none"});
+        $("#sidemenu-desktop").css({"display":"block"});
+    } else {
+        $("#sidemenu-mobile").css({"display":"block"});
+        $("#sidemenu-desktop").css({"display":"none"});
+    }
+
+    if (currentWidth >= 992 && menuMobile && bmOpen) {
+
+        menuMobile = false;
+        menuDesktop = true;
+
+        $("main").animate({"right":"335px"}, 100, "swing");
+    }
+
+    if (currentWidth < 992 && menuDesktop && bmOpen) {
+
+        menuMobile = true;
+        menuDesktop = false;
+
+        $("main").animate({"right":"260px"}, 100, "swing");
+    }
+
+}
+
+const mainLoopID = setInterval(updateMenus, 10);
+
 // ********************************************************
 // ***   Event listener on Menu Button toggles menu     ***
 // ***   open/closed. Also scrollbars are toggled here. ***
@@ -20,13 +74,13 @@ $("#contact-burger-btn").on("click", function() {
     if (bmClosed) {
         bmClosed = false;
         bmOpen = true;
-        $("#sidemenu-desktop").css({"overflow-y":"scroll"});
+        $(".sidemenu-both").css({"overflow-y":"scroll"});
         bmOpenMenu();
     } else {
         bmOpen = false;
         bmClosed = true;
         bmCloseMenu();
-        $("#sidemenu-desktop").css({"overflow-y":"hidden"});
+        $(".sidemenu-both").css({"overflow-y":"hidden"});
     }
 })
 
@@ -35,9 +89,13 @@ $("#contact-burger-btn").on("click", function() {
 // ********************************************************
 
 function bmOpenMenu() {
+    let currentWidth = window.innerWidth;
 
-    $("main").animate({"right":"335px"}, 300, "swing");
-
+    if (currentWidth >= 992) {
+        $("main").animate({"right":"335px"}, 300, "swing");
+    } else {        
+        $("main").animate({"right":"260px"}, 300, "swing");
+    }
 }
 
 function bmCloseMenu() {

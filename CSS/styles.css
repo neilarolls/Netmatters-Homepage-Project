@@ -465,6 +465,7 @@ body {
   right: 0;
   overflow-x: clip;
   z-index: -5;
+  list-style-type: none;
 }
 
 #sidemenu-desktop .desktop-sidebar-item::before {
@@ -495,6 +496,108 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   letter-spacing: 0.4px;
   width: 335px;
+}
+
+#sidemenu-mobile {
+  list-style-type: none;
+  position: fixed;
+  background-color: #333645;
+  background-attachment: scroll;
+  padding: 21px;
+  color: white;
+  width: 260px;
+  height: 100vh;
+  right: 0;
+  overflow-x: clip;
+  z-index: -5;
+  text-align: center;
+}
+
+#sidemenu-mobile #sidemenu-mobile-contact-btn a {
+  display: inline-block;
+  height: 64.7px;
+  width: 218px;
+  padding: 18px 0 19px;
+  font-size: 1.125rem;
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#sidemenu-mobile .mobile-sidebar-item {
+  width: 218px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: #262834;
+}
+
+#sidemenu-mobile .mobile-sidebar-item a {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 10px;
+  letter-spacing: 0.4px;
+  width: 218px;
+  color: white;
+  text-decoration: none;
+}
+
+#sidemenu-mobile .mobile-sidebar-title {
+  height: 113px;
+  background-color: #333645;
+  font-size: 1.125rem;
+  padding: 12px 0 18px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  letter-spacing: 0.4px;
+  width: 218px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#sidemenu-mobile .mobile-sidebar-title .sidemenu-title-small {
+  font-size: 0.625rem;
+}
+
+#sidemenu-mobile .mobile-sidebar-item-alt {
+  text-align: left;
+  align-content: center;
+  padding-left: 1.75rem;
+  height: 51px;
+  font-size: 0.875rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+  letter-spacing: 0.4px;
+  width: 218px;
+  background-color: #262834;
+}
+
+#sidemenu-mobile .mobile-sidebar-item-alt a {
+  display: inline;
+  font-size: 0.875rem;
+  padding: 10px 10px 10px 0;
+  letter-spacing: 0.4px;
+  width: 218px;
+  color: white;
+  text-decoration: none;
+}
+
+#sidemenu-mobile .mobile-sidebar-title-alt {
+  height: 56px;
+  background-color: #333645;
+  font-size: 1rem;
+  padding: 18px 20px 22px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.4px;
+  width: 218px;
+}
+
+#sidemenu-mobile .mobile-sidebar-item-alt::before {
+  content: url("../img/icons/angles-right-solid-sm.png");
+  position: relative;
+  width: 0.5rem;
+  height: 0.5rem;
+  top: 0;
+  left: -16px;
+  z-index: 5;
 }
 
 .container-contact {
