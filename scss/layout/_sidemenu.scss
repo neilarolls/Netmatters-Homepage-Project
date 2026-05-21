@@ -24,7 +24,7 @@
         position: relative;
         width: 0.5rem;
         height: 0.5rem;
-        top: 31%;
+        top: 26%;
         left: 6%;
         z-index: 5;
     }
@@ -32,7 +32,8 @@
     .desktop-sidebar-item {
 
         :focus {
-            outline: 1px solid white;            
+            box-shadow: inset 0 0 1px 1px white;
+            border-radius: 0.2rem;
         }
 
         width: 335px;
@@ -42,20 +43,34 @@
         border-top: 1px solid rgba(0,0,0,0.45);
         letter-spacing: 0.4px;
 
+        
         a {
+            display:inline-block;
             text-decoration: none;
             color: white;
             position: relative;
-            top: 31%;
-            left: 8%;
+            bottom: 48%;
+            left: 0%;
             width: 335px;
             height: 51px;
-            padding: 20px 15px;
+            padding: 15px 15px 25px 15px;
+        }
+        
+        .sidemenu-anchor {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            
         }
     }
 
-
     .desktop-sidebar-title {
+
+        :focus {
+            box-shadow: inset 0 0 1px 1px white;
+            border-radius: 0.2rem;
+        }
 
         height: 56px;
         background-color: #333645;
@@ -67,14 +82,22 @@
         width: 335px;
 
         a {
+            display:inline-block;
             text-decoration: none;
             color: white;
             position: relative;
-            top: 31%;
-            left: 8%;
+            bottom: 0;
+            left: 0;
             width: 335px;
             height: 56px;
-            padding: 20px 17.5px;
+            padding: 16px 15px 24px 15px;
+        }
+
+        .sidemenu-anchor {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
         }
     }
 
@@ -109,19 +132,79 @@
                 display: inline-block;
                 height: 64.7px;
                 width: 218px;
-                padding: 18px 0 19px;
+                padding: 20px 0 17px;
                 font-size: 1.125rem;
                 color: white;
                 text-decoration: none;
                 border: 1px solid rgba(255,255,255,0.1);
+                border-radius: 3px;
+
+                &:hover {
+                    background-color: #3d404e;
+                }
+            }
+        }
+
+        .mobile-sidebar-title {
+
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 218px;
+            height: 113px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+
+            .sidemenu-anchor {
+
+                width: 218px;
+                height: 113px;
+                padding: 12px 0 18px 0;
+                position: relative;
+                top: 0;
+                left: 0;
+                background-color: #333645;
+                font-size: 1.125rem;
+                border: 1px solid rgba(255,255,255,0.1);
+                border-radius: 3px;
+                letter-spacing: 0.4px;
+                cursor: pointer;
+
+                .sidemenu-title-small {
+                    font-size: 0.625rem;
+                }
+
+
+                .mobile-sidebar-title-link {
+
+                    display:inline-block;
+                    text-decoration: none;
+                    color: white;
+                    position: relative;
+                    top: -1rem;
+                    left: 0;
+                    width: 218px;
+                    height: 56px;
+                    padding: 16px 15px 24px 15px;
+
+                }
+
+                &:hover {
+                    background-color: #3d404e;
+                }
             }
         }
 
         .mobile-sidebar-item {
 
+            :focus {
+                box-shadow: inset 0 0 1px 1px white;
+                border-radius: 0.2rem;
+            }
+
             width: 218px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.45);
             border-top: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.45);
             background-color: #262834;
 
             a {
@@ -133,25 +216,46 @@
                 color: white;
                 text-decoration: none;
             }
-        }
 
-
-        .mobile-sidebar-title {
-            height: 113px;
-            background-color: #333645;
-            font-size: 1.125rem;
-            padding: 12px 0 18px 0;
-            border: 1px solid rgba(255,255,255,0.1);
-            letter-spacing: 0.4px;
-            width: 218px;
-            margin-bottom: 20px;
-            margin-top: 20px;
-
-            .sidemenu-title-small {
-                font-size: 0.625rem;
-            }
         }
     }
+
+    // .desktop-sidebar-item {
+
+    //     :focus {
+    //         box-shadow: inset 0 0 1px 1px white;
+    //         border-radius: 0.2rem;
+    //     }
+
+    //     width: 335px;
+    //     height: 51px;
+    //     font-size: 0.875rem;
+    //     // padding: 14px 20px 26px 35px;
+    //     border-top: 1px solid rgba(0,0,0,0.45);
+    //     letter-spacing: 0.4px;
+
+        
+    //     a {
+    //         display:inline-block;
+    //         text-decoration: none;
+    //         color: white;
+    //         position: relative;
+    //         bottom: 48%;
+    //         left: 0%;
+    //         width: 335px;
+    //         height: 51px;
+    //         padding: 15px 15px 25px 15px;
+    //     }
+        
+    //     .sidemenu-anchor {
+    //         display: block;
+    //         width: 100%;
+    //         height: 100%;
+    //         position: relative;
+            
+    //     }
+    // }
+
 
     .mobile-sidebar-item-alt {
 

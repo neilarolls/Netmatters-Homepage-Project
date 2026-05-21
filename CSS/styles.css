@@ -479,7 +479,7 @@ body {
   position: relative;
   width: 0.5rem;
   height: 0.5rem;
-  top: 31%;
+  top: 26%;
   left: 6%;
   z-index: 5;
 }
@@ -493,18 +493,27 @@ body {
 }
 
 #sidemenu-desktop .desktop-sidebar-item :focus {
-  outline: 1px solid white;
+  box-shadow: inset 0 0 1px 1px white;
+  border-radius: 0.2rem;
 }
 
 #sidemenu-desktop .desktop-sidebar-item a {
+  display: inline-block;
   text-decoration: none;
   color: white;
   position: relative;
-  top: 31%;
-  left: 8%;
+  bottom: 48%;
+  left: 0%;
   width: 335px;
   height: 51px;
-  padding: 20px 15px;
+  padding: 15px 15px 25px 15px;
+}
+
+#sidemenu-desktop .desktop-sidebar-item .sidemenu-anchor {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 #sidemenu-desktop .desktop-sidebar-title {
@@ -517,15 +526,28 @@ body {
   width: 335px;
 }
 
+#sidemenu-desktop .desktop-sidebar-title :focus {
+  box-shadow: inset 0 0 1px 1px white;
+  border-radius: 0.2rem;
+}
+
 #sidemenu-desktop .desktop-sidebar-title a {
+  display: inline-block;
   text-decoration: none;
   color: white;
   position: relative;
-  top: 31%;
-  left: 8%;
+  bottom: 0;
+  left: 0;
   width: 335px;
   height: 56px;
-  padding: 20px 17.5px;
+  padding: 16px 15px 24px 15px;
+}
+
+#sidemenu-desktop .desktop-sidebar-title .sidemenu-anchor {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 #sidemenu-mobile {
@@ -555,18 +577,73 @@ body {
   display: inline-block;
   height: 64.7px;
   width: 218px;
-  padding: 18px 0 19px;
+  padding: 20px 0 17px;
   font-size: 1.125rem;
   color: white;
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+#sidemenu-mobile #mobile-sidebar-top-section #sidemenu-mobile-contact-btn a:hover {
+  background-color: #3d404e;
+}
+
+#sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-title {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 113px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-title .sidemenu-anchor {
+  width: 218px;
+  height: 113px;
+  padding: 12px 0 18px 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #333645;
+  font-size: 1.125rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+}
+
+#sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-title .sidemenu-anchor .sidemenu-title-small {
+  font-size: 0.625rem;
+}
+
+#sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-title .sidemenu-anchor .mobile-sidebar-title-link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  top: -1rem;
+  left: 0;
+  width: 218px;
+  height: 56px;
+  padding: 16px 15px 24px 15px;
+}
+
+#sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-title .sidemenu-anchor:hover {
+  background-color: #3d404e;
 }
 
 #sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-item {
   width: 218px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
   background-color: #262834;
+}
+
+#sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-item :focus {
+  box-shadow: inset 0 0 1px 1px white;
+  border-radius: 0.2rem;
 }
 
 #sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-item a {
@@ -577,22 +654,6 @@ body {
   width: 218px;
   color: white;
   text-decoration: none;
-}
-
-#sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-title {
-  height: 113px;
-  background-color: #333645;
-  font-size: 1.125rem;
-  padding: 12px 0 18px 0;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  letter-spacing: 0.4px;
-  width: 218px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-#sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-title .sidemenu-title-small {
-  font-size: 0.625rem;
 }
 
 #sidemenu-mobile .mobile-sidebar-item-alt {
