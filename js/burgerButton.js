@@ -1,8 +1,8 @@
 // **************************************************************
-// ***  Make sure the main element has relative positioning.  ***
+// ***  Make sure the body element has relative positioning.  ***
 // **************************************************************
 
-$("main").css({"position":"relative"});
+$("body").css({"position":"relative"});
 
 // ********************************************************
 // ***   Variables to track the status of the menu.     ***
@@ -15,19 +15,25 @@ let menuDesktop = false;
 let menuMobile = true;
 
 // ********************************************************
-// ***   Set menu flags according to width at start.     ***
+// ***   Set menu flags according to width at start.    ***
 // ********************************************************
 
 const startingWidth = window.innerWidth;
 
+$("#sidemenu-wrapper").css({"width":"275px"});
+
 if (startingWidth >= 992) {
     menuDesktop = true;
     menuMobile = false;
+    $("#sidemenu-wrapper").css({"width":"350px"});
 }
 
+// *********************************
+// ***   Set widths of menus.    ***
+// *********************************
 
-$("#sidemenu-desktop").css({"width":"335px"});
-$("#sidemenu-mobile").css({"width":"260px"});
+$("#sidemenu-desktop").css({"width":"350px"});
+$("#sidemenu-mobile").css({"width":"275px"});
 
 
 
@@ -50,7 +56,7 @@ function updateMenus() {
         menuMobile = false;
         menuDesktop = true;
 
-        $("main").animate({"right":"335px"}, 100, "swing");
+        $("body").animate({"right":"350px"}, 100, "swing");
     }
 
     if (currentWidth < 992 && menuDesktop && bmOpen) {
@@ -58,19 +64,24 @@ function updateMenus() {
         menuMobile = true;
         menuDesktop = false;
 
-        $("main").animate({"right":"260px"}, 100, "swing");
+        $("body").animate({"right":"275px"}, 100, "swing");
     }
 
 }
 
-const mainLoopID = setInterval(updateMenus, 10);
+const sidemenuLoopID = setInterval(updateMenus, 5);
+
+
 
 // ********************************************************
 // ***   Event listener on Menu Button toggles menu     ***
 // ***   open/closed. Also scrollbars are toggled here. ***
 // ********************************************************
 
-$("#contact-burger-btn").on("click", function() {
+$("#contact-burger-btn").on("click", function(e) {
+
+    e.preventDefault();
+
     if (bmClosed) {
         bmClosed = false;
         bmOpen = true;
@@ -89,18 +100,19 @@ $("#contact-burger-btn").on("click", function() {
 // ********************************************************
 
 function bmOpenMenu() {
+
     let currentWidth = window.innerWidth;
 
     if (currentWidth >= 992) {
-        $("main").animate({"right":"335px"}, 300, "swing");
-    } else {        
-        $("main").animate({"right":"260px"}, 300, "swing");
+        $("body").animate({"right":"350px"}, 300, "swing");
+    } else {
+        $("body").animate({"right":"275px"}, 300, "swing");
     }
 }
 
 function bmCloseMenu() {
 
-    $("main").animate({"right":"0"}, 300, "swing");
+    $("body").animate({"right":"0"}, 300, "swing");
 
 }
 

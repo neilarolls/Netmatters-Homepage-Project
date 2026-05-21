@@ -466,6 +466,12 @@ body {
   overflow-x: clip;
   z-index: -5;
   list-style-type: none;
+  scrollbar-gutter: stable;
+  padding-right: 10px;
+}
+
+#sidemenu-desktop:focus {
+  outline: none;
 }
 
 #sidemenu-desktop .desktop-sidebar-item::before {
@@ -473,29 +479,53 @@ body {
   position: relative;
   width: 0.5rem;
   height: 0.5rem;
-  top: 0;
-  left: -16px;
+  top: 31%;
+  left: 6%;
   z-index: 5;
 }
 
 #sidemenu-desktop .desktop-sidebar-item {
+  width: 335px;
   height: 51px;
   font-size: 0.875rem;
-  padding: 14px 20px 26px 35px;
   border-top: 1px solid rgba(0, 0, 0, 0.45);
   letter-spacing: 0.4px;
+}
+
+#sidemenu-desktop .desktop-sidebar-item :focus {
+  outline: 1px solid white;
+}
+
+#sidemenu-desktop .desktop-sidebar-item a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  top: 31%;
+  left: 8%;
   width: 335px;
+  height: 51px;
+  padding: 20px 15px;
 }
 
 #sidemenu-desktop .desktop-sidebar-title {
   height: 56px;
   background-color: #333645;
   font-size: 1rem;
-  padding: 18px 20px 22px 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   letter-spacing: 0.4px;
   width: 335px;
+}
+
+#sidemenu-desktop .desktop-sidebar-title a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  top: 31%;
+  left: 8%;
+  width: 335px;
+  height: 56px;
+  padding: 20px 17.5px;
 }
 
 #sidemenu-mobile {
@@ -503,7 +533,6 @@ body {
   position: fixed;
   background-color: #333645;
   background-attachment: scroll;
-  padding: 21px;
   color: white;
   width: 260px;
   height: 100vh;
@@ -511,9 +540,18 @@ body {
   overflow-x: clip;
   z-index: -5;
   text-align: center;
+  scrollbar-gutter: stable;
 }
 
-#sidemenu-mobile #sidemenu-mobile-contact-btn a {
+#sidemenu-mobile:focus {
+  outline: none;
+}
+
+#sidemenu-mobile #mobile-sidebar-top-section {
+  padding: 21px;
+}
+
+#sidemenu-mobile #mobile-sidebar-top-section #sidemenu-mobile-contact-btn a {
   display: inline-block;
   height: 64.7px;
   width: 218px;
@@ -524,14 +562,14 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#sidemenu-mobile .mobile-sidebar-item {
+#sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-item {
   width: 218px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.45);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   background-color: #262834;
 }
 
-#sidemenu-mobile .mobile-sidebar-item a {
+#sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-item a {
   display: inline-block;
   font-size: 1rem;
   padding: 10px;
@@ -541,7 +579,7 @@ body {
   text-decoration: none;
 }
 
-#sidemenu-mobile .mobile-sidebar-title {
+#sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-title {
   height: 113px;
   background-color: #333645;
   font-size: 1.125rem;
@@ -553,26 +591,26 @@ body {
   margin-top: 20px;
 }
 
-#sidemenu-mobile .mobile-sidebar-title .sidemenu-title-small {
+#sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-title .sidemenu-title-small {
   font-size: 0.625rem;
 }
 
 #sidemenu-mobile .mobile-sidebar-item-alt {
   text-align: left;
   align-content: center;
-  padding-left: 1.75rem;
   height: 51px;
   font-size: 0.875rem;
   border-top: 1px solid rgba(0, 0, 0, 0.45);
   letter-spacing: 0.4px;
-  width: 218px;
+  width: 260px;
   background-color: #262834;
+  padding-left: 28px;
+  padding-right: 1.125rem;
 }
 
 #sidemenu-mobile .mobile-sidebar-item-alt a {
   display: inline;
   font-size: 0.875rem;
-  padding: 10px 10px 10px 0;
   letter-spacing: 0.4px;
   width: 218px;
   color: white;
@@ -587,7 +625,8 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   letter-spacing: 0.4px;
-  width: 218px;
+  width: 260px;
+  text-align: left;
 }
 
 #sidemenu-mobile .mobile-sidebar-item-alt::before {
