@@ -573,6 +573,10 @@ body {
   padding: 21px;
 }
 
+#sidemenu-mobile #mobile-sidebar-top-section .mobile-subsection:hover .mobile-sidebar-title * {
+  background-color: #3d404e;
+}
+
 #sidemenu-mobile #mobile-sidebar-top-section #sidemenu-mobile-contact-btn a {
   display: inline-block;
   height: 64.7px;
@@ -583,10 +587,6 @@ body {
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 3px;
-}
-
-#sidemenu-mobile #mobile-sidebar-top-section #sidemenu-mobile-contact-btn a:hover {
-  background-color: #3d404e;
 }
 
 #sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-title {
@@ -630,10 +630,6 @@ body {
   padding: 16px 15px 24px 15px;
 }
 
-#sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-title .sidemenu-anchor:hover {
-  background-color: #3d404e;
-}
-
 #sidemenu-mobile #mobile-sidebar-top-section .mobile-sidebar-item {
   width: 218px;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -656,26 +652,50 @@ body {
   text-decoration: none;
 }
 
+#sidemenu-mobile .mobile-sidebar-item-alt::before {
+  content: url("../img/icons/angles-right-solid-sm.png");
+  position: relative;
+  width: 0.5rem;
+  height: 0.5rem;
+  top: 0;
+  left: -16px;
+  z-index: 5;
+}
+
 #sidemenu-mobile .mobile-sidebar-item-alt {
   text-align: left;
   align-content: center;
+  width: 260px;
   height: 51px;
   font-size: 0.875rem;
   border-top: 1px solid rgba(0, 0, 0, 0.45);
   letter-spacing: 0.4px;
-  width: 260px;
   background-color: #262834;
-  padding-left: 28px;
-  padding-right: 1.125rem;
+}
+
+#sidemenu-mobile .mobile-sidebar-item-alt:focus {
+  box-shadow: inset 0 0 1px 1px white;
+  border-radius: 0.2rem;
 }
 
 #sidemenu-mobile .mobile-sidebar-item-alt a {
-  display: inline;
-  font-size: 0.875rem;
-  letter-spacing: 0.4px;
-  width: 218px;
-  color: white;
+  display: inline-block;
   text-decoration: none;
+  color: white;
+  position: relative;
+  font-size: 0.875rem;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 51px;
+  padding: 15px 15px 25px 15px;
+}
+
+#sidemenu-mobile .mobile-sidebar-item-alt .sidemenu-anchor {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 #sidemenu-mobile .mobile-sidebar-title-alt {
@@ -688,16 +708,6 @@ body {
   letter-spacing: 0.4px;
   width: 260px;
   text-align: left;
-}
-
-#sidemenu-mobile .mobile-sidebar-item-alt::before {
-  content: url("../img/icons/angles-right-solid-sm.png");
-  position: relative;
-  width: 0.5rem;
-  height: 0.5rem;
-  top: 0;
-  left: -16px;
-  z-index: 5;
 }
 
 .container-contact {

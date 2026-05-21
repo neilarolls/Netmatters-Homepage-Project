@@ -39,7 +39,6 @@
         width: 335px;
         height: 51px;
         font-size: 0.875rem;
-        // padding: 14px 20px 26px 35px;
         border-top: 1px solid rgba(0,0,0,0.45);
         letter-spacing: 0.4px;
 
@@ -124,6 +123,16 @@
 
     #mobile-sidebar-top-section {
 
+        .mobile-subsection {
+            
+            &:hover {
+
+                .mobile-sidebar-title * {
+                    background-color: #3d404e;
+                }
+            }
+        }
+
         padding: 21px;
 
         #sidemenu-mobile-contact-btn {
@@ -139,9 +148,7 @@
                 border: 1px solid rgba(255,255,255,0.1);
                 border-radius: 3px;
 
-                &:hover {
-                    background-color: #3d404e;
-                }
+
             }
         }
 
@@ -189,9 +196,9 @@
 
                 }
 
-                &:hover {
-                    background-color: #3d404e;
-                }
+                // &:hover {
+                //     background-color: #3d404e;
+                // }
             }
         }
 
@@ -220,64 +227,57 @@
         }
     }
 
-    // .desktop-sidebar-item {
+    .mobile-sidebar-item-alt::before {
 
-    //     :focus {
-    //         box-shadow: inset 0 0 1px 1px white;
-    //         border-radius: 0.2rem;
-    //     }
+        content: url("../img/icons/angles-right-solid-sm.png");
+        position: relative;
+        width: 0.5rem;
+        height: 0.5rem;
+        top: 0;
+        left: -16px;
+        z-index: 5;
 
-    //     width: 335px;
-    //     height: 51px;
-    //     font-size: 0.875rem;
-    //     // padding: 14px 20px 26px 35px;
-    //     border-top: 1px solid rgba(0,0,0,0.45);
-    //     letter-spacing: 0.4px;
-
-        
-    //     a {
-    //         display:inline-block;
-    //         text-decoration: none;
-    //         color: white;
-    //         position: relative;
-    //         bottom: 48%;
-    //         left: 0%;
-    //         width: 335px;
-    //         height: 51px;
-    //         padding: 15px 15px 25px 15px;
-    //     }
-        
-    //     .sidemenu-anchor {
-    //         display: block;
-    //         width: 100%;
-    //         height: 100%;
-    //         position: relative;
-            
-    //     }
-    // }
-
+    }
 
     .mobile-sidebar-item-alt {
 
-        text-align: left;
-        align-content: center;
-        height: 51px;
-        font-size: 0.875rem;
-        border-top: 1px solid rgba(0,0,0,0.45);
-        letter-spacing: 0.4px;
-        width: 260px;
-        background-color: #262834;
-        padding-left: 28px;
-        padding-right: 1.125rem;
+            &:focus {
+                box-shadow: inset 0 0 1px 1px white;
+                border-radius: 0.2rem;
+            }
 
-        a {
-            display: inline;
+            text-align: left;
+            align-content: center;
+            width: 260px;
+            height: 51px;
             font-size: 0.875rem;
+            border-top: 1px solid rgba(0,0,0,0.45);
             letter-spacing: 0.4px;
-            width: 218px;
-            color: white;
-            text-decoration: none;
-        }
+            background-color: #262834;
+            // padding-left: 1.75rem;
+            // padding-right: 1.125rem;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                position: relative;
+                font-size: 0.875rem;
+                top: 0;
+                left: 0;
+                width: 218px;
+                height: 51px;
+                padding: 15px 15px 25px 15px;
+            }
+
+            .sidemenu-anchor {
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                
+            }
+
     }
 
 
@@ -292,18 +292,6 @@
         letter-spacing: 0.4px;
         width: 260px;
         text-align: left;
-
-    }
-
-    .mobile-sidebar-item-alt::before {
-
-        content: url("../img/icons/angles-right-solid-sm.png");
-        position: relative;
-        width: 0.5rem;
-        height: 0.5rem;
-        top: 0;
-        left: -16px;
-        z-index: 5;
 
     }
 
