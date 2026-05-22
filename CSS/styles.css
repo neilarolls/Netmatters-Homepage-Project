@@ -655,22 +655,9 @@ body {
 #sidemenu-mobile .mobile-sidebar-item-alt::before {
   content: url("../img/icons/angles-right-solid-sm.png");
   position: relative;
-  width: 0.5rem;
-  height: 0.5rem;
-  top: 0;
-  left: -16px;
+  width: 0.7rem;
+  height: 1.4rem;
   z-index: 5;
-}
-
-#sidemenu-mobile .mobile-sidebar-item-alt {
-  text-align: left;
-  align-content: center;
-  width: 260px;
-  height: 51px;
-  font-size: 0.875rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.45);
-  letter-spacing: 0.4px;
-  background-color: #262834;
 }
 
 #sidemenu-mobile .mobile-sidebar-item-alt:focus {
@@ -678,24 +665,39 @@ body {
   border-radius: 0.2rem;
 }
 
-#sidemenu-mobile .mobile-sidebar-item-alt a {
+#sidemenu-mobile .mobile-sidebar-item-alt {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 260px;
+  height: fit-content;
+  font-size: 0.875rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+  letter-spacing: 0.4px;
+  background-color: #262834;
+  padding-left: 1.5rem;
+}
+
+#sidemenu-mobile .mobile-sidebar-item-alt .sidemenu-anchor {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  bottom: 0;
+  left: 0;
+}
+
+#sidemenu-mobile .mobile-sidebar-item-alt .sidemenu-anchor a {
   display: inline-block;
   text-decoration: none;
   color: white;
   position: relative;
   font-size: 0.875rem;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 218px;
-  height: 51px;
-  padding: 15px 15px 25px 15px;
-}
-
-#sidemenu-mobile .mobile-sidebar-item-alt .sidemenu-anchor {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: relative;
+  height: fit-content;
+  padding: 15px 15px;
 }
 
 #sidemenu-mobile .mobile-sidebar-title-alt {
