@@ -86,12 +86,15 @@ $("#contact-burger-btn").on("click", function(e) {
         bmClosed = false;
         bmOpen = true;
         $(".sidemenu-both").css({"overflow-y":"scroll"});
+        $("main").addClass('menu-open');
         bmOpenMenu();
+        
     } else {
         bmOpen = false;
         bmClosed = true;
         bmCloseMenu();
         $(".sidemenu-both").css({"overflow-y":"hidden"});
+        $("main").removeClass('menu-open');
     }
 })
 

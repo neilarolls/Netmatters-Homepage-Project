@@ -2836,6 +2836,11 @@ header {
   z-index: 0;
 }
 
+main.menu-open {
+  pointer-events: none;
+  filter: brightness(60%);
+}
+
 .partners-top-wrapper {
   width: calc((100vw - 15) * 1px);
   background-color: white;

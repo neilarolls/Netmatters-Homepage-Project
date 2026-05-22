@@ -3,7 +3,6 @@ body {
     background-color: #323544; // *SNAGGING* - Colour variables
     overflow-x: clip;
     z-index: 0;
-
 }
 
 * {
@@ -15,4 +14,9 @@ header {
     width: 100vw;
     background-color: #323544;
     z-index: 0;
+}
+
+main.menu-open {
+  pointer-events: none;
+  filter:brightness(60%);
 }
