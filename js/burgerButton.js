@@ -98,6 +98,38 @@ $("#contact-burger-btn").on("click", function(e) {
     }
 })
 
+$(document).on("click", function(e) {
+
+    e.preventDefault();
+
+    const currentLeft = $("body").position().left;
+    let currentWidth = window.innerWidth;
+    const mouseX = currentWidth - e.clientX - 16;
+
+
+    // console.log(mouseX);
+
+    if ((currentWidth >= 992 && currentLeft === -350 && mouseX > 350)) {
+
+        bmOpen = false;
+        bmClosed = true;
+        bmCloseMenu();
+        $(".sidemenu-both").css({"overflow-y":"hidden"});
+        $("main").removeClass('menu-open');
+
+    }
+
+    if (currentWidth < 992 && currentLeft === -275 && mouseX > 275) {
+
+        bmOpen = false;
+        bmClosed = true;
+        bmCloseMenu();
+        $(".sidemenu-both").css({"overflow-y":"hidden"});
+        $("main").removeClass('menu-open');
+
+    }
+})
+
 // ********************************************************
 // ***   Animate the opening and closing of the menu    ***
 // ********************************************************

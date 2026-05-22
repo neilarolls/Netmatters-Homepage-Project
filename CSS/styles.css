@@ -2839,6 +2839,7 @@ header {
 main.menu-open {
   pointer-events: none;
   filter: brightness(60%);
+  transition: filter 0.3s linear;
 }
 
 .partners-top-wrapper {
