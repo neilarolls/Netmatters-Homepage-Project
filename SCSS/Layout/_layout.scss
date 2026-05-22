@@ -21,3 +21,9 @@ main.menu-open {
   filter:brightness(60%);
   transition: filter 0.3s linear;
 }
+
+main.menu-closed {
+  pointer-events: all;
+  filter:brightness(100%);
+  transition: filter 0.3s linear;
+}

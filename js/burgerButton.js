@@ -87,14 +87,16 @@ $("#contact-burger-btn").on("click", function(e) {
         bmOpen = true;
         $(".sidemenu-both").css({"overflow-y":"scroll"});
         $("main").addClass('menu-open');
+        $("main").removeClass('menu-closed');
         bmOpenMenu();
         
-    } else {
+    } else {                                                // With the page non-responsive this shouldn't occur. Still, who knows....
         bmOpen = false;
         bmClosed = true;
         bmCloseMenu();
         $(".sidemenu-both").css({"overflow-y":"hidden"});
         $("main").removeClass('menu-open');
+        $("main").addClass('menu-closed');
     }
 })
 
@@ -104,7 +106,7 @@ $(document).on("click", function(e) {
 
     const currentLeft = $("body").position().left;
     let currentWidth = window.innerWidth;
-    const mouseX = currentWidth - e.clientX - 16;
+    const mouseX = currentWidth - e.clientX - 16; // Can I get the scrollbar width precisely, assuming that is what I am accounting for?
 
 
     // console.log(mouseX);
@@ -116,6 +118,7 @@ $(document).on("click", function(e) {
         bmCloseMenu();
         $(".sidemenu-both").css({"overflow-y":"hidden"});
         $("main").removeClass('menu-open');
+        $("main").addClass('menu-closed');
 
     }
 
@@ -126,6 +129,7 @@ $(document).on("click", function(e) {
         bmCloseMenu();
         $(".sidemenu-both").css({"overflow-y":"hidden"});
         $("main").removeClass('menu-open');
+        $("main").addClass('menu-closed');
 
     }
 })
@@ -133,6 +137,36 @@ $(document).on("click", function(e) {
 // ********************************************************
 // ***   Animate the opening and closing of the menu    ***
 // ********************************************************
+
+
+
+function bmLineToCross() {
+    $("#contact-burger-top").css({"transition":"transform 0.15s linear","transform":"rotate(45deg)"});
+    $("#contact-burger-middle").css({"transition":"transform 0.15s linear","transform":"rotate(45deg)"});    
+    $("#contact-burger-bottom").css({"transition":"transform 0.15s linear","transform":"rotate(-45deg)"});
+}
+
+function bmlineToLines() {
+
+    $("#contact-burger-top").delay(150).animate({"top":"-3px"}, 150);
+    $("#contact-burger-bottom").delay(150).animate({"top":"-3px"}, 150);
+}
+
+function animBurgerOpen() {
+
+    $("#contact-burger-top").animate({"top":"7px"}, 150);
+    $("#contact-burger-bottom").animate({"top":"-12px"}, 150, bmLineToCross);
+}
+
+function animBurgerClose() {
+    $("#contact-burger-top").css({"transition":"transform 0.15s linear","transform":"rotate(0deg)"});
+    $("#contact-burger-middle").css({"transition":"transform 0.15s linear","transform":"rotate(0deg)"});
+    $("#contact-burger-bottom").css({"transition":"transform 0.15s linear","transform":"rotate(0deg)"});
+    bmlineToLines();
+}
+
+
+
 
 function bmOpenMenu() {
 
@@ -143,12 +177,15 @@ function bmOpenMenu() {
     } else {
         $("body").animate({"right":"275px"}, 300, "swing");
     }
+
+    animBurgerOpen();
 }
 
 function bmCloseMenu() {
 
     $("body").animate({"right":"0"}, 300, "swing");
 
+    animBurgerClose();
 }
 
 // const clientHoverIntervalID = setInterval(getZones, 10);

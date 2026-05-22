@@ -214,23 +214,50 @@
                     }
 
                     .contact-hamburger {
-                        display: inline-block;
 
                         // @media (max-width: 767.99px) {
                         //     padding-right: 15px;
                         // }
 
                         button {
+
+                            position: relative;
                             background-color: #333645;
                             height: 56px;
                             width: 63px;
                             padding: 0;
                             border-radius: 3px;
                             cursor: pointer;
+                            line-height: 10px;
 
-                            span img {
-                                scale: 1.6;
-                                padding-top: 2px;
+                            #contact-burger-top {
+                                display: inline-block;
+                                position: relative;
+                                top: -3px;
+                                left: 0px;
+                                width: 52%;
+                                height: 0;
+                                border: 2px solid white;
+                            }
+
+                            #contact-burger-middle {
+                                display: inline-block;
+                                position: relative;
+                                top: -3px;
+                                left: 0px;
+                                width: 51%;
+                                height: 0;
+                                border: 2px solid white;
+                            }
+
+                            #contact-burger-bottom {
+                                display: inline-block;
+                                position: relative;
+                                top: -3px;
+                                left: 0px;
+                                width: 52%;
+                                height: 0;
+                                border: 2px solid white;
                             }
 
                         }
