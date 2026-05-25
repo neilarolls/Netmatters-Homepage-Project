@@ -23,3 +23,21 @@ $(document).ready(function(){
     draggable:false
   });
 });
+
+$(document).ready(function(){
+  $('.banner').slick({
+    autoplay:true,
+    autoplaySpeed:5000,
+    speed:200,
+    infinite:true,
+    variableWidth:false,
+    pauseOnHover:true,
+    arrows:false,
+    dots:true,
+    slidesToShow:1,
+    draggable:false,
+    centerMode:true,
+    centerPadding:false,
+    useCSS:false    
+  });
+});

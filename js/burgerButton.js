@@ -20,6 +20,10 @@ let menuMobile = true;
 
 const startingWidth = window.innerWidth;
 
+// *******************************************
+// ***   Set widths of menu containers.    ***
+// *******************************************
+
 $("#sidemenu-wrapper").css({"width":"275px"});
 
 if (startingWidth >= 992) {
@@ -28,20 +32,16 @@ if (startingWidth >= 992) {
     $("#sidemenu-wrapper").css({"width":"350px"});
 }
 
-// *********************************
-// ***   Set widths of menus.    ***
-// *********************************
-
 $("#sidemenu-desktop").css({"width":"350px"});
 $("#sidemenu-mobile").css({"width":"275px"});
-
-
-
 
 function updateMenus() {
 
     let currentWidth = window.innerWidth;
 
+// *********************************
+// ***   Switch menus @ 992px.   ***
+// *********************************
     
     if (currentWidth >= 992) {
         $("#sidemenu-mobile").css({"display":"none"});
@@ -50,6 +50,11 @@ function updateMenus() {
         $("#sidemenu-mobile").css({"display":"block"});
         $("#sidemenu-desktop").css({"display":"none"});
     }
+
+// ***************************************
+// ***   Set flags and animate swap,   ***
+// ***     only if menu is open.       ***
+// ***************************************
 
     if (currentWidth >= 992 && menuMobile && bmOpen) {
 
@@ -68,6 +73,11 @@ function updateMenus() {
     }
 
 }
+
+// ************************************
+// ***   Performs the updateMenus   ***
+// ***      function every 5ms.     ***
+// ************************************
 
 const sidemenuLoopID = setInterval(updateMenus, 5);
 
@@ -104,10 +114,15 @@ $(document).on("click", function(e) {
 
     e.preventDefault();
 
+// ********************************************************
+// ***   This event handler detects mouse clicks then   ***
+// ***   if the menu is open and the click is off-menu  ***
+// ***   the menu is closed.                            ***
+// ********************************************************
+
     const currentLeft = $("body").position().left;
     let currentWidth = window.innerWidth;
-    const mouseX = currentWidth - e.clientX - 16; // Can I get the scrollbar width precisely, assuming that is what I am accounting for?
-
+    const mouseX = currentWidth - e.clientX - 16;
 
     // console.log(mouseX);
 
@@ -187,5 +202,3 @@ function bmCloseMenu() {
 
     animBurgerClose();
 }
-
-// const clientHoverIntervalID = setInterval(getZones, 10);

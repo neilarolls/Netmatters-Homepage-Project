@@ -8,7 +8,7 @@
     background-color: #262834;
     background-attachment: scroll;
     color: white;
-    width: 335px;
+    width: 350px;
     height: 100vh;
     right: 0;
     overflow-x: clip;
@@ -36,7 +36,13 @@
             border-radius: 0.2rem;
         }
 
-        width: 335px;
+
+            width: 350px;
+
+            @media (pointer: fine) and (hover: hover) {
+                width: 335px;
+            }
+
         height: 51px;
         font-size: 0.875rem;
         border-top: 1px solid rgba(0,0,0,0.45);
@@ -50,14 +56,26 @@
             position: relative;
             bottom: 48%;
             left: 0%;
-            width: 335px;
+
+            width: 350px;
+
+            @media (pointer: fine) and (hover: hover) {
+                width: 335px;
+            }
+
             height: 51px;
             padding: 15px 15px 25px 15px;
         }
         
         .sidemenu-anchor {
             display: block;
-            width: 100%;
+
+            width: 350px;
+
+            @media (pointer: fine) and (hover: hover) {
+                width: 335px;
+            }
+
             height: 100%;
             position: relative;
             
@@ -78,7 +96,13 @@
         border-top: 1px solid rgba(255,255,255,0.1);
         border-bottom: 1px solid rgba(0,0,0,0.25);
         letter-spacing: 0.4px;
-        width: 335px;
+
+            width: 350px;
+
+            @media (pointer: fine) and (hover: hover) {
+                width: 335px;
+            }
+
 
         a {
             display:inline-block;
@@ -87,14 +111,26 @@
             position: relative;
             bottom: 0;
             left: 0;
-            width: 335px;
+
+            width: 350px;
+
+            @media (pointer: fine) and (hover: hover) {
+                width: 335px;
+            }
+
             height: 56px;
             padding: 16px 15px 24px 15px;
         }
 
         .sidemenu-anchor {
             display: block;
-            width: 100%;
+
+            width: 350px;
+
+            @media (pointer: fine) and (hover: hover) {
+                width: 335px;
+            }
+
             height: 100%;
             position: relative;
         }
@@ -140,7 +176,13 @@
             a {
                 display: inline-block;
                 height: 64.7px;
-                width: 218px;
+
+                width: 233px;
+
+                @media (pointer: fine) and (hover: hover) {
+                    width: 218px;
+                }
+
                 padding: 20px 0 17px;
                 font-size: 1.125rem;
                 color: white;
@@ -154,17 +196,29 @@
 
         .mobile-sidebar-title {
 
-            position: relative;
-            top: 0;
-            left: 0;
-            width: 218px;
+            // position: relative;
+            // top: 0;
+            // left: 0;
+            margin: 0 auto;
+
+            width: 233px;
+
+            @media (pointer: fine) and (hover: hover) {
+                width: 218px;
+            }
+
             height: 113px;
             margin-bottom: 20px;
             margin-top: 20px;
 
             .sidemenu-anchor {
 
-                width: 218px;
+                width: 233px;
+
+                @media (pointer: fine) and (hover: hover) {
+                    width: 218px;
+                }
+
                 height: 113px;
                 padding: 12px 0 18px 0;
                 position: relative;
@@ -190,7 +244,13 @@
                     position: relative;
                     top: -1rem;
                     left: 0;
-                    width: 218px;
+
+                    width: 233px;
+
+                    @media (pointer: fine) and (hover: hover) {
+                        width: 218px;
+                    }
+
                     height: 56px;
                     padding: 16px 15px 24px 15px;
 
@@ -209,7 +269,14 @@
                 border-radius: 0.2rem;
             }
 
-            width: 218px;
+            margin: 0 auto;
+
+            width: 233px;
+
+            @media (pointer: fine) and (hover: hover) {
+                width: 218px;
+            }
+
             border-top: 1px solid rgba(255,255,255,0.05);
             border-bottom: 1px solid rgba(0, 0, 0, 0.45);
             background-color: #262834;
@@ -219,7 +286,13 @@
                 font-size: 1rem;
                 padding: 10px;
                 letter-spacing: 0.4px;
-                width: 218px;
+
+                width: 233px;
+
+                @media (pointer: fine) and (hover: hover) {
+                    width: 218px;
+                }
+
                 color: white;
                 text-decoration: none;
             }
@@ -250,7 +323,13 @@
         align-items: center;
 
         text-align: left;
-        width: 260px;
+
+        width: 275px;
+
+        @media (pointer: fine) and (hover: hover) {
+            width: 260px;
+        }
+
         height: fit-content;
         font-size: 0.875rem;
         border-top: 1px solid rgba(0,0,0,0.45);
@@ -263,7 +342,13 @@
         .sidemenu-anchor {
             display: block;
             position: relative;
-            width: 100%;
+
+            width: 275px;
+
+            @media (pointer: fine) and (hover: hover) {
+                width: 260px;
+            }
+
             height: fit-content;
             bottom: 0;
             left: 0;
@@ -276,7 +361,13 @@
                 font-size: 0.875rem;
                 bottom: 0;
                 left: -32px;
-                width: 260px;
+
+                width: 275px;
+
+                @media (pointer: fine) and (hover: hover) {
+                    width: 260px;
+                }
+
                 height: fit-content;
                 padding: 15px 15px 15px 50px;
             }
@@ -305,14 +396,26 @@
         border-top: 1px solid rgba(255,255,255,0.1);
         border-bottom: 1px solid rgba(0,0,0,0.25);
         letter-spacing: 0.4px;
-        width: 260px;
+
+        width: 275px;
+
+        @media (pointer: fine) and (hover: hover) {
+            width: 260px;
+        }
+
         text-align: left;
 
     
         .sidemenu-anchor {
             display: block;
             position: relative;
-            width: 100%;
+
+            width: 275px;
+
+            @media (pointer: fine) and (hover: hover) {
+                width: 260px;
+            }
+
             height: fit-content;
             bottom: 0;
             left: 0;
@@ -324,7 +427,13 @@
                 position: relative;
                 bottom: 0;
                 left: -20px;
-                width: 260px;
+
+                width: 275px;
+
+                @media (pointer: fine) and (hover: hover) {
+                    width: 260px;
+                }
+
                 height: fit-content;
                 padding: 17px 15px 13px 24px;
             }
