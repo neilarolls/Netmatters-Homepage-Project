@@ -3133,7 +3133,7 @@ main.menu-closed {
 .slick-active button {
   border: 2px solid #ffffff;
   z-index: 200;
-  background-image: radial-gradient(circle at center, #ffffff 35%, transparent 45%) !important;
+  background-image: radial-gradient(circle at center, #ffffff 35%, transparent 50%) !important;
 }
 
 [id*=slick-slide-control] {
