@@ -1,12 +1,14 @@
 #container-dropdown {
     width: calc((100vw - 15) * 1px);
     display: none;
-    overflow-x: clip;   
-    height: auto;
-    // margin-right: auto;
-    // margin-left: auto;
+    overflow-x: clip;
+    height: 119.5px;
 
-    color: #fff; // *SNAGGING* - Colour variables
+    @media (min-width: 1260px) {
+        height: 99.25px;
+    }
+
+    color: #fff;
     background-color: #323544;
 
     @media (min-width: 992px) {
@@ -18,11 +20,6 @@
         padding-left: calc((100vw - 1200px) / 2);
         padding-right: calc((100vw - 1200px) / 2);
     }
-
-
-
-
-
 
     @media (min-width: 992px) {
         display: block;

@@ -1197,9 +1197,15 @@ body {
   width: calc((100vw - 15) * 1px);
   display: none;
   overflow-x: clip;
-  height: auto;
+  height: 119.5px;
   color: #fff;
   background-color: #323544;
+}
+
+@media (min-width: 1260px) {
+  #container-dropdown {
+    height: 99.25px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2202,7 +2208,7 @@ body {
   height: 20px;
   border-radius: 10px;
   cursor: pointer;
-  left: calc((50vw - 6rem));
+  left: calc((50vw - 7.25rem));
 }
 
 .container-banner #slick-slide-control21 {
@@ -2216,7 +2222,7 @@ body {
   height: 20px;
   border-radius: 10px;
   cursor: pointer;
-  left: calc((50vw - 4rem));
+  left: calc((50vw - 5.25rem));
 }
 
 .container-banner #slick-slide-control22 {
@@ -2230,7 +2236,7 @@ body {
   height: 20px;
   border-radius: 10px;
   cursor: pointer;
-  left: calc((50vw - 2rem));
+  left: calc((50vw - 3.25rem));
 }
 
 .container-banner #slick-slide-control23 {
@@ -2244,7 +2250,7 @@ body {
   height: 20px;
   border-radius: 10px;
   cursor: pointer;
-  left: 50vw;
+  left: calc((50vw - 1.25rem));
 }
 
 .container-banner #slick-slide-control24 {
@@ -2258,7 +2264,7 @@ body {
   height: 20px;
   border-radius: 10px;
   cursor: pointer;
-  left: calc((50vw + 2rem));
+  left: calc((50vw + 0.75rem));
 }
 
 .container-banner #slick-slide-control25 {
@@ -2272,7 +2278,7 @@ body {
   height: 20px;
   border-radius: 10px;
   cursor: pointer;
-  left: calc((50vw + 4rem));
+  left: calc((50vw + 2.75rem));
 }
 
 .container-banner #slick-slide-control26 {
@@ -2286,7 +2292,7 @@ body {
   height: 20px;
   border-radius: 10px;
   cursor: pointer;
-  left: calc((50vw + 6rem));
+  left: calc((50vw + 4.75rem));
 }
 
 .container-banner .banner {
@@ -2342,12 +2348,11 @@ body {
 @media (max-width: 991.999px) {
   .container-banner div[id*=banner-text] .banner-text-block {
     width: 75%;
-    left: calc(100vw * 0.125);
+    left: calc(100vw * 0.12);
   }
 }
 
 .container-banner div[id*=banner-text] .banner-text-block > div {
-  z-index: 150;
   position: relative;
   width: 100%;
   top: 30px;
