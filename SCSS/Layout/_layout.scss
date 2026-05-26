@@ -1,11 +1,11 @@
 body {
     margin: 0;
-    background-color: #323544; // *SNAGGING* - Colour variables
+    background-color: #323544;
     overflow-x: clip;
     z-index: 0;
 }
 
-* {
+*   {
     box-sizing: border-box;
 }
 
@@ -17,15 +17,29 @@ header {
 }
 
 main.menu-open {
-  pointer-events: none;
-  user-select: none;
-  filter:brightness(60%);
-  transition: filter 0.3s linear;
+    pointer-events: none;
+    user-select: none;
+    filter:brightness(60%);
+    transition: filter 0.3s linear;
 }
 
 main.menu-closed {
-  pointer-events: all;
-  user-select: none;
-  filter:brightness(100%);
-  transition: filter 0.3s linear;
+    pointer-events: all;
+    user-select: none;
+    filter:brightness(100%);
+    transition: filter 0.3s linear;
+}
+
+.slick-active {
+    
+    button {
+        border: 2px solid #ffffff;
+        z-index: 200;        
+        background-image: radial-gradient(circle at center, #ffffff 35%, transparent 45%) !important;
+    }
+}
+
+[id*=slick-slide-control] {
+
+        background-image: radial-gradient(circle at center, #ffffff88 35%, transparent 45%);
 }

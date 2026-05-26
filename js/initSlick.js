@@ -20,7 +20,9 @@ $(document).ready(function(){
     pauseOnHover:true,
     arrows:false,
     slidesToShow:12,
-    draggable:false
+    draggable:false,
+    useCSS:false,
+    useTransform: false
   });
 });
 

@@ -2191,10 +2191,6 @@ body {
   color: #fff;
 }
 
-.container-banner [id*=slick-slide-control].slick-active button {
-  border: 5px solid #ffffff;
-}
-
 .container-banner #slick-slide-control20 {
   position: absolute;
   display: inline-block;
@@ -2202,10 +2198,9 @@ body {
   bottom: 50px;
   color: transparent;
   background-color: transparent;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  border: 5px solid #ffffff88;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
   cursor: pointer;
   left: calc((50vw - 6rem));
 }
@@ -2217,10 +2212,9 @@ body {
   bottom: 50px;
   color: transparent;
   background-color: transparent;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  border: 5px solid #ffffff88;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
   cursor: pointer;
   left: calc((50vw - 4rem));
 }
@@ -2232,10 +2226,9 @@ body {
   bottom: 50px;
   color: transparent;
   background-color: transparent;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  border: 5px solid #ffffff88;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
   cursor: pointer;
   left: calc((50vw - 2rem));
 }
@@ -2247,10 +2240,9 @@ body {
   bottom: 50px;
   color: transparent;
   background-color: transparent;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  border: 5px solid #ffffff88;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
   cursor: pointer;
   left: 50vw;
 }
@@ -2262,10 +2254,9 @@ body {
   bottom: 50px;
   color: transparent;
   background-color: transparent;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  border: 5px solid #ffffff88;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
   cursor: pointer;
   left: calc((50vw + 2rem));
 }
@@ -2277,10 +2268,9 @@ body {
   bottom: 50px;
   color: transparent;
   background-color: transparent;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  border: 5px solid #ffffff88;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
   cursor: pointer;
   left: calc((50vw + 4rem));
 }
@@ -2292,10 +2282,9 @@ body {
   bottom: 50px;
   color: transparent;
   background-color: transparent;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  border: 5px solid #ffffff88;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
   cursor: pointer;
   left: calc((50vw + 6rem));
 }
@@ -3141,6 +3130,16 @@ main.menu-closed {
   transition: filter 0.3s linear;
 }
 
+.slick-active button {
+  border: 2px solid #ffffff;
+  z-index: 200;
+  background-image: radial-gradient(circle at center, #ffffff 35%, transparent 45%) !important;
+}
+
+[id*=slick-slide-control] {
+  background-image: radial-gradient(circle at center, #ffffff88 35%, transparent 45%);
+}
+
 .partners-top-wrapper {
   width: calc((100vw - 15) * 1px);
   background-color: white;
@@ -3561,6 +3560,16 @@ main.menu-closed {
   cursor: pointer;
 }
 
+#container-clients .clients .item .pop-up-text::after {
+  content: '';
+  position: absolute;
+  height: 70px;
+  top: 100%;
+  left: 0px;
+  width: 280px;
+  z-index: 1;
+}
+
 #container-clients .clients .item .pop-up-text {
   display: none;
   position: absolute;
@@ -3573,16 +3582,6 @@ main.menu-closed {
   text-align: center;
   left: calc(50% - 140px);
   margin: 0 0 50px;
-}
-
-#container-clients .clients .item .pop-up-text ::after {
-  content: '';
-  position: absolute;
-  height: 50px;
-  top: 100%;
-  left: 0px;
-  width: 280px;
-  z-index: 5;
 }
 
 #container-clients .clients .item .pop-up-text .client-arrow {
@@ -3626,7 +3625,6 @@ main.menu-closed {
   width: fit-content;
   top: 0rem;
   left: 0.5rem;
-  z-index: 2;
 }
 
 #container-clients .clients .item div img {

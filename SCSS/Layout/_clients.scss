@@ -26,8 +26,18 @@
             padding-left: 25px;
             padding-right: 25px;
             width: fit-content;
-            cursor: pointer;
-            
+            cursor: pointer;            
+
+            .pop-up-text::after {                   // Extends the :hover area
+                    content: '';
+                    position: absolute;
+                    height: 70px;
+                    top: 100%;
+                    left:0px;
+                    width: 280px;
+                    z-index: 1;
+            }
+
             .pop-up-text {
                 display: none;
                 position: absolute;
@@ -40,16 +50,6 @@
                 text-align: center;
                 left: calc(50% - 140px);
                 margin: 0 0 50px;
-
-                ::after {                   // Extends the :hover area
-                    content: '';
-                    position: absolute;
-                    height: 50px;
-                    top: 100%;
-                    left:0px;
-                    width: 280px;
-                    z-index: 5;
-                }
 
                 .client-arrow {
                     @include client-popup-triangle($triangle-colour: #323544);
@@ -86,7 +86,7 @@
                             width: fit-content;
                             top: 0rem;
                             left: 0.5rem;
-                            z-index: 2;
+                            // z-index: 2;
                         }
                     }
                 }

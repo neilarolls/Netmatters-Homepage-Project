@@ -30,12 +30,6 @@
     padding: 0;
     color: #fff;
 
-    [id*=slick-slide-control].slick-active {
-        button {
-            border: 5px solid #ffffff;
-        }
-    }
-
     #slick-slide-control20 {
 
         position: absolute;
@@ -44,10 +38,9 @@
         bottom: 50px;
         color: transparent;
         background-color: transparent;
-        width:10px;
-        height:10px;
-        border-radius: 5px;
-        border: 5px solid #ffffff88;
+        width:20px;
+        height:20px;
+        border-radius: 10px;
         cursor: pointer;
         left: calc((50vw - 6rem));
 
@@ -61,10 +54,9 @@
         bottom: 50px;
         color: transparent;
         background-color: transparent;
-        width:10px;
-        height:10px;
-        border-radius: 5px;
-        border: 5px solid #ffffff88;
+        width:20px;
+        height:20px;
+        border-radius: 10px;
         cursor: pointer;
         left: calc((50vw - 4rem));
 
@@ -78,10 +70,9 @@
         bottom: 50px;
         color: transparent;
         background-color: transparent;
-        width:10px;
-        height:10px;
-        border-radius: 5px;
-        border: 5px solid #ffffff88;
+        width:20px;
+        height:20px;
+        border-radius: 10px;
         cursor: pointer;
         left: calc((50vw - 2rem));
 
@@ -95,10 +86,9 @@
         bottom: 50px;
         color: transparent;
         background-color: transparent;
-        width:10px;
-        height:10px;
-        border-radius: 5px;
-        border: 5px solid #ffffff88;
+        width:20px;
+        height:20px;
+        border-radius: 10px;
         cursor: pointer;
         left: 50vw;
 
@@ -112,10 +102,9 @@
         bottom: 50px;
         color: transparent;
         background-color: transparent;
-        width:10px;
-        height:10px;
-        border-radius: 5px;
-        border: 5px solid #ffffff88;
+        width:20px;
+        height:20px;
+        border-radius: 10px;
         cursor: pointer;
         left: calc((50vw + 2rem));
 
@@ -129,10 +118,9 @@
         bottom: 50px;
         color: transparent;
         background-color: transparent;
-        width:10px;
-        height:10px;
-        border-radius: 5px;
-        border: 5px solid #ffffff88;
+        width:20px;
+        height:20px;
+        border-radius: 10px;
         cursor: pointer;
         left: calc((50vw + 4rem));
 
@@ -146,10 +134,9 @@
         bottom: 50px;
         color: transparent;
         background-color: transparent;
-        width:10px;
-        height:10px;
-        border-radius: 5px;
-        border: 5px solid #ffffff88;
+        width:20px;
+        height:20px;
+        border-radius: 10px;
         cursor: pointer;
         left: calc((50vw + 6rem));
 
