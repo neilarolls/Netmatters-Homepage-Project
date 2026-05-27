@@ -1,4 +1,3 @@
-$(document).ready(function() {
     
     // **************************************************************
     // ***  Make sure the body element has relative positioning.  ***
@@ -15,6 +14,7 @@ $(document).ready(function() {
 
     let menuDesktop = false;
     let menuMobile = true;
+    let resetSticky = false;
 
     // ********************************************************
     // ***   Set menu flags according to width at start.    ***
@@ -109,6 +109,7 @@ $(document).ready(function() {
             $(".sidemenu-both").css({"overflow-y":"hidden"});
             $("main").removeClass('menu-open');
             $("main").addClass('menu-closed');
+            resetSticky = true;
         }
     })
 
@@ -136,6 +137,7 @@ $(document).ready(function() {
             $(".sidemenu-both").css({"overflow-y":"hidden"});
             $("main").removeClass('menu-open');
             $("main").addClass('menu-closed');
+            resetSticky = true;
 
         }
 
@@ -147,6 +149,7 @@ $(document).ready(function() {
             $(".sidemenu-both").css({"overflow-y":"hidden"});
             $("main").removeClass('menu-open');
             $("main").addClass('menu-closed');
+            resetSticky = true;
 
         }
     })
@@ -204,4 +207,3 @@ $(document).ready(function() {
 
         animBurgerClose();
     }
-});
