@@ -13,7 +13,7 @@ header {
     margin: 0;
     width: 100vw;
     background-color: #323544;
-    z-index: 0;
+    z-index: 5;
 }
 
 main.menu-open {
@@ -23,10 +23,10 @@ main.menu-open {
     transition: filter 0.3s linear;
 }
 
-main.menu-closed {
+main.dimmed {
     pointer-events: all;
     user-select: none;
-    filter:brightness(100%);
+    filter:brightness(50%);
     transition: filter 0.3s linear;
 }
 

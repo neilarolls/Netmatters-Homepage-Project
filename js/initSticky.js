@@ -3,7 +3,6 @@
 // *************************************************
 
     let previousScrollIndex = 0;
-    let stickyOn = false;
     let stickyTimer = 0;
 
 // ****************************************************
@@ -17,7 +16,7 @@
 // ***   reattaches the header.                     ***
 // ****************************************************
 
-    function makeSticky() {
+    function makeSticky(animate) {
 
         let headerYMax = document.getElementById("container-contact").offsetHeight;
 
@@ -35,14 +34,23 @@
             adjustWidth = 0;
         }
 
-        $("#contact-sticky-target").css({"z-index":"5","position":"fixed", "top":`-${headerYMax}px`, "left":"0", "width":`calc(100vw + ${adjustWidth}px)`});
+
+        if (animate) {
+
+            $("#contact-sticky-target").css({"z-index":"5","position":"fixed", "top":`-${headerYMax}px`, "left":"0", "width":`calc(100vw + ${adjustWidth}px)`});
+
+
+            $("#contact-sticky-target").delay(150).animate({"top":"0"}, 300);
+
+        } else {
+
+            $("#contact-sticky-target").css({"z-index":"5","position":"fixed", "top":`0`, "left":"0", "width":`calc(100vw + ${adjustWidth}px)`});            
+        }
 
         if (!($("#filler-block").length)) {
         
             $("main").prepend(`<div id="filler-block" style="display:block;width:100%;height:${headerYMax}px"></div>`);
         }
-
-        $("#contact-sticky-target").delay(150).animate({"top":"0"}, 300);
 
     }
 
@@ -59,7 +67,7 @@
 
             $("#contact-sticky-target").delay(150).animate({"top":`-${headerYMax}px`}, 300, function() {
 
-                $("#contact-sticky-target").css({"z-index":"0","position":"relative", "width":"100vw"});
+                $("#contact-sticky-target").css({"z-index":"","position":"", "top":"", "left":"", "width":""});
 
                 if (($("#filler-block").length)) {
                 
@@ -70,7 +78,7 @@
 
         } else {
             
-            $("#contact-sticky-target").css({"z-index":"0","position":"relative", "width":"100vw"});
+            $("#contact-sticky-target").css({"z-index":"","position":"", "top":"", "left":"", "width":""});
 
             if (($("#filler-block").length)) {
             
@@ -82,26 +90,28 @@
 
     }
 
-    function updateSticky() {
+    function updateStickyWidth() {
 
         let adjustWidth = 0;
+        let currentWidth = window.innerWidth;
 
         if (bmOpen) {
-            adjustWidth = -15;
-            // console.log(bmOpen);
-        } else {
-            adjustWidth = 0;
-        }
 
-        $("#contact-sticky-target").css({"width":`calc(100vw + ${adjustWidth}px)`});
-        
+            adjustWidth = -15;
+
+        } else {
+
+            adjustWidth = 0;
+        }        
+
+        $("#contact-sticky-target").width(currentWidth + adjustWidth);
     }
 
     function stickyHandler() {
 
         if (!resetSticky) {
 
-            updateSticky();
+            updateStickyWidth();
 
             const currentScrollIndex = window.scrollY;
             const stickyYBoth = (window.innerWidth >= 992);
@@ -159,7 +169,7 @@
 
             if (currentScrollIndex > (stickyYMax + 50) && goingUp && !stickyOn) {
 
-                makeSticky();
+                makeSticky(true);
 
                 stickyOn = true;
             }
@@ -214,11 +224,20 @@
 
         } else {
 
+            previousScrollIndex = window.scrollY;
+            stickyTimer = 0;
+            stickyOn = wasSticky;
+            wasSticky = false;
             resetSticky = false;
 
-            makeUnsticky(false);
+            if (stickyOn) {
 
-            console.log(window.scrollY);
+                makeSticky(false);
+
+            } else {
+
+                makeUnsticky();
+            }
 
         }
     }

@@ -5,7 +5,7 @@ let consentGiven = localStorage.getItem(consentKey) === 'true';
 
 if (!consentGiven) {
 
-    $("main").css({"filter":"brightness(50%)"});
+    $("main").addClass("dimmed");
 
     const cookieDialogue = document.getElementById("cookie-dialogue");
 
@@ -19,7 +19,7 @@ if (!consentGiven) {
 
         console.log("cookie dialogue:- cookies accepted");
 
-        $("main").css({"filter":"brightness(100%)"});
+        $("main").removeClass("dimmed");
     });
 
     $("#cookie-dialogue-change-button").on( "click", function () {
@@ -28,7 +28,7 @@ if (!consentGiven) {
 
         console.log("cookie dialogue:- change settings selected");
 
-        $("main").css({"filter":"brightness(100%)"});
+        $("main").removeClass("dimmed");
     });
 }
 

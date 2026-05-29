@@ -1,12 +1,6 @@
-    
-    // **************************************************************
-    // ***  Make sure the body element has relative positioning.  ***
-    // **************************************************************
-
-    // $("body").css({"position":"relative"});
-
     // ********************************************************
     // ***   Variables to track the status of the menu.     ***
+    // ***   Also declares shared sticky header variables.  ***
     // ********************************************************
 
     let bmOpen = false;
@@ -14,7 +8,10 @@
 
     let menuDesktop = false;
     let menuMobile = true;
+
     let resetSticky = false;
+    let wasSticky = false;
+    let stickyOn = false;
 
     // ********************************************************
     // ***   Set menu flags according to width at start.    ***
@@ -93,13 +90,14 @@
     $("#contact-burger-btn").on("click", function(e) {
 
         e.preventDefault();
+        e.stopPropagation();
 
         if (bmClosed) {
             bmClosed = false;
             bmOpen = true;
+            wasSticky = stickyOn;
             $(".sidemenu-both").css({"overflow-y":"scroll"});
             $("main").addClass('menu-open');
-            $("main").removeClass('menu-closed');
             bmOpenMenu();
             
         } else {                                                // With the page non-responsive this shouldn't occur. Still, who knows....
@@ -108,14 +106,14 @@
             bmCloseMenu();
             $(".sidemenu-both").css({"overflow-y":"hidden"});
             $("main").removeClass('menu-open');
-            $("main").addClass('menu-closed');
             resetSticky = true;
         }
     })
 
     $(document).on("click", function(e) {
 
-        // e.preventDefault();
+        e.preventDefault();
+        e.stopPropagation();
 
     // ********************************************************
     // ***   This event handler detects mouse clicks then   ***
@@ -136,7 +134,6 @@
             bmCloseMenu();
             $(".sidemenu-both").css({"overflow-y":"hidden"});
             $("main").removeClass('menu-open');
-            $("main").addClass('menu-closed');
             resetSticky = true;
 
         }
@@ -148,7 +145,6 @@
             bmCloseMenu();
             $(".sidemenu-both").css({"overflow-y":"hidden"});
             $("main").removeClass('menu-open');
-            $("main").addClass('menu-closed');
             resetSticky = true;
 
         }

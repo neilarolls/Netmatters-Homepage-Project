@@ -1338,7 +1338,7 @@ body {
   right: 0;
   position: absolute;
   top: 234px;
-  z-index: 2;
+  z-index: 5;
   background-color: #526781;
 }
 
@@ -1465,7 +1465,7 @@ body {
   right: 0;
   position: absolute;
   top: 234px;
-  z-index: 2;
+  z-index: 5;
   background-color: #286abd;
 }
 
@@ -1592,7 +1592,7 @@ body {
   right: 0;
   position: absolute;
   top: 234px;
-  z-index: 2;
+  z-index: 5;
   background-color: #25a25a;
 }
 
@@ -1719,7 +1719,7 @@ body {
   right: 0;
   position: absolute;
   top: 234px;
-  z-index: 2;
+  z-index: 5;
   background-color: #bc2c28;
 }
 
@@ -1846,7 +1846,7 @@ body {
   right: 0;
   position: absolute;
   top: 234px;
-  z-index: 2;
+  z-index: 5;
   background-color: #79539a;
 }
 
@@ -1973,7 +1973,7 @@ body {
   right: 0;
   position: absolute;
   top: 234px;
-  z-index: 2;
+  z-index: 5;
   background-color: #de093f;
 }
 
@@ -2100,7 +2100,7 @@ body {
   right: 0;
   position: absolute;
   top: 234px;
-  z-index: 2;
+  z-index: 5;
   background-color: #a3331d;
 }
 
@@ -3121,7 +3121,7 @@ header {
   margin: 0;
   width: 100vw;
   background-color: #323544;
-  z-index: 0;
+  z-index: 5;
 }
 
 main.menu-open {
@@ -3131,10 +3131,10 @@ main.menu-open {
   transition: filter 0.3s linear;
 }
 
-main.menu-closed {
+main.dimmed {
   pointer-events: all;
   user-select: none;
-  filter: brightness(100%);
+  filter: brightness(50%);
   transition: filter 0.3s linear;
 }
 
@@ -3895,6 +3895,7 @@ main.menu-closed {
   width: 100vw;
   height: 100vh;
   background-color: transparent;
+  overflow: visible;
 }
 
 #cookie-dialogue #cookie-grid-container {
