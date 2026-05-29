@@ -115,7 +115,7 @@
 
     $(document).on("click", function(e) {
 
-        e.preventDefault();
+        // e.preventDefault();
 
     // ********************************************************
     // ***   This event handler detects mouse clicks then   ***
