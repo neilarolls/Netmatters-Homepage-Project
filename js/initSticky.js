@@ -44,7 +44,12 @@
 
         } else {
 
-            $("#contact-sticky-target").css({"z-index":"5","position":"fixed", "top":`0`, "left":"0", "width":`calc(100vw + ${adjustWidth}px)`});            
+            
+
+            $("#contact-sticky-target").css({"z-index":"5","position":"fixed", "top":`-${headerYMax}px`, "left":"0", "width":`calc(100vw + ${adjustWidth}px)`});
+
+            $("#contact-sticky-target").delay(300).animate({"top":"0"}, 1);
+
         }
 
         if (!($("#filler-block").length)) {

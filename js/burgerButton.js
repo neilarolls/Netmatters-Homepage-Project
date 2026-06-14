@@ -202,4 +202,5 @@
         $("body").animate({"right":"0"}, 300, "swing");
 
         animBurgerClose();
+
     }
