@@ -9,8 +9,6 @@
     let menuDesktop = false;
     let menuMobile = true;
 
-    let resetSticky = false;
-    let wasSticky = false;
     let stickyOn = false;
 
     // ********************************************************
@@ -95,7 +93,6 @@
         if (bmClosed) {
             bmClosed = false;
             bmOpen = true;
-            wasSticky = stickyOn;
             $(".sidemenu-both").css({"overflow-y":"scroll"});
             $("main").addClass('menu-open');
             bmOpenMenu();
@@ -106,7 +103,6 @@
             bmCloseMenu();
             $(".sidemenu-both").css({"overflow-y":"hidden"});
             $("main").removeClass('menu-open');
-            resetSticky = true;
         }
     })
 
@@ -134,7 +130,6 @@
             bmCloseMenu();
             $(".sidemenu-both").css({"overflow-y":"hidden"});
             $("main").removeClass('menu-open');
-            resetSticky = true;
 
         }
 
@@ -145,7 +140,6 @@
             bmCloseMenu();
             $(".sidemenu-both").css({"overflow-y":"hidden"});
             $("main").removeClass('menu-open');
-            resetSticky = true;
 
         }
     })

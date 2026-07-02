@@ -1,9 +1,13 @@
+$(document).ready(function() {
+
 // *************************************************
 // ***    Declare flag and tracking variables    ***
 // *************************************************
 
     let previousScrollIndex = 0;
     let stickyTimer = 0;
+    const headerContact = document.getElementById("contact-sticky-target");
+    const headerOriginalTop = headerContact.offsetTop;
 
 // ****************************************************
 // ***   updateSticky() toggles the sticky header   ***
@@ -18,6 +22,7 @@
 
     function makeSticky(animate) {
 
+        let currentScrollY = window.scrollY;
         let headerYMax = document.getElementById("container-contact").offsetHeight;
 
         if (window.innerWidth >= 992) {
@@ -34,29 +39,31 @@
             adjustWidth = 0;
         }
 
-
-        if (animate) {
-
-            $("#contact-sticky-target").css({"z-index":"5","position":"fixed", "top":`-${headerYMax}px`, "left":"0", "width":`calc(100vw + ${adjustWidth}px)`});
-
-
-            $("#contact-sticky-target").delay(150).animate({"top":"0"}, 300);
-
-        } else {
-
-            
-
-            $("#contact-sticky-target").css({"z-index":"5","position":"fixed", "top":`-${headerYMax}px`, "left":"0", "width":`calc(100vw + ${adjustWidth}px)`});
-
-            $("#contact-sticky-target").delay(300).animate({"top":"0"}, 1);
-
-        }
-
         if (!($("#filler-block").length)) {
         
             $("main").prepend(`<div id="filler-block" style="display:block;width:100%;height:${headerYMax}px"></div>`);
         }
 
+        if (animate) {
+
+            $("#contact-sticky-target").css({"z-index":"5","position":"absolute", "top":`${(currentScrollY - headerOriginalTop) - headerYMax}px`, "left":"0", "width":`calc(100vw + ${adjustWidth}px)`});
+
+
+            $("#contact-sticky-target").delay(150).animate({"top":`${currentScrollY - headerOriginalTop}px`}, 300);
+
+        } else {
+            
+
+            $("#contact-sticky-target").css({"z-index":"5","position":"absolute", "top":`${(currentScrollY - headerOriginalTop) - headerYMax}px`, "left":"0", "width":`calc(100vw + ${adjustWidth}px)`});
+
+            $("#contact-sticky-target").delay(300).animate({"top":`${currentScrollY - headerOriginalTop}px`}, 1);
+
+        }
+
+        console.log(`currentScrollY:    ${currentScrollY}`);
+        console.log(`window.scrollY:    ${window.scrollY}`);
+        console.log(`headerYMax:        ${headerYMax}`);
+        console.log(`headerOriginalTop: ${headerOriginalTop}`);
     }
 
     function makeUnsticky(animate = true) {
@@ -114,57 +121,55 @@
 
     function stickyHandler() {
 
-        if (!resetSticky) {
+        updateStickyWidth();
 
-            updateStickyWidth();
+        const currentScrollIndex = window.scrollY;
+        const stickyYBoth = (window.innerWidth >= 992);
 
-            const currentScrollIndex = window.scrollY;
-            const stickyYBoth = (window.innerWidth >= 992);
-
-            let goingUp = false;
-            let goingDown = false;
+        let goingUp = false;
+        let goingDown = false;
 
     // ****************************************************
     // ***   Get current total height of header area.   ***
     // ****************************************************
 
-            let stickyYMax = document.getElementById("container-contact").offsetHeight;
+        let stickyYMax = document.getElementById("container-contact").offsetHeight;
 
-            if (stickyYBoth) {
+        if (stickyYBoth) {
 
-                stickyYMax +=  document.getElementById("container-dropdown").offsetHeight;
+            stickyYMax += document.getElementById("container-dropdown").offsetHeight;
 
-            }
+        }
 
     // ************************************
     // ***   Set goingUp or goingDown.  ***
     // ************************************
 
-            if (currentScrollIndex < previousScrollIndex) {
+        if (currentScrollIndex < previousScrollIndex) {
 
-                goingUp = true;
+            goingUp = true;
 
-                stickyTimer = 0;            // Scrolling up resets the sticky timer so it will only close
-                                            // if the page isn't scrolled for 8 seconds.
+            stickyTimer = 0;            // Scrolling up resets the sticky timer so it will only close
+                                        // if the page isn't scrolled for 10 seconds.
 
-            }
+        }
 
-            if (currentScrollIndex > previousScrollIndex) {
+        if (currentScrollIndex > previousScrollIndex) {
 
-                goingDown = true;
+            goingDown = true;
 
-            }
+        }
 
-    // let consoleString = "";
+        // let consoleString = "";
 
 
-    // console.log(currentScrollIndex);
-    // consoleString += `${stickyYBoth} `;
-    // console.log(goingUp);
-    // console.log(goingDown);
-    // consoleString += `${stickyYMax} `;
+        // console.log(currentScrollIndex);
+        // consoleString += `${stickyYBoth} `;
+        // console.log(goingUp);
+        // console.log(goingDown);
+        // consoleString += `${stickyYMax} `;
 
-    // console.log(consoleString);
+        // console.log(consoleString);
 
 
 
@@ -172,84 +177,67 @@
     // ***  Stick or unstick the menu.  ***
     // ************************************
 
-            if (currentScrollIndex > (stickyYMax + 50) && goingUp && !stickyOn) {
+        if (currentScrollIndex > (stickyYMax + 50) && goingUp && !stickyOn) {
 
-                makeSticky(true);
+            makeSticky(true);
 
-                stickyOn = true;
-            }
+            stickyOn = true;
+        }
 
-            if (currentScrollIndex > stickyYMax && goingDown && stickyOn) {
+        if (currentScrollIndex > stickyYMax && goingDown && stickyOn) {
 
-                makeUnsticky(true);
+            makeUnsticky(true);
 
-                stickyOn = false;
-            }
+            stickyOn = false;
+        }
 
-            if (currentScrollIndex === 0 && stickyOn) {
+        if (currentScrollIndex === 0 && stickyOn) {
 
-                makeUnsticky(false);
+            makeUnsticky(false);
 
-                stickyOn = false;
-            }
+            stickyOn = false;
+        }
 
 
     // ***********************************************
     // ***  If sticky is on, increment the timer.  ***
     // ***********************************************
 
-            if (stickyOn) {
+        if (stickyOn) {
 
-                stickyTimer++;
+            stickyTimer++;
 
-            } else {
+        } else {
 
-                stickyTimer = 0;
+            stickyTimer = 0;
 
-            }
+        }
 
     // ********************************************************
-    // ***  Unstick header and zero timer after 8 seconds.  ***
+    // ***  Unstick header and zero timer after 10 seconds.  **
     // ********************************************************
 
-            if (stickyTimer >= 800 && stickyOn) {
+        // if (stickyTimer >= 1000 && stickyOn) {
 
-                makeUnsticky(true);
+        //     makeUnsticky(true);
 
-                stickyOn = false;
+        //     stickyOn = false;
 
-                stickyTimer = 0;
-            }
+        //     stickyTimer = 0;
+        // }
 
     // **********************************************************************
     // ***  Store current scroll position to detect direction of scroll.  ***
     // **********************************************************************
 
-            previousScrollIndex = currentScrollIndex;
+        previousScrollIndex = currentScrollIndex;
 
-        } else {
-
-            previousScrollIndex = window.scrollY;
-            stickyTimer = 0;
-            stickyOn = wasSticky;
-            wasSticky = false;
-            resetSticky = false;
-
-            if (stickyOn) {
-
-                makeSticky(false);
-
-            } else {
-
-                makeUnsticky();
-            }
-
-        }
     }
-
 
 // ********************************************************
 // ***  Set the loop to run every 10ms.                 ***
 // ********************************************************
 
 const stickyLoopID = setInterval(stickyHandler, 10);
+
+});
