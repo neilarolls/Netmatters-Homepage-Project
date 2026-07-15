@@ -1003,6 +1003,7 @@ body {
     flex-direction: row;
     height: 56px;
     align-items: center;
+    width: fit-content;
   }
 }
 
@@ -1094,6 +1095,10 @@ body {
   #container-contact .contact-v-wrapper .contact-h-wrapper .contact-top-row .contact-actions-wrapper .contact-actions .contact-search-button form button {
     border-radius: 0 3px 3px 0;
   }
+}
+
+#container-contact .contact-v-wrapper .contact-h-wrapper .contact-top-row .contact-actions-wrapper .contact-actions .contact-search-button form button:hover {
+  background-color: #7e808a;
 }
 
 #container-contact .contact-v-wrapper .contact-h-wrapper .contact-top-row .contact-actions-wrapper .contact-hamburger button {

@@ -123,12 +123,13 @@
 
                         .contact-contact-btn {
                             display: none;
-                            
+
                             @media (min-width: 992px) {
                                 display: flex;
                                 flex-direction: row;
                                 height: 56px;
                                 align-items: center;
+                                width: fit-content;
                             }
 
                             a {
@@ -207,6 +208,10 @@
 
                                     @media (min-width: 1260px) {
                                         border-radius: 0 3px 3px 0;                                    
+                                    }
+
+                                    &:hover {
+                                        background-color: #7e808a;
                                     }
                                 }
 
