@@ -27,16 +27,7 @@ $(document).ready(function() {
 
         if (window.innerWidth >= 992) {
 
-            headerYMax +=  document.getElementById("container-dropdown").offsetHeight;
-        }
-
-        let adjustWidth = 0;
-
-        if (bmOpen) {
-            adjustWidth = -15;
-            // console.log(bmOpen);
-        } else {
-            adjustWidth = 0;
+            headerYMax += document.getElementById("container-dropdown").offsetHeight;
         }
 
         if (!($("#filler-block").length)) {
@@ -46,7 +37,7 @@ $(document).ready(function() {
 
         if (animate) {
 
-            $("#contact-sticky-target").css({"z-index":"5","position":"absolute", "top":`${(currentScrollY - headerOriginalTop) - headerYMax}px`, "left":"0", "width":`calc(100vw + ${adjustWidth}px)`});
+            $("#contact-sticky-target").css({"z-index":"5","position":"absolute", "top":`${(currentScrollY - headerOriginalTop) - headerYMax}px`, "left":"0", "width":"100vw"});
 
 
             $("#contact-sticky-target").delay(150).animate({"top":`${currentScrollY - headerOriginalTop}px`}, 300);
@@ -54,7 +45,7 @@ $(document).ready(function() {
         } else {
             
 
-            $("#contact-sticky-target").css({"z-index":"5","position":"absolute", "top":`${(currentScrollY - headerOriginalTop) - headerYMax}px`, "left":"0", "width":`calc(100vw + ${adjustWidth}px)`});
+            $("#contact-sticky-target").css({"z-index":"5","position":"absolute", "top":`${(currentScrollY - headerOriginalTop) - headerYMax}px`, "left":"0", "width":"100vw"});
 
             $("#contact-sticky-target").delay(300).animate({"top":`${currentScrollY - headerOriginalTop}px`}, 1);
 
@@ -102,26 +93,7 @@ $(document).ready(function() {
 
     }
 
-    function updateStickyWidth() {
-
-        let adjustWidth = 0;
-        let currentWidth = window.innerWidth;
-
-        if (bmOpen) {
-
-            adjustWidth = -15;
-
-        } else {
-
-            adjustWidth = 0;
-        }        
-
-        $("#contact-sticky-target").width(currentWidth + adjustWidth);
-    }
-
     function stickyHandler() {
-
-        updateStickyWidth();
 
         const currentScrollIndex = window.scrollY;
         const stickyYBoth = (window.innerWidth >= 992);

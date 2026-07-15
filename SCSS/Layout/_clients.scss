@@ -1,21 +1,22 @@
 #container-clients {
-        width: calc((100vw - 15) * 1px);
-        height: 170px;
-        padding: 50px 0;
-        background-color: #ffffff;
 
-        .clients .slick-list .slick-track .slick-slide div .item .client-image-wrapper, .clients .slick-list .slick-track .slick-slide div .item .client-image-wrapper .pop-up-text {
-            
-            &:hover {
-                .pop-up-text {
-                    display: block;
-                }
+    width: calc((100vw - 15) * 1px);
+    height: 170px;
+    padding: 50px 0;
+    background-color: #ffffff;
+
+    .clients .slick-list .slick-track .slick-slide div .item .client-image-wrapper, .clients .slick-list .slick-track .slick-slide div .item .client-image-wrapper .pop-up-text {
+        
+        &:hover {
+            .pop-up-text {
+                display: block;
             }
         }
+    }
 
     .clients {
-        overflow-x: clip;
-        overflow-y: visible;
+
+        overflow: visible;
         min-width: 0;
 
         .item {
